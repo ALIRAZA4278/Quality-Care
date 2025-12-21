@@ -11,47 +11,48 @@ export default function Footer() {
             {/* Left - Newsletter Form */}
             <div>
               <h2
-                className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 uppercase"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 uppercase"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 Subscribe Our Newsletter
               </h2>
 
               <form className="max-w-xl">
-                <div className="flex gap-0 bg-[#2a3f35] rounded-full p-2">
+                <div className="bg-[#2a3f35] rounded-xl p-3 sm:p-4">
                   <input
                     type="email"
                     placeholder="Your Email Address"
-                    className="flex-1 bg-transparent px-6 py-3 text-white placeholder:text-gray-400 focus:outline-none"
+                    className="w-full bg-transparent px-3 sm:px-4 py-2.5 sm:py-3 text-white placeholder:text-gray-400 focus:outline-none text-xs sm:text-sm md:text-base mb-3"
                   />
                   <button
                     type="submit"
-                    className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-100 inline-flex items-center gap-2 transition-colors uppercase text-sm"
+                    className="w-full bg-white text-black px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-gray-100 inline-flex items-center justify-center gap-2 transition-colors uppercase text-[10px] sm:text-xs md:text-sm"
                   >
                     Subscribe
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="18"
+                      width="16"
+                      height="16"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="2.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
+                      className="sm:w-[18px] sm:h-[18px]"
                     >
                       <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                   </button>
                 </div>
 
-                <div className="flex items-center gap-2 mt-4">
+                <div className="flex items-center gap-2 mt-3 sm:mt-4">
                   <input
                     type="checkbox"
                     id="news"
-                    className="w-4 h-4 rounded border-gray-400"
+                    className="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded border-gray-400"
                   />
-                  <label htmlFor="news" className="text-sm text-gray-300">
+                  <label htmlFor="news" className="text-xs sm:text-sm text-gray-300">
                     Send Me News About Outsorcy
                   </label>
                 </div>
@@ -59,14 +60,14 @@ export default function Footer() {
             </div>
 
             {/* Right - Logo */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="bg-white rounded-full p-8 w-64 h-64 flex items-center justify-center">
+            <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
+              <div className="bg-white rounded-full p-6 sm:p-8 w-48 h-48 sm:w-64 sm:h-64 flex items-center justify-center">
                 <Image
-                  src="/Logo.png"
+                  src="/logo.svg"
                   alt="Quality Care Senior Living"
                   width={180}
                   height={180}
-                  className="object-contain"
+                  className="object-contain w-32 sm:w-44"
                 />
               </div>
             </div>
@@ -298,32 +299,33 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-            <p>© 2025 QUALITY CARE SENIOR LIVING. ALL RIGHTS RESERVED.</p>
-            <div className="flex flex-wrap gap-6 items-center">
-              <Link href="/privacy" className="hover:text-white transition-colors uppercase">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs sm:text-sm text-gray-400">
+            <p className="text-center sm:text-left">© 2025 QUALITY CARE SENIOR LIVING. ALL RIGHTS RESERVED.</p>
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 items-center">
+              <Link href="/privacy" className="hover:text-white transition-colors uppercase text-xs">
                 Privacy & Policy
               </Link>
-              <Link href="/terms-of-use" className="hover:text-white transition-colors uppercase">
+              <Link href="/terms-of-use" className="hover:text-white transition-colors uppercase text-xs">
                 Terms of Use
               </Link>
-              <Link href="/hipaa-policy" className="hover:text-white transition-colors uppercase">
+              <Link href="/hipaa-policy" className="hover:text-white transition-colors uppercase text-xs">
                 HIPAA Policy
               </Link>
-              <Link href="/accessibility" className="hover:text-white transition-colors uppercase">
+              <Link href="/accessibility" className="hover:text-white transition-colors uppercase text-xs whitespace-nowrap">
                 Accessibility Statement
               </Link>
               <button className="hover:text-white transition-colors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="sm:w-6 sm:h-6"
                 >
                   <circle cx="12" cy="12" r="10" />
                   <path d="M12 16v-4M12 8h.01" />

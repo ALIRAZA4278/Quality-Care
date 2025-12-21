@@ -56,36 +56,20 @@ export default function ServicesPageContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative w-full h-[60vh] flex items-center justify-center">
+      <section className="relative w-full h-[25vh] sm:h-[30vh] md:h-[35vh] flex items-center justify-center mt-[100px] sm:mt-[120px] md:mt-[140px]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
             src="/hero.png"
             alt="Services"
             fill
-            className="object-contain"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-white/60"></div>
         </div>
 
-        {/* Logo at Top */}
-        <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20">
-          <div className="bg-white rounded-full p-4 shadow-lg">
-            <Image
-              src="/Logo.png"
-              alt="Quality Care Senior Living"
-              width={80}
-              height={80}
-              className="object-contain"
-            />
-          </div>
-          <p className="text-center text-xs text-gray-600 mt-2 uppercase tracking-wide">
-            Senior Living
-          </p>
-        </div>
-
         {/* Hero Title */}
-        <div className="relative z-10 text-center">
+        <div className="relative z-10 text-center px-4">
           <h1
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900"
             style={{ fontFamily: "var(--font-recoleta)" }}
@@ -97,12 +81,12 @@ export default function ServicesPageContent() {
       </section>
 
       {/* Services Content Section */}
-      <section className="bg-white py-16 sm:py-20 md:py-24 px-4 sm:px-6">
+      <section className="bg-white py-8 sm:py-12 md:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-12 sm:mb-16">
+          <div className="text-center mb-8 sm:mb-12">
             <h3
-              className="text-xl sm:text-2xl mb-3"
+              className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3"
               style={{
                 fontFamily: "var(--font-aulletta)",
                 color: "#887904",
@@ -111,27 +95,27 @@ export default function ServicesPageContent() {
               Our Services
             </h3>
             <h2
-              className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight px-4"
               style={{ fontFamily: "var(--font-recoleta)" }}
             >
               Supporting Every Day, Every Way
             </h2>
-            <div className="w-24 h-1 bg-[#887904] mx-auto mt-6"></div>
-            <p className="text-base sm:text-lg text-gray-700 mt-6 max-w-3xl mx-auto">
+            <div className="w-20 sm:w-24 h-1 bg-[#887904] mx-auto mt-4 sm:mt-6"></div>
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 mt-4 sm:mt-6 max-w-3xl mx-auto px-4">
               At Quality Care Senior Living, we provide essential daily support
               to ensure every resident feels comfortable, cared for, and safe.
             </p>
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 mb-10 sm:mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-10">
             {services.map((service) => (
               <div
                 key={service.id}
-                className="bg-white rounded-[32px] p-3 relative flex flex-col"
+                className="bg-white rounded-2xl sm:rounded-[32px] p-2 sm:p-3 relative flex flex-col"
               >
                 {/* Image Container with padding and rounded */}
-                <div className="relative h-65 sm:h-70 overflow-hidden rounded-[16px] mb-2">
+                <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden rounded-xl sm:rounded-[16px] mb-2">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -141,9 +125,9 @@ export default function ServicesPageContent() {
                 </div>
 
                 {/* Icon Badge - Overlapping between image and text */}
-                <div className="flex justify-center -mt-10 mb-6 relative z-10">
-                  <div className="bg-white rounded-full p-4 shadow-lg">
-                    <div className="relative w-8 h-8 sm:w-10 sm:h-10">
+                <div className="flex justify-center -mt-8 sm:-mt-10 mb-4 sm:mb-6 relative z-10">
+                  <div className="bg-white rounded-full p-3 sm:p-4 shadow-lg">
+                    <div className="relative w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10">
                       <Image
                         src={service.icon}
                         alt={`${service.title} icon`}
@@ -155,20 +139,20 @@ export default function ServicesPageContent() {
                 </div>
 
                 {/* Content */}
-                <div className="text-center px-2 flex flex-col flex-grow">
+                <div className="text-center px-2 sm:px-3 flex flex-col flex-grow">
                   <h3
-                    className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 leading-tight"
+                    className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight"
                     style={{ fontFamily: "var(--font-recoleta)" }}
                   >
                     {service.title}
                   </h3>
-                  <p className="text-sm sm:text-lg text-gray-700 mb-6 leading-relaxed flex-grow">
+                  <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed flex-grow">
                     {service.description}
                   </p>
-                  <div className="pb-4">
+                  <div className="pb-3 sm:pb-4">
                     <Link
                       href={`/services#${service.title.toLowerCase().replace(/\s+/g, "-")}`}
-                      className="inline-block text-[#887904] font-semibold text-base hover:text-[#6a5f03] transition-colors border-b-2 border-[#887904] hover:border-[#6a5f03]"
+                      className="inline-block text-[#887904] font-semibold text-sm sm:text-base hover:text-[#6a5f03] transition-colors border-b-2 border-[#887904] hover:border-[#6a5f03]"
                     >
                       Learn More
                     </Link>
@@ -179,23 +163,24 @@ export default function ServicesPageContent() {
           </div>
 
           {/* Book a Tour CTA */}
-          <div className="text-center mt-12 sm:mt-16">
+          <div className="text-center mt-8 sm:mt-12">
             <Link
               href="/book-tour"
-              className="bg-black text-white pl-8 pr-2 py-3 rounded-full font-semibold hover:bg-gray-800 inline-flex items-center gap-3 transition-colors text-[15px] uppercase tracking-wide"
+              className="bg-black text-white pl-6 sm:pl-8 pr-2 py-2.5 sm:py-3 rounded-full font-semibold hover:bg-gray-800 inline-flex items-center gap-2 sm:gap-3 transition-colors text-xs sm:text-sm md:text-[15px] uppercase tracking-wide"
             >
               Book a Tour
-              <div className="bg-white rounded-full p-3 flex items-center justify-center">
+              <div className="bg-white rounded-full p-2 sm:p-3 flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="16"
+                  height="16"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="black"
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="sm:w-5 sm:h-5"
                 >
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>

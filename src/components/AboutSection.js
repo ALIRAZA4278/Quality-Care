@@ -24,7 +24,7 @@ export default function AboutSection() {
              {/* Logo Badge */}
               <div className="absolute top-1 sm:top-2 right-6 sm:right-10 bg-white rounded-full p-2 sm:p-4 shadow-lg">
                 <Image
-                  src="/Logo.png"
+                  src="/logo.svg"
                   alt="Quality Care Logo"
                   width={60}
                   height={60}

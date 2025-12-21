@@ -17,20 +17,20 @@ export default function PrivacyPageContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative w-full h-[60vh] flex items-center justify-center">
+      <section className="relative w-full h-[25vh] sm:h-[30vh] md:h-[35vh] flex items-center justify-center mt-[100px] sm:mt-[120px] md:mt-[140px]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
             src="/hero.png"
             alt="Privacy & Policy"
             fill
-            className="object-contain"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-white/60"></div>
         </div>
 
         {/* Hero Title */}
-        <div className="relative z-10 text-center">
+        <div className="relative z-10 text-center px-4">
           <h1
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900"
             style={{ fontFamily: "var(--font-recoleta)" }}
@@ -42,17 +42,17 @@ export default function PrivacyPageContent() {
       </section>
 
       {/* Privacy Content Section */}
-      <section className="bg-white py-16 sm:py-20 px-4 sm:px-6">
+      <section className="bg-white py-8 sm:py-12 md:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
             {/* Left Sidebar Navigation */}
             <div className="lg:col-span-1">
-              <div className="space-y-3">
+              <div className="space-y-2 sm:space-y-3">
                 {sections.map((section) => (
                   <button
                     key={section.id}
                     onClick={() => setActiveSection(section.id)}
-                    className={`w-full text-left px-6 py-4 rounded-full font-semibold text-sm transition-colors flex items-center justify-between ${
+                    className={`w-full text-left px-4 sm:px-6 py-3 sm:py-4 rounded-full font-semibold text-xs sm:text-sm transition-colors flex items-center justify-between ${
                       activeSection === section.id
                         ? "bg-gray-900 text-white"
                         : "bg-[#f8f6f3] text-gray-900 hover:bg-gray-200"
@@ -60,12 +60,13 @@ export default function PrivacyPageContent() {
                   >
                     {section.label}
                     <svg
-                      width="20"
-                      height="20"
+                      width="16"
+                      height="16"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="2"
+                      className="sm:w-5 sm:h-5"
                     >
                       <path d="M9 18l6-6-6-6" />
                     </svg>
@@ -79,12 +80,12 @@ export default function PrivacyPageContent() {
               {activeSection === "introduction" && (
                 <div>
                   <h2
-                    className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6"
+                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
                     style={{ fontFamily: "var(--font-recoleta)" }}
                   >
                     Introduction & Scope
                   </h2>
-                  <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
+                  <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
                     <p>
                       At Quality Care, we recognize that the privacy of your personal information, especially when it concerns health and senior living, is a matter of profound importance and trust. This Privacy Policy is designed to provide you with a comprehensive understanding of how we collect, process, manage, and safeguard the data of our seniors, their family members, and legal representatives through our digital platforms, including our website, mobile applications, and other communication portals.
                     </p>
@@ -104,12 +105,12 @@ export default function PrivacyPageContent() {
               {activeSection === "information" && (
                 <div>
                   <h2
-                    className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6"
+                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
                     style={{ fontFamily: "var(--font-recoleta)" }}
                   >
                     Information We Collect
                   </h2>
-                  <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
+                  <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
                     <p>
                       We collect various types of information to provide and improve our services. This includes personal identification information such as names, contact details, and demographic information. We also collect health-related information when necessary to provide appropriate care services.
                     </p>
@@ -123,12 +124,12 @@ export default function PrivacyPageContent() {
               {activeSection === "usage" && (
                 <div>
                   <h2
-                    className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6"
+                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
                     style={{ fontFamily: "var(--font-recoleta)" }}
                   >
                     How We Use Data
                   </h2>
-                  <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
+                  <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
                     <p>
                       The information we collect is used primarily to provide high-quality care services to our residents. We use your data to coordinate care plans, communicate with family members, and ensure the safety and well-being of all residents.
                     </p>
@@ -142,12 +143,12 @@ export default function PrivacyPageContent() {
               {activeSection === "hipaa" && (
                 <div>
                   <h2
-                    className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6"
+                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
                     style={{ fontFamily: "var(--font-recoleta)" }}
                   >
                     HIPAA & Security Protocols
                   </h2>
-                  <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
+                  <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
                     <p>
                       Quality Care is committed to maintaining the highest standards of data security and complying with HIPAA regulations. We implement comprehensive security measures including encryption, secure data storage, and restricted access to protected health information.
                     </p>
@@ -161,12 +162,12 @@ export default function PrivacyPageContent() {
               {activeSection === "data-sharing" && (
                 <div>
                   <h2
-                    className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6"
+                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
                     style={{ fontFamily: "var(--font-recoleta)" }}
                   >
                     Data Sharing & Third Parties
                   </h2>
-                  <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
+                  <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
                     <p>
                       We do not sell, rent, or trade your personal information to third parties for marketing purposes. We only share information when necessary to provide our services, comply with legal obligations, or with your explicit consent.
                     </p>

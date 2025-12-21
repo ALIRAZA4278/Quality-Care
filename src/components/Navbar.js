@@ -8,6 +8,8 @@ import TourModal from "@/components/TourModal";
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isTourModalOpen, setIsTourModalOpen] = useState(false);
+  const [showPhone, setShowPhone] = useState(false);
+  const [showEmail, setShowEmail] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -16,42 +18,77 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 w-full">
       {/* Top Bar */}
-      <div className="bg-[#1a1a1a] text-white py-2.5 px-4 sm:px-6">
+      <div className="bg-[#1a1a1a] text-white py-2.5 px-4 sm:px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto flex items-center justify-start gap-4 sm:gap-8 text-xs sm:text-sm">
+          {/* Phone Section */}
           <div className="flex items-center gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#d4af37"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="sm:w-[18px] sm:h-[18px]"
+            <button
+              onClick={() => setShowPhone(!showPhone)}
+              className="sm:cursor-default flex items-center gap-2"
+              aria-label="Toggle phone number"
             >
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-            </svg>
-            <span className="hidden sm:inline">+314 256 8792 2</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#d4af37"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="sm:w-[18px] sm:h-[18px] flex-shrink-0"
+              >
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <span className="hidden sm:inline">+314 256 8792 2</span>
+            </button>
+            {/* Mobile slide-in phone number */}
+            <div
+              className={`sm:hidden transition-all duration-300 ease-in-out overflow-hidden ${
+                showPhone ? "max-w-[150px] opacity-100" : "max-w-0 opacity-0"
+              }`}
+            >
+              <a href="tel:+31425687922" className="whitespace-nowrap">
+                +314 256 8792 2
+              </a>
+            </div>
           </div>
+
+          {/* Email Section */}
           <div className="flex items-center gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#d4af37"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="sm:w-[18px] sm:h-[18px]"
+            <button
+              onClick={() => setShowEmail(!showEmail)}
+              className="md:cursor-default flex items-center gap-2"
+              aria-label="Toggle email"
             >
-              <rect x="2" y="4" width="20" height="16" rx="2" />
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-            </svg>
-            <span className="hidden md:inline">info@qualitycaresl.com</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#d4af37"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="sm:w-[18px] sm:h-[18px] flex-shrink-0"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <span className="hidden md:inline">info@qualitycaresl.com</span>
+            </button>
+            {/* Mobile/tablet slide-in email */}
+            <div
+              className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${
+                showEmail ? "max-w-[200px] opacity-100" : "max-w-0 opacity-0"
+              }`}
+            >
+              <a href="mailto:info@qualitycaresl.com" className="whitespace-nowrap text-[10px] sm:text-xs">
+                info@qualitycaresl.com
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -113,9 +150,9 @@ export default function Navbar() {
           {/* Center Logo with Circle Background */}
           <div className="absolute left-1/2 -translate-x-1/2 -bottom-8 sm:-bottom-16">
             <Link href="/">
-              <div className="bg-white rounded-full p-3 sm:p-5 border-2 sm:border-4 border-white shadow-lg">
+              <div className="bg-white rounded-full p-3 sm:p-5 border-2 sm:border-4 border-white ">
                 <Image
-                  src="/Logo.png"
+                  src="/Logo.svg"
                   alt="Quality Care Senior Living"
                   width={60}
                   height={60}
@@ -197,13 +234,15 @@ export default function Navbar() {
           {/* Sidebar Header */}
           <div className="bg-[#1a1a1a] p-6 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <Image
-                src="/Logo.png"
-                alt="Quality Care"
-                width={50}
-                height={50}
-                className="object-contain"
-              />
+              <div className="bg-white rounded-full p-2 flex items-center justify-center">
+                <Image
+                  src="/Logo.svg"
+                  alt="Quality Care"
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
               <span className="text-white font-bold text-sm">
                 Quality Care Senior Living
               </span>
