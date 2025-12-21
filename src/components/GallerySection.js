@@ -16,12 +16,12 @@ export default function GallerySection() {
   ];
 
   return (
-    <section className="bg-white py-12 sm:py-16 md:py-24 px-4 sm:px-6">
+    <section className="bg-white py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+        <div className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-16">
           <h3
-            className="text-xl sm:text-2xl md:text-3xl mb-3 sm:mb-4"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-2 sm:mb-3 md:mb-4"
             style={{
               fontFamily: "var(--font-aulletta)",
               color: "#887904",
@@ -31,18 +31,18 @@ export default function GallerySection() {
             Our Gallery
           </h3>
           <h2
-            className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight px-4"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             See Where Comfort and Care Meet
           </h2>
-          <div className="w-24 h-1 bg-[#887904] mx-auto mt-4"></div>
+          <div className="w-16 sm:w-20 md:w-24 h-1 bg-[#887904] mx-auto mt-3 sm:mt-4"></div>
         </div>
 
-        {/* Gallery Grid - Custom Layout */}
-        <div className="grid grid-cols-6 gap-6 sm:gap-4 auto-rows-[200px]">
-          {/* First image - Large bedroom left (spans 2 rows) */}
-          <div className="row-span-2 col-span-2 relative overflow-hidden  group cursor-pointer">
+        {/* Gallery Grid - Responsive Layout */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-6 auto-rows-[120px] sm:auto-rows-[150px] md:auto-rows-[180px] lg:auto-rows-[200px]">
+          {/* First image - Large bedroom left (spans 2 rows on desktop, 1 on mobile) */}
+          <div className="col-span-2 sm:row-span-2 sm:col-span-2 md:row-span-2 md:col-span-2 lg:row-span-2 lg:col-span-2 relative overflow-hidden rounded-lg sm:rounded-xl group cursor-pointer">
             <Image
               src={galleryImages[0].src}
               alt={galleryImages[0].alt}
@@ -53,7 +53,7 @@ export default function GallerySection() {
           </div>
 
           {/* Bathroom */}
-          <div className="relative  overflow-hidden  group cursor-pointer">
+          <div className="relative overflow-hidden rounded-lg sm:rounded-xl group cursor-pointer">
             <Image
               src={galleryImages[1].src}
               alt={galleryImages[1].alt}
@@ -64,7 +64,7 @@ export default function GallerySection() {
           </div>
 
           {/* Closet */}
-          <div className="relative overflow-hidden  group cursor-pointer">
+          <div className="relative overflow-hidden rounded-lg sm:rounded-xl group cursor-pointer">
             <Image
               src={galleryImages[2].src}
               alt={galleryImages[2].alt}
@@ -75,7 +75,7 @@ export default function GallerySection() {
           </div>
 
           {/* Bedroom right */}
-          <div className="relative col-span-2 overflow-hidden  group cursor-pointer">
+          <div className="relative col-span-2 sm:col-span-1 md:col-span-2 overflow-hidden rounded-lg sm:rounded-xl group cursor-pointer">
             <Image
               src={galleryImages[3].src}
               alt={galleryImages[3].alt}
@@ -86,7 +86,7 @@ export default function GallerySection() {
           </div>
 
           {/* Backyard (spans 2 columns) */}
-          <div className="col-span-2 relative overflow-hidden  group cursor-pointer">
+          <div className="col-span-2 sm:col-span-1 md:col-span-2 relative overflow-hidden rounded-lg sm:rounded-xl group cursor-pointer">
             <Image
               src={galleryImages[4].src}
               alt={galleryImages[4].alt}
@@ -97,10 +97,10 @@ export default function GallerySection() {
           </div>
 
           {/* Bedroom/Closet */}
-          <div className="relative row-span-2 col-span-2 overflow-hidden  group cursor-pointer">
+          <div className="relative col-span-2 sm:row-span-2 sm:col-span-2 md:row-span-2 md:col-span-2 lg:row-span-2 lg:col-span-2 overflow-hidden rounded-lg sm:rounded-xl group cursor-pointer">
             <Image
               src={galleryImages[5].src}
-              alt={galleryImages[3].alt}
+              alt={galleryImages[5].alt}
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-300"
             />
@@ -108,7 +108,7 @@ export default function GallerySection() {
           </div>
 
           {/* Bedroom */}
-          <div className="relative col-span-2  overflow-hidden  group cursor-pointer">
+          <div className="relative col-span-2 sm:col-span-1 md:col-span-2 overflow-hidden rounded-lg sm:rounded-xl group cursor-pointer">
             <Image
               src={galleryImages[6].src}
               alt={galleryImages[6].alt}
@@ -119,7 +119,7 @@ export default function GallerySection() {
           </div>
 
           {/* Bathroom */}
-          <div className="relative overflow-hidden  group cursor-pointer">
+          <div className="relative overflow-hidden rounded-lg sm:rounded-xl group cursor-pointer">
             <Image
               src={galleryImages[7].src}
               alt={galleryImages[7].alt}
@@ -130,7 +130,7 @@ export default function GallerySection() {
           </div>
 
           {/* Kitchen */}
-          <div className="relative overflow-hidden  group cursor-pointer">
+          <div className="relative overflow-hidden rounded-lg sm:rounded-xl group cursor-pointer">
             <Image
               src={galleryImages[8].src}
               alt={galleryImages[8].alt}
