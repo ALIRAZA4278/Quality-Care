@@ -17,6 +17,11 @@ export const metadata = {
   title: "Quality Care Senior Living",
   description:
     "Professional, compassionate personal care in a peaceful residential setting where every resident is truly treated like family.",
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
