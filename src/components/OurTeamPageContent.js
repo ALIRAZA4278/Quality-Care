@@ -54,7 +54,7 @@ export default function OurTeamPageContent() {
             </div>
 
             {/* Left - Text Content */}
-            <div className="flex-1 p-6 sm:p-8 lg:p-12 xl:p-16 lg:pr-[52%] z-10 order-2 lg:order-1">
+            <div className="flex-1 p-6 sm:p-8 lg:p-12 xl:p-16 lg:pr-[55%] xl:pr-[54%] z-10 order-2 lg:order-1">
               <h2
                 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-2"
                 style={{ fontFamily: "var(--font-recoleta)" }}
