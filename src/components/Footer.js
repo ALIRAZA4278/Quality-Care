@@ -1,0 +1,338 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="bg-[#12201B] text-white">
+      {/* Newsletter Section */}
+      <div className="border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            {/* Left - Newsletter Form */}
+            <div>
+              <h2
+                className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 uppercase"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                Subscribe Our Newsletter
+              </h2>
+
+              <form className="max-w-xl">
+                <div className="flex gap-0 bg-[#2a3f35] rounded-full p-2">
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    className="flex-1 bg-transparent px-6 py-3 text-white placeholder:text-gray-400 focus:outline-none"
+                  />
+                  <button
+                    type="submit"
+                    className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-100 inline-flex items-center gap-2 transition-colors uppercase text-sm"
+                  >
+                    Subscribe
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div className="flex items-center gap-2 mt-4">
+                  <input
+                    type="checkbox"
+                    id="news"
+                    className="w-4 h-4 rounded border-gray-400"
+                  />
+                  <label htmlFor="news" className="text-sm text-gray-300">
+                    Send Me News About Outsorcy
+                  </label>
+                </div>
+              </form>
+            </div>
+
+            {/* Right - Logo */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="bg-white rounded-full p-8 w-64 h-64 flex items-center justify-center">
+                <Image
+                  src="/Logo.png"
+                  alt="Quality Care Senior Living"
+                  width={180}
+                  height={180}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Footer Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+          {/* About Us */}
+          <div>
+            <h3 className="text-xl font-bold mb-4 uppercase">About Us</h3>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              We believe every resident deserves dignity, love, and a peaceful environment they can call home.
+            </p>
+
+            {/* Social Media */}
+            <div className="mt-6">
+              <h4 className="text-lg font-semibold mb-3 uppercase">Social Media</h4>
+              <div className="flex gap-3">
+                <Link
+                  href="https://facebook.com"
+                  target="_blank"
+                  className="bg-[#2a3f35] hover:bg-[#887904] p-3 rounded-full transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                  </svg>
+                </Link>
+                <Link
+                  href="https://linkedin.com"
+                  target="_blank"
+                  className="bg-[#2a3f35] hover:bg-[#887904] p-3 rounded-full transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </Link>
+                <Link
+                  href="https://youtube.com"
+                  target="_blank"
+                  className="bg-[#2a3f35] hover:bg-[#887904] p-3 rounded-full transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                  </svg>
+                </Link>
+                <Link
+                  href="https://twitter.com"
+                  target="_blank"
+                  className="bg-[#2a3f35] hover:bg-[#887904] p-3 rounded-full transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl font-bold mb-4 uppercase">Quick Links</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/" className="text-gray-300 hover:text-[#887904] transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-gray-300 hover:text-[#887904] transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/amenities" className="text-gray-300 hover:text-[#887904] transition-colors">
+                  Amenities
+                </Link>
+              </li>
+              <li>
+                <Link href="/gallery" className="text-gray-300 hover:text-[#887904] transition-colors">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link href="/our-team" className="text-gray-300 hover:text-[#887904] transition-colors">
+                  Our Team
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-gray-300 hover:text-[#887904] transition-colors">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Our Services */}
+          <div>
+            <h3 className="text-xl font-bold mb-4 uppercase">Our Services</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/services#personal-care" className="text-gray-300 hover:text-[#887904] transition-colors">
+                  Personal Care Assistance
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#medication" className="text-gray-300 hover:text-[#887904] transition-colors">
+                  Medication Reminders
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#meals" className="text-gray-300 hover:text-[#887904] transition-colors">
+                  Home-Cooked Meals
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#activities" className="text-gray-300 hover:text-[#887904] transition-colors">
+                  Daily Activities
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#housekeeping" className="text-gray-300 hover:text-[#887904] transition-colors">
+                  Housekeeping & Laundry
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#companionship" className="text-gray-300 hover:text-[#887904] transition-colors">
+                  Companionship & Emotional Support
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Us */}
+          <div>
+            <h3 className="text-xl font-bold mb-4 uppercase">Contact Us</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="flex-shrink-0 mt-1"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span className="text-gray-300 text-sm">
+                  2033 Sombrero Way SE,<br />
+                  Atlanta, GA 30316
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="flex-shrink-0"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <Link href="tel:+31425687922" className="text-gray-300 hover:text-[#887904] transition-colors text-sm">
+                  +314 256 8792 2
+                </Link>
+              </li>
+              <li className="flex items-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="flex-shrink-0"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                <Link href="mailto:info@qualitycaresl.com" className="text-gray-300 hover:text-[#887904] transition-colors text-sm">
+                  Info@Qualitycaresl.Com
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+            <p>© 2025 QUALITY CARE SENIOR LIVING. ALL RIGHTS RESERVED.</p>
+            <div className="flex flex-wrap gap-6 items-center">
+              <Link href="/privacy" className="hover:text-white transition-colors uppercase">
+                Privacy & Policy
+              </Link>
+              <Link href="/terms-of-use" className="hover:text-white transition-colors uppercase">
+                Terms of Use
+              </Link>
+              <Link href="/hipaa-policy" className="hover:text-white transition-colors uppercase">
+                HIPAA Policy
+              </Link>
+              <Link href="/accessibility" className="hover:text-white transition-colors uppercase">
+                Accessibility Statement
+              </Link>
+              <button className="hover:text-white transition-colors">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 16v-4M12 8h.01" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

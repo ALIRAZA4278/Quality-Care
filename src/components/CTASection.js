@@ -1,0 +1,68 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export default function CTASection() {
+  return (
+    <section className="relative bg-white overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/home/bg1.png"
+          alt="Background"
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-0 items-center min-h-[250px] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Left Side - Text Content */}
+        <div className="text-white py-6 lg:py-10">
+          <h2
+            className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 leading-tight italic max-w-2xl"
+            style={{ fontFamily: "var(--font-recoleta)" }}
+          >
+            SCHEDULE A VISIT TODAY AND EXPERIENCE THE DIFFERENCE OF PERSONALIZED SENIOR CARE.
+          </h2>
+
+          {/* Yellow underline */}
+          <div className="w-20 h-1 bg-[#887904] mb-8"></div>
+
+          {/* Book a Tour Button */}
+          <Link
+            href="/book-tour"
+            className="bg-white text-black pl-8 pr-2 py-3 rounded-full font-semibold hover:bg-gray-100 inline-flex items-center gap-3 transition-colors text-[15px] uppercase tracking-wide"
+          >
+            Book a Tour
+            <div className="bg-black rounded-full p-3 flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </div>
+          </Link>
+        </div>
+
+        {/* Right Side - Caregiver Image */}
+        <div className="relative top-2 h-[300px] sm:h-[350px] lg:h-[400px] flex items-end justify-end">
+          <div className="absolute  w-full h-full">
+            <Image
+              src="/home/home1.png"
+              alt="Caregiver with senior"
+              fill
+              className="object-contain object-bottom"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
