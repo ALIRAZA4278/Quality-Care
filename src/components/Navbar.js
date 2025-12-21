@@ -152,7 +152,7 @@ export default function Navbar() {
             <Link href="/">
               <div className="bg-white rounded-full p-3 sm:p-5 border-2 sm:border-4 border-white ">
                 <Image
-                  src="/Logo.svg"
+                  src="/logo.svg"
                   alt="Quality Care Senior Living"
                   width={60}
                   height={60}
