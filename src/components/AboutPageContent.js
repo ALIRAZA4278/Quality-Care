@@ -7,7 +7,7 @@ export default function AboutPageContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative w-full h-[25vh] sm:h-[30vh] md:h-[35vh] flex items-center justify-center mt-[70px] sm:mt-[80px] md:mt-[90px]">
+      <section className="relative w-full h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[40vh] flex items-center justify-center mt-[70px] sm:mt-[80px] md:mt-[90px]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
