@@ -25,10 +25,10 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 h-full flex flex-col items-center justify-center text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 h-full flex flex-col items-center justify-center text-center pt-20 sm:pt-24 md:pt-0">
         {/* Main Heading */}
         <h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 sm:mb-5 md:mb-6 max-w-4xl leading-tight animate-fade-in"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 sm:mb-5 md:mb-6 max-w-4xl leading-tight animate-fade-in mt-8 sm:mt-0"
           style={{
             fontFamily: "var(--font-recoleta)",
             animationDelay: "0.4s",
