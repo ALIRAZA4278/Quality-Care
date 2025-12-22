@@ -88,7 +88,7 @@ export default function ServicesSection() {
             <ScrollAnimation animation="fade-up" delay={index * 0.1} key={service.id}>
             <div
               key={service.id}
-              className="bg-white rounded-[32px] p-3 relative flex flex-col hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group animate-fade-in"
+              className="bg-white rounded-[32px] p-3 relative flex flex-col h-full hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group animate-fade-in"
               style={{
                 animationDelay: `${index * 0.1}s`,
                 opacity: 0,
@@ -120,27 +120,16 @@ export default function ServicesSection() {
               </div>
 
               {/* Content */}
-              <div className="text-center px-2 flex flex-col flex-grow">
+              <div className="text-center px-2 flex flex-col flex-grow pb-4">
                 <h3
                   className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 leading-tight"
                   style={{ fontFamily: "var(--font-recoleta)" }}
                 >
                   {service.title}
                 </h3>
-                <p className="text-sm sm:text-lg text-gray-700 mb-6 leading-relaxed flex-grow">
+                <p className="text-sm sm:text-lg text-gray-700 leading-relaxed flex-grow">
                   {service.description}
                 </p>
-                <div className="pb-4">
-                  <Link
-                    href={`/services#${service.title.toLowerCase().replace(/\s+/g, "-")}`}
-                    className="inline-flex items-center gap-2 text-[#887904] font-semibold text-base hover:text-[#6a5f03] hover:gap-4 hover:scale-105 transition-all duration-300 border-b-2 border-[#887904] hover:border-[#6a5f03] hover:shadow-lg group/link"
-                  >
-                    Learn More
-                    <svg className="w-4 h-4 group-hover/link:translate-x-2 group-hover:scale-125 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </div>
               </div>
             </div>
             </ScrollAnimation>

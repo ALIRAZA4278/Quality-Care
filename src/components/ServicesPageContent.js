@@ -119,7 +119,7 @@ export default function ServicesPageContent() {
             {services.map((service, index) => (
               <ScrollAnimation key={service.id} animation="fade-up" delay={index * 0.1}>
                 <div
-                  className="bg-white rounded-2xl sm:rounded-[32px] p-2 sm:p-3 relative flex flex-col shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group"
+                  className="bg-white rounded-2xl sm:rounded-[32px] p-2 sm:p-3 relative flex flex-col h-full shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group"
                 >
                 {/* Image Container with padding and rounded */}
                 <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden rounded-xl sm:rounded-[16px] mb-2">
