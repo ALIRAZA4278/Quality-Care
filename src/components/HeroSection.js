@@ -24,20 +24,6 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 h-full flex flex-col items-center justify-start pt-[5.50rem] sm:pt-24 md:pt-32 lg:pt-64 text-center">
-        {/* Golden Script Text */}
-        <h2
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-2 sm:mb-3 animate-fade-in"
-          style={{
-            fontFamily: "var(--font-aulletta)",
-            color: "#887904",
-            fontWeight: "400",
-            animationDelay: "0.2s",
-            opacity: 0,
-          }}
-        >
-          Quality Care Senior Living
-        </h2>
-
         {/* Main Heading */}
         <h1
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-gray-900 mb-3 sm:mb-4 md:mb-5 max-w-3xl sm:max-w-4xl md:max-w-5xl lg:max-w-7xl leading-tight px-4 animate-fade-in"
