@@ -37,7 +37,7 @@ export default function AmenitiesPageContent() {
           {/* Section Header */}
           <div className="text-center mb-8 sm:mb-12">
             <p
-              className="text-[#887904] text-xl sm:text-2xl md:text-3xl mb-3 sm:mb-4"
+              className="text-[#887904] text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
               style={{ fontFamily: "var(--font-aulletta)" }}
             >
               Amenities
@@ -370,7 +370,7 @@ export default function AmenitiesPageContent() {
             {/* Right Side - Content */}
             <div className="order-1 lg:order-2 lg:pt-8">
               <p
-                className="text-[#887904] text-xl sm:text-2xl md:text-3xl mb-3 sm:mb-4"
+                className="text-[#887904] text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
                 style={{ fontFamily: "var(--font-aulletta)" }}
               >
                 About Us

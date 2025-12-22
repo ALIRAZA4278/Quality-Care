@@ -154,13 +154,15 @@ export default function Navbar() {
           {/* Center Logo with Circle Background */}
           <div className="absolute left-1/2 -translate-x-1/2 -bottom-8 sm:-bottom-16">
             <Link href="/" className="block">
-              <div className="bg-white rounded-full p-3 sm:p-5 border-2 sm:border-4 border-white ">
+              <div className="bg-white rounded-full p-3 sm:p-5 border-2 sm:border-4 border-white shadow-lg">
                 <Image
                   src="/logo.svg"
                   alt="Quality Care Senior Living"
-                  width={60}
-                  height={60}
-                  className="object-contain sm:w-[110px] sm:h-[110px]"
+                  width={110}
+                  height={110}
+                  className="object-contain w-[60px] h-[60px] sm:w-[110px] sm:h-[110px]"
+                  priority
+                  quality={100}
                 />
               </div>
             </Link>

@@ -68,7 +68,7 @@ export default function AboutSection() {
           <div className="lg:pl-8 mt-8 lg:mt-0">
             {/* About Us Label */}
             <h3
-              className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4"
+              className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
               style={{
                 fontFamily: "var(--font-aulletta)",
                 color: "#887904",

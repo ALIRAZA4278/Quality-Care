@@ -63,7 +63,7 @@ export default function ServicesSection() {
         <ScrollAnimation animation="fade-down">
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <h3
-            className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4"
+            className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
             style={{
               fontFamily: "var(--font-aulletta)",
               color: "#887904",
@@ -88,7 +88,7 @@ export default function ServicesSection() {
             <ScrollAnimation animation="fade-up" delay={index * 0.1} key={service.id}>
             <div
               key={service.id}
-              className="bg-white rounded-[32px] p-3 relative flex flex-col h-full hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group animate-fade-in"
+              className="bg-white rounded-[32px] p-3 relative flex flex-col h-full shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] group animate-fade-in"
               style={{
                 animationDelay: `${index * 0.1}s`,
                 opacity: 0,

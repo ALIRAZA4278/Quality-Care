@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,17 +7,17 @@ export default function Footer() {
       {/* Newsletter Section */}
       <div className="border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16 lg:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
-            {/* Left - Newsletter Form */}
+          <div className="max-w-2xl mx-auto">
+            {/* Newsletter Form */}
             <div>
               <h2
-                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 uppercase"
+                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 uppercase text-center"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 Subscribe Our Newsletter
               </h2>
 
-              <form className="max-w-xl">
+              <form className="max-w-xl mx-auto">
                 <div className="bg-[#2a3f35] rounded-xl p-3 sm:p-4">
                   <input
                     type="email"
@@ -46,7 +46,7 @@ export default function Footer() {
                   </button>
                 </div>
 
-                <div className="flex items-center gap-2 mt-3 sm:mt-4">
+                <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
                   <input
                     type="checkbox"
                     id="news"
@@ -57,19 +57,6 @@ export default function Footer() {
                   </label>
                 </div>
               </form>
-            </div>
-
-            {/* Right - Logo */}
-            <div className="flex justify-center lg:justify-end mt-6 lg:mt-0">
-              <div className="bg-white rounded-full p-3 sm:p-6 md:p-8 w-28 h-28 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 flex items-center justify-center shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                <Image
-                  src="/logo.svg"
-                  alt="Quality Care Senior Living"
-                  width={180}
-                  height={180}
-                  className="object-contain w-16 h-16 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -314,25 +301,14 @@ export default function Footer() {
               <Link href="/accessibility" className="hover:text-white transition-colors uppercase text-xs whitespace-nowrap">
                 Accessibility Statement
               </Link>
-              <Link href="/accessibility" className="hover:text-white transition-all duration-300 hover:scale-110" aria-label="Accessibility">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="sm:w-6 sm:h-6"
-                >
-                  <circle cx="12" cy="4" r="2" />
-                  <path d="M16 8h-6a2 2 0 0 0-2 2v1" />
-                  <path d="M14 22v-9" />
-                  <path d="M18 22l-4-9l-4 9" />
-                  <path d="M8 12l-3 3l3 3" />
-                </svg>
+              <Link href="/accessibility" className="hover:opacity-80 transition-all duration-300 hover:scale-110" aria-label="Accessibility">
+                <Image
+                  src="/footer.png"
+                  alt="Accessibility"
+                  width={28}
+                  height={28}
+                  className="w-6 h-6 sm:w-7 sm:h-7"
+                />
               </Link>
             </div>
           </div>

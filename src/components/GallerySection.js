@@ -19,7 +19,7 @@ export default function GallerySection() {
         {/* Section Header */}
         <div className="text-center mb-6 sm:mb-8 md:mb-10">
           <h3
-            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-2 sm:mb-3 md:mb-4"
+            className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
             style={{
               fontFamily: "var(--font-aulletta)",
               color: "#887904",

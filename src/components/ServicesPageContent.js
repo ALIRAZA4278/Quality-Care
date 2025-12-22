@@ -92,7 +92,7 @@ export default function ServicesPageContent() {
           <ScrollAnimation animation="fade-down">
             <div className="text-center mb-8 sm:mb-12">
               <h3
-                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-2 sm:mb-3"
+                className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3"
                 style={{
                   fontFamily: "var(--font-aulletta)",
                   color: "#887904",
@@ -119,7 +119,7 @@ export default function ServicesPageContent() {
             {services.map((service, index) => (
               <ScrollAnimation key={service.id} animation="fade-up" delay={index * 0.1}>
                 <div
-                  className="bg-white rounded-2xl sm:rounded-[32px] p-2 sm:p-3 relative flex flex-col h-full shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group"
+                  className="bg-white rounded-2xl sm:rounded-[32px] p-2 sm:p-3 relative flex flex-col h-full shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] group"
                 >
                 {/* Image Container with padding and rounded */}
                 <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden rounded-xl sm:rounded-[16px] mb-2">
