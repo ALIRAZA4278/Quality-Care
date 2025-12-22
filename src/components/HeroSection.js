@@ -7,7 +7,7 @@ import TourModal from "./TourModal";
 export default function HeroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <section className="relative w-full h-[85vh] sm:h-[90vh] md:h-screen mt-0">
+    <section className="relative w-full h-[85vh] sm:h-[90vh] md:h-[95vh] lg:h-screen mt-0">
       {/* Background Image */}
       <div className="absolute inset-0 overflow-hidden">
         <Image
@@ -25,7 +25,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-[5] max-w-7xl mx-auto px-6 sm:px-8 h-full flex flex-col items-center justify-center text-center pt-20 sm:pt-24 md:pt-28 lg:pt-0">
+      <div className="relative z-[5] max-w-7xl mx-auto px-6 sm:px-8 h-full flex flex-col items-center justify-center text-center pt-20 sm:pt-24 md:pt-28 lg:pt-0 xl:pt-0">
         {/* Main Heading */}
         <h1
           className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-4 sm:mb-5 md:mb-6 max-w-4xl leading-tight animate-fade-in"
