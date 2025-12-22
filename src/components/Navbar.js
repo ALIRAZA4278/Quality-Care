@@ -132,31 +132,31 @@ export default function Navbar() {
           </button>
 
           {/* Left Navigation Links - Desktop */}
-          <div className="hidden lg:flex items-center gap-10 flex-1 justify-end pr-32">
+          <div className="hidden lg:flex items-center gap-6 xl:gap-10 flex-1 justify-end pr-24 xl:pr-32">
             <Link
               href="/"
-              className="text-black font-medium hover:text-[#887904] text-[15px] transition-all duration-300 hover:scale-110 relative group"
+              className="text-black font-medium hover:text-[#887904] text-[13px] xl:text-[15px] transition-all duration-300 hover:scale-110 relative group"
             >
               HOME
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
               href="/about"
-              className="text-black font-medium hover:text-[#887904] text-[15px] transition-all duration-300 hover:scale-110 relative group"
+              className="text-black font-medium hover:text-[#887904] text-[13px] xl:text-[15px] transition-all duration-300 hover:scale-110 relative group"
             >
               ABOUT US
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
               href="/services"
-              className="text-black font-medium hover:text-[#887904] text-[15px] transition-all duration-300 hover:scale-110 relative group"
+              className="text-black font-medium hover:text-[#887904] text-[13px] xl:text-[15px] transition-all duration-300 hover:scale-110 relative group"
             >
               SERVICES
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
               href="/amenities"
-              className="text-black font-medium hover:text-[#887904] text-[15px] transition-all duration-300 hover:scale-110 relative group"
+              className="text-black font-medium hover:text-[#887904] text-[13px] xl:text-[15px] transition-all duration-300 hover:scale-110 relative group"
             >
               AMENITIES
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
@@ -164,7 +164,7 @@ export default function Navbar() {
           </div>
 
           {/* Center Logo with Circle Background */}
-          <div className="absolute left-1/2 -translate-x-1/2 -bottom-8 sm:-bottom-16">
+          <div className="absolute left-1/2 -translate-x-1/2 -bottom-8 sm:-bottom-16 z-10">
             <Link href="/" className="block">
               <div className="bg-white rounded-full p-3 sm:p-5 border-2 sm:border-4 border-white shadow-lg">
                 <Image
@@ -181,46 +181,46 @@ export default function Navbar() {
           </div>
 
           {/* Right Navigation Links - Desktop */}
-          <div className="hidden lg:flex items-center gap-10 flex-1 pl-32">
+          <div className="hidden lg:flex items-center gap-6 xl:gap-10 flex-1 pl-24 xl:pl-32">
             <Link
               href="/gallery"
-              className="text-black font-medium hover:text-[#887904] text-[15px] whitespace-nowrap transition-all duration-300 hover:scale-110 relative group"
+              className="text-black font-medium hover:text-[#887904] text-[13px] xl:text-[15px] whitespace-nowrap transition-all duration-300 hover:scale-110 relative group"
             >
               GALLERY
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
               href="/our-team"
-              className="text-black font-medium hover:text-[#887904] text-[15px] whitespace-nowrap transition-all duration-300 hover:scale-110 relative group"
+              className="text-black font-medium hover:text-[#887904] text-[13px] xl:text-[15px] whitespace-nowrap transition-all duration-300 hover:scale-110 relative group"
             >
               OUR TEAM
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
               href="/contact"
-              className="text-black font-medium hover:text-[#887904] text-[15px] whitespace-nowrap transition-all duration-300 hover:scale-110 relative group"
+              className="text-black font-medium hover:text-[#887904] text-[13px] xl:text-[15px] whitespace-nowrap transition-all duration-300 hover:scale-110 relative group"
             >
               CONTACT US
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <button
               onClick={() => setIsTourModalOpen(true)}
-              className="bg-[#1a1a1a] text-white pl-8 pr-2 py-2.5 rounded-l-full rounded-r-full font-medium hover:bg-[#887904] hover:scale-105 active:scale-95 flex items-center gap-4 transition-all duration-300 text-[15px] whitespace-nowrap shadow-lg hover:shadow-xl group"
+              className="bg-[#1a1a1a] text-white pl-6 xl:pl-8 pr-2 py-2 xl:py-2.5 rounded-l-full rounded-r-full font-medium hover:bg-[#887904] hover:scale-105 active:scale-95 flex items-center gap-3 xl:gap-4 transition-all duration-300 text-[13px] xl:text-[15px] whitespace-nowrap shadow-lg hover:shadow-xl group"
               style={{ borderRadius: "50px 50px 50px 50px" }}
             >
               BOOK A TOUR
-              <div className="bg-white rounded-full p-3 flex items-center justify-center transition-all duration-300 shadow-md">
+              <div className="bg-white rounded-full p-2 xl:p-3 flex items-center justify-center transition-all duration-300 shadow-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="18"
+                  height="18"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#1a1a1a"
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="drop-shadow-md"
+                  className="drop-shadow-md xl:w-5 xl:h-5"
                 >
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
