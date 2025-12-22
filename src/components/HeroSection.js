@@ -28,7 +28,7 @@ export default function HeroSection() {
       <div className="relative z-[5] max-w-7xl mx-auto px-6 sm:px-8 h-full flex flex-col items-center justify-center text-center pt-28 sm:pt-32 md:pt-36 lg:pt-8 xl:pt-0">
         {/* Main Heading */}
         <h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 sm:mb-5 md:mb-6 max-w-4xl leading-tight animate-fade-in"
+          className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-4 sm:mb-5 md:mb-6 max-w-4xl leading-tight animate-fade-in"
           style={{
             fontFamily: "var(--font-recoleta)",
             animationDelay: "0.4s",
@@ -39,7 +39,7 @@ export default function HeroSection() {
         </h1>
 
         {/* Description Text */}
-        <p className="text-sm sm:text-base md:text-lg text-white max-w-2xl md:max-w-3xl mb-6 sm:mb-8 leading-relaxed animate-fade-in"
+        <p className="text-sm sm:text-base md:text-base lg:text-lg text-white max-w-2xl md:max-w-3xl mb-6 sm:mb-8 leading-relaxed animate-fade-in"
           style={{
             animationDelay: "0.6s",
             opacity: 0,
