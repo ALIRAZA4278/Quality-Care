@@ -106,7 +106,7 @@ export default function Navbar() {
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-gradient-to-b from-gray-100 to-white py-2 sm:py-2 md:py-3 px-4 sm:px-6 relative shadow-lg">
+      <nav className="bg-gradient-to-b from-gray-100 to-white py-2 sm:py-2 md:py-4 px-4 sm:px-6 relative shadow-lg">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Mobile Menu Button */}
           <button
