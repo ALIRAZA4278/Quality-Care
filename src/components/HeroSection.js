@@ -16,7 +16,9 @@ export default function HeroSection() {
           fill
           className="object-cover w-full h-full"
           style={{ objectPosition: "center top" }}
+          quality={100}
           priority
+          sizes="100vw"
         />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-white/35 via-white/12 to-transparent md:from-white/20 md:via-transparent"></div>

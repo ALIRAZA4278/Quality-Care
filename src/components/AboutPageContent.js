@@ -39,7 +39,7 @@ export default function AboutPageContent() {
             <ScrollAnimation animation="fade-right">
               <div>
                 <h3
-                  className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3"
+                  className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3 uppercase"
                   style={{
                     fontFamily: "'Playfair Display', serif",
                     color: "#887904",
@@ -123,7 +123,7 @@ export default function AboutPageContent() {
             <ScrollAnimation animation="fade-left">
               <div className="order-1 lg:order-2">
               <h3
-                className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3"
+                className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3 uppercase"
                 style={{
                   fontFamily: "'Playfair Display', serif",
                   color: "#887904",
@@ -162,7 +162,7 @@ export default function AboutPageContent() {
           <ScrollAnimation animation="fade-down">
             <div className="text-center mb-8 sm:mb-12">
               <h3
-                className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3"
+                className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3 uppercase"
                 style={{
                   fontFamily: "'Playfair Display', serif",
                   color: "#887904",

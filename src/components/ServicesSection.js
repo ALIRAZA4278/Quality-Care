@@ -63,7 +63,7 @@ export default function ServicesSection() {
         <ScrollAnimation animation="fade-down">
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <h3
-            className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
+            className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4 uppercase"
             style={{
               fontFamily: "'Playfair Display', serif",
               color: "#887904",

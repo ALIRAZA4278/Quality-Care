@@ -58,12 +58,12 @@ export default function AboutSection() {
             <div className="absolute top-8 sm:top-35 -left-6 sm:-left-10 w-[30%] h-[65%] bg-black rounded-[20px] sm:rounded-[32px] shadow-2xl"></div>
 
             {/* Main Large Image - Taller and bigger */}
-            <div className="absolute top-[-5%] sm:top-[-8%] left-[0] w-[85%] h-[95%] rounded-[20px] sm:rounded-[32px] overflow-hidden shadow-2xl hover:shadow-[#887904]/50 hover:scale-105 transition-all duration-500 group">
+            <div className="absolute top-[-5%] sm:top-[-8%] left-[0] w-[85%] h-[95%] rounded-[20px] sm:rounded-[32px] overflow-hidden shadow-2xl hover:shadow-[#887904]/50 group">
               <Image
                 src="/home/about1.png"
                 alt="Senior couple having tea"
                 fill
-                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                className="object-cover transition-transform duration-500"
               />
 
             </div>
@@ -92,12 +92,12 @@ export default function AboutSection() {
             </div>
 
             {/* Bottom Right Small Image - Taller */}
-            <div className="absolute -bottom-6 sm:-bottom-8 -right-3 sm:-right-5 w-[50%] h-[65%] rounded-[20px] sm:rounded-[32px] overflow-hidden shadow-2xl hover:shadow-[#887904]/50 hover:scale-105 hover:-rotate-2 transition-all duration-500 group cursor-pointer animate-float">
+            <div className="absolute -bottom-6 sm:-bottom-8 -right-3 sm:-right-5 w-[50%] h-[65%] rounded-[20px] sm:rounded-[32px] overflow-hidden shadow-2xl hover:shadow-[#887904]/50   transition-all duration-500 group cursor-pointer animate-float">
               <Image
                 src="/home/about2.png"
                 alt="Seniors in living room"
                 fill
-                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                className="object-cover  "
               />
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function AboutSection() {
           <div className="lg:pl-8 mt-8 lg:mt-0">
             {/* About Us Label */}
             <h3
-              className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
+              className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4 uppercase"
               style={{
                 fontFamily: "'Playfair Display', serif",
                 color: "#887904",

@@ -19,7 +19,7 @@ export default function GallerySection() {
         {/* Section Header */}
         <div className="text-center mb-6 sm:mb-8 md:mb-10">
           <h3
-            className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
+            className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4 uppercase"
             style={{
               fontFamily: "'Playfair Display', serif",
               color: "#887904",

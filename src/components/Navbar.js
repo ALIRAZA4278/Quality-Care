@@ -94,7 +94,7 @@ export default function Navbar() {
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-white py-4 sm:py-6 px-4 sm:px-6 relative">
+      <nav className="bg-gradient-to-b from-gray-100 to-white py-4 sm:py-6 px-4 sm:px-6 relative shadow-lg">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Mobile Menu Button */}
           <button
