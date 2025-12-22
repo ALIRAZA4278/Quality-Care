@@ -71,9 +71,9 @@ export default function TourModal({ isOpen, onClose }) {
         <div className="relative pt-8 px-4 pb-4 sm:pt-12 sm:px-8 sm:pb-6">
           <h2
             className="text-2xl sm:text-4xl font-black text-center text-gray-900 mb-1 sm:mb-3"
-            style={{ fontFamily: "'Playfair Display', serif", fontWeight: "900" }}
+            style={{ fontFamily: "'Playfair Display', serif", fontWeight: "900", letterSpacing: "-0.02em", WebkitTextStroke: "0.5px black" }}
           >
-            Schedule a Tour
+            <strong style={{ fontWeight: "900" }}>Schedule a Tour</strong>
           </h2>
           <p className="text-center text-gray-600 text-[10px] sm:text-sm mb-2 sm:mb-5 px-1">
             We'd love to meet you and show you our home. Please fill out the form below

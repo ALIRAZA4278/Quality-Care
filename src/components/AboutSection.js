@@ -69,7 +69,7 @@ export default function AboutSection() {
              {/* Logo Badge */}
               <div className="absolute top-1 sm:top-2 right-6 sm:right-10 bg-white rounded-full p-2 sm:p-4 shadow-xl hover:shadow-2xl hover:shadow-[#887904]/40 hover:scale-110 hover:rotate-6 transition-all duration-300 cursor-pointer group">
                 <Image
-                  src="/logo.svg"
+                  src="/logo.png"
                   alt="Quality Care Logo"
                   width={60}
                   height={60}
@@ -78,7 +78,7 @@ export default function AboutSection() {
               </div>
 
             {/* Years of Experience Text - Bottom Left, overlapping */}
-            <div ref={countRef} className="absolute flex flex-col items-center -bottom-[12%] sm:-bottom-[5%] left-[8%] sm:left-[5%] z-10 bg-white px-4 py-3 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+            <div ref={countRef} className="absolute flex flex-col items-center -bottom-[12%] sm:-bottom-[5%] left-[8%] sm:left-[10%] z-10  hover:scale-105 transition-all duration-300 cursor-pointer">
               <div
                 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-none mb-1"
                 style={{ fontFamily: "var(--font-recoleta)" }}

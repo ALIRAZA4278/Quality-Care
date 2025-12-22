@@ -168,7 +168,7 @@ export default function Navbar() {
             <Link href="/" className="block">
               <div className="bg-white rounded-full p-3 sm:p-5 border-2 sm:border-4 border-white shadow-lg">
                 <Image
-                  src="/logo.svg"
+                  src="/logo.png"
                   alt="Quality Care Senior Living"
                   width={110}
                   height={110}
@@ -406,7 +406,7 @@ export default function Navbar() {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                   <circle cx="12" cy="10" r="3"/>
                 </svg>
-                <span className="text-[10px] text-gray-700 leading-tight">
+                <span className="text-xs text-gray-700 leading-tight">
                   123 Main Street, Decatur, GA
                 </span>
               </div>
@@ -426,7 +426,7 @@ export default function Navbar() {
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
-                <span className="text-[10px] text-gray-700">
+                <span className="text-xs text-gray-700">
                   info@qualitycaresl.com
                 </span>
               </div>
