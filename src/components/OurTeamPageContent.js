@@ -112,9 +112,6 @@ export default function OurTeamPageContent() {
 
                 <p>
                   I believe that building strong relationships with families, residents, and staff is essential for providing exceptional service. As a leader, I strive to lead by example, fostering a supportive and collaborative environment. While I have the ability to work in operations across different industries, my true passion is helping seniors and
-                </p>
-
-                <p>
                   their families find a place where they can age in place with dignity and respect. I treat every resident who walks through our doors as if they were my own family member.
                 </p>
 
