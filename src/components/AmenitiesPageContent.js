@@ -40,6 +40,7 @@ export default function AmenitiesPageContent() {
               className="text-[#887904] text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
               style={{ fontFamily: "var(--font-aulletta)" }}
             >
+              
               Amenities
             </p>
             <h2

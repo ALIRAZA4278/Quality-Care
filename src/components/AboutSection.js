@@ -104,7 +104,7 @@ export default function AboutSection() {
               <ul className="space-y-2 sm:space-y-3">
                 <li className="flex items-start gap-2 sm:gap-3 hover:bg-white/50 p-2 rounded-lg hover:shadow-md transition-all duration-300 group cursor-pointer">
                   <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-[#887904] mt-1 flex-shrink-0 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-[#887904] mt-1 flex-shrink-0 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300 drop-shadow-md"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -120,7 +120,7 @@ export default function AboutSection() {
                 </li>
                 <li className="flex items-start gap-2 sm:gap-3 hover:bg-white/50 p-2 rounded-lg hover:shadow-md transition-all duration-300 group cursor-pointer">
                   <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-[#887904] mt-1 flex-shrink-0 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-[#887904] mt-1 flex-shrink-0 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300 drop-shadow-md"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -136,7 +136,7 @@ export default function AboutSection() {
                 </li>
                 <li className="flex items-start gap-2 sm:gap-3 hover:bg-white/50 p-2 rounded-lg hover:shadow-md transition-all duration-300 group cursor-pointer">
                   <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-[#887904] mt-1 flex-shrink-0 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-[#887904] mt-1 flex-shrink-0 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300 drop-shadow-md"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -150,7 +150,7 @@ export default function AboutSection() {
                 </li>
                 <li className="flex items-start gap-2 sm:gap-3 hover:bg-white/50 p-2 rounded-lg hover:shadow-md transition-all duration-300 group cursor-pointer">
                   <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-[#887904] mt-1 flex-shrink-0 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-[#887904] mt-1 flex-shrink-0 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300 drop-shadow-md"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -184,7 +184,7 @@ export default function AboutSection() {
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="sm:w-5 sm:h-5"
+                  className="sm:w-5 sm:h-5 drop-shadow-md"
                 >
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
