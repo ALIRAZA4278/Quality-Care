@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import ScrollAnimation from "./ScrollAnimation";
 
 export default function AboutPageContent() {
   return (
@@ -33,38 +36,41 @@ export default function AboutPageContent() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left - Text Content */}
-            <div>
-              <h3
-                className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3"
-                style={{
-                  fontFamily: "var(--font-aulletta)",
-                  color: "#887904",
-                }}
-              >
-                Our Mission
-              </h3>
-              <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6"
-                style={{ fontFamily: "var(--font-recoleta)" }}
-              >
-                Connecting Care With Compassion
-              </h2>
+            <ScrollAnimation animation="fade-right">
+              <div>
+                <h3
+                  className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3"
+                  style={{
+                    fontFamily: "var(--font-aulletta)",
+                    color: "#887904",
+                  }}
+                >
+                  Our Mission
+                </h3>
+                <h2
+                  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6"
+                  style={{ fontFamily: "var(--font-recoleta)" }}
+                >
+                  Connecting Care With Compassion
+                </h2>
 
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
-                At Quality Care Senior Living, our mission is simple:
-              </p>
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
+                  At Quality Care Senior Living, our mission is simple:
+                </p>
 
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
-                to provide compassionate, personalized care in a comfortable home where seniors feel safe, respected, and truly cared for.
-              </p>
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
+                  to provide compassionate, personalized care in a comfortable home where seniors feel safe, respected, and truly cared for.
+                </p>
 
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
-                We believe every resident deserves dignity, love, and a peaceful environment they can call home.
-              </p>
-            </div>
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+                  We believe every resident deserves dignity, love, and a peaceful environment they can call home.
+                </p>
+              </div>
+            </ScrollAnimation>
 
             {/* Right - Image with 25+ Years Badge */}
-            <div className="relative mt-8 lg:mt-0">
+            <ScrollAnimation animation="fade-left">
+              <div className="relative mt-8 lg:mt-0">
               <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/about/about1.png"
@@ -87,7 +93,8 @@ export default function AboutPageContent() {
                   Years Experience
                 </div>
               </div>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -97,20 +104,23 @@ export default function AboutPageContent() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left - Image */}
-            <div className="order-2 lg:order-1">
-              <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/about/about2.png"
-                  alt="Seniors walking"
-                  width={600}
-                  height={400}
-                  className="object-cover w-full"
-                />
+            <ScrollAnimation animation="fade-right">
+              <div className="order-2 lg:order-1">
+                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/about/about2.png"
+                    alt="Seniors walking"
+                    width={600}
+                    height={400}
+                    className="object-cover w-full"
+                  />
+                </div>
               </div>
-            </div>
+            </ScrollAnimation>
 
             {/* Right - Text Content */}
-            <div className="order-1 lg:order-2">
+            <ScrollAnimation animation="fade-left">
+              <div className="order-1 lg:order-2">
               <h3
                 className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3"
                 style={{
@@ -137,7 +147,8 @@ export default function AboutPageContent() {
               >
                 This isn&apos;t just a facility — it&apos;s a home.
               </p>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -146,35 +157,39 @@ export default function AboutPageContent() {
       <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 bg-[#f8f8f8]">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-8 sm:mb-12">
-            <h3
-              className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3"
-              style={{
-                fontFamily: "var(--font-aulletta)",
-                color: "#887904",
-              }}
-            >
-              Why Choose Us
-            </h3>
-            <h2
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900"
-              style={{ fontFamily: "var(--font-recoleta)" }}
-            >
-              Why Families Choose Us
-            </h2>
-            <div className="w-20 sm:w-24 h-1 bg-[#887904] mx-auto mt-4 sm:mt-6"></div>
-          </div>
+          <ScrollAnimation animation="fade-down">
+            <div className="text-center mb-8 sm:mb-12">
+              <h3
+                className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3"
+                style={{
+                  fontFamily: "var(--font-aulletta)",
+                  color: "#887904",
+                }}
+              >
+                Why Choose Us
+              </h3>
+              <h2
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                Why Families Choose Us
+              </h2>
+              <div className="w-20 sm:w-24 h-1 bg-[#887904] mx-auto mt-4 sm:mt-6"></div>
+            </div>
+          </ScrollAnimation>
 
           {/* Image */}
-          <div className="relative">
-            <Image
-              src="/about/image.png"
-              alt="Why Families Choose Us"
-              width={1200}
-              height={600}
-              className="object-contain w-full"
-            />
-          </div>
+          <ScrollAnimation animation="zoom">
+            <div className="relative">
+              <Image
+                src="/about/image.png"
+                alt="Why Families Choose Us"
+                width={1200}
+                height={600}
+                className="object-contain w-full"
+              />
+            </div>
+          </ScrollAnimation>
         </div>
       </section>
 

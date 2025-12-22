@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import ScrollAnimation from "./ScrollAnimation";
 
 export default function AccessibilityPageContent() {
   return (

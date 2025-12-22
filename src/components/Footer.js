@@ -6,12 +6,12 @@ export default function Footer() {
     <footer className="bg-[#12201B] text-white">
       {/* Newsletter Section */}
       <div className="border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16 lg:py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
             {/* Left - Newsletter Form */}
             <div>
               <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 uppercase"
+                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 uppercase"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 Subscribe Our Newsletter
@@ -26,7 +26,7 @@ export default function Footer() {
                   />
                   <button
                     type="submit"
-                    className="w-full bg-white text-black px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-gray-100 inline-flex items-center justify-center gap-2 transition-colors uppercase text-[10px] sm:text-xs md:text-sm"
+                    className="w-full bg-white text-black px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-[#887904] hover:text-white hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-2 transition-all duration-300 uppercase text-[10px] sm:text-xs md:text-sm shadow-md hover:shadow-lg group"
                   >
                     Subscribe
                     <svg
@@ -39,7 +39,7 @@ export default function Footer() {
                       strokeWidth="2.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="sm:w-[18px] sm:h-[18px]"
+                      className="sm:w-[18px] sm:h-[18px] transition-transform duration-300 group-hover:translate-x-1"
                     >
                       <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
@@ -60,14 +60,14 @@ export default function Footer() {
             </div>
 
             {/* Right - Logo */}
-            <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
-              <div className="bg-white rounded-full p-6 sm:p-8 w-48 h-48 sm:w-64 sm:h-64 flex items-center justify-center">
+            <div className="flex justify-center lg:justify-end mt-6 lg:mt-0">
+              <div className="bg-white rounded-full p-3 sm:p-6 md:p-8 w-28 h-28 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 flex items-center justify-center shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
                 <Image
                   src="/logo.svg"
                   alt="Quality Care Senior Living"
                   width={180}
                   height={180}
-                  className="object-contain w-32 sm:w-44"
+                  className="object-contain w-16 h-16 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44"
                 />
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function Footer() {
                 <Link
                   href="https://facebook.com"
                   target="_blank"
-                  className="bg-[#2a3f35] hover:bg-[#887904] p-3 rounded-full transition-colors"
+                  className="bg-[#2a3f35] hover:bg-[#887904] hover:scale-110 active:scale-95 p-3 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ export default function Footer() {
                 <Link
                   href="https://linkedin.com"
                   target="_blank"
-                  className="bg-[#2a3f35] hover:bg-[#887904] p-3 rounded-full transition-colors"
+                  className="bg-[#2a3f35] hover:bg-[#887904] hover:scale-110 active:scale-95 p-3 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@ export default function Footer() {
                 <Link
                   href="https://youtube.com"
                   target="_blank"
-                  className="bg-[#2a3f35] hover:bg-[#887904] p-3 rounded-full transition-colors"
+                  className="bg-[#2a3f35] hover:bg-[#887904] hover:scale-110 active:scale-95 p-3 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +137,7 @@ export default function Footer() {
                 <Link
                   href="https://twitter.com"
                   target="_blank"
-                  className="bg-[#2a3f35] hover:bg-[#887904] p-3 rounded-full transition-colors"
+                  className="bg-[#2a3f35] hover:bg-[#887904] hover:scale-110 active:scale-95 p-3 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -158,33 +158,33 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4 uppercase">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-[#887904] transition-colors">
-                  Home
+                <Link href="/" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                  → Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-[#887904] transition-colors">
-                  About Us
+                <Link href="/about" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                  → About Us
                 </Link>
               </li>
               <li>
-                <Link href="/amenities" className="text-gray-300 hover:text-[#887904] transition-colors">
-                  Amenities
+                <Link href="/amenities" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                  → Amenities
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className="text-gray-300 hover:text-[#887904] transition-colors">
-                  Gallery
+                <Link href="/gallery" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                  → Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/our-team" className="text-gray-300 hover:text-[#887904] transition-colors">
-                  Our Team
+                <Link href="/our-team" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                  → Our Team
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-[#887904] transition-colors">
-                  Contact Us
+                <Link href="/contact" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                  → Contact Us
                 </Link>
               </li>
             </ul>
@@ -195,33 +195,33 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4 uppercase">Our Services</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/services#personal-care" className="text-gray-300 hover:text-[#887904] transition-colors">
-                  Personal Care Assistance
+                <Link href="/services#personal-care" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                  → Personal Care Assistance
                 </Link>
               </li>
               <li>
-                <Link href="/services#medication" className="text-gray-300 hover:text-[#887904] transition-colors">
-                  Medication Reminders
+                <Link href="/services#medication" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                  → Medication Reminders
                 </Link>
               </li>
               <li>
-                <Link href="/services#meals" className="text-gray-300 hover:text-[#887904] transition-colors">
-                  Home-Cooked Meals
+                <Link href="/services#meals" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                  → Home-Cooked Meals
                 </Link>
               </li>
               <li>
-                <Link href="/services#activities" className="text-gray-300 hover:text-[#887904] transition-colors">
-                  Daily Activities
+                <Link href="/services#activities" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                  → Daily Activities
                 </Link>
               </li>
               <li>
-                <Link href="/services#housekeeping" className="text-gray-300 hover:text-[#887904] transition-colors">
-                  Housekeeping & Laundry
+                <Link href="/services#housekeeping" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                  → Housekeeping & Laundry
                 </Link>
               </li>
               <li>
-                <Link href="/services#companionship" className="text-gray-300 hover:text-[#887904] transition-colors">
-                  Companionship & Emotional Support
+                <Link href="/services#companionship" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                  → Companionship & Emotional Support
                 </Link>
               </li>
             </ul>
@@ -288,7 +288,7 @@ export default function Footer() {
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
                 <Link href="mailto:info@qualitycaresl.com" className="text-gray-300 hover:text-[#887904] transition-colors text-sm">
-                  Info@Qualitycaresl.Com
+                  info@qualitycaresl.com
                 </Link>
               </li>
             </ul>
@@ -314,7 +314,7 @@ export default function Footer() {
               <Link href="/accessibility" className="hover:text-white transition-colors uppercase text-xs whitespace-nowrap">
                 Accessibility Statement
               </Link>
-              <button className="hover:text-white transition-colors">
+              <Link href="/accessibility" className="hover:text-white transition-all duration-300 hover:scale-110" aria-label="Accessibility">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -327,10 +327,13 @@ export default function Footer() {
                   strokeLinejoin="round"
                   className="sm:w-6 sm:h-6"
                 >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 16v-4M12 8h.01" />
+                  <circle cx="12" cy="4" r="2" />
+                  <path d="M16 8h-6a2 2 0 0 0-2 2v1" />
+                  <path d="M14 22v-9" />
+                  <path d="M18 22l-4-9l-4 9" />
+                  <path d="M8 12l-3 3l3 3" />
                 </svg>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

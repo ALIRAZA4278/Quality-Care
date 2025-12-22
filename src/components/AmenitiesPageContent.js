@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import ScrollAnimation from "./ScrollAnimation";
 
 export default function AmenitiesPageContent() {
   return (
@@ -34,18 +37,18 @@ export default function AmenitiesPageContent() {
           {/* Section Header */}
           <div className="text-center mb-8 sm:mb-12">
             <p
-              className="text-[#887904] text-base sm:text-2xl mb-3 sm:mb-4"
+              className="text-[#887904] text-xl sm:text-2xl md:text-3xl mb-3 sm:mb-4"
               style={{ fontFamily: "var(--font-aulletta)" }}
             >
               Amenities
             </p>
             <h2
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-4"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 px-4"
               style={{ fontFamily: "var(--font-recoleta)" }}
             >
               A Comfortable Home Environment
             </h2>
-            <div className="w-20 sm:w-24 h-1 bg-[#887904] mx-auto mb-6 sm:mb-8"></div>
+            <div className="w-20 sm:w-24 md:w-28 h-1 bg-[#887904] mx-auto mb-6 sm:mb-8"></div>
             <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed px-4">
               We offer a safe, peaceful personal care home setting designed to make residents feel
               comfortable and cared for.
@@ -367,18 +370,18 @@ export default function AmenitiesPageContent() {
             {/* Right Side - Content */}
             <div className="order-1 lg:order-2 lg:pt-8">
               <p
-                className="text-[#887904] text-base sm:text-lg mb-3 sm:mb-4"
+                className="text-[#887904] text-xl sm:text-2xl md:text-3xl mb-3 sm:mb-4"
                 style={{ fontFamily: "var(--font-aulletta)" }}
               >
                 About Us
               </p>
               <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 Floor Plan Layout
               </h2>
-              <div className="w-20 sm:w-24 h-1 bg-[#887904] mb-6 sm:mb-8"></div>
+              <div className="w-20 sm:w-24 md:w-28 h-1 bg-[#887904] mb-6 sm:mb-8"></div>
 
               <div className="space-y-4 sm:space-y-5 text-gray-700 text-sm sm:text-base leading-relaxed">
                 <p>

@@ -123,34 +123,38 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-10 flex-1 justify-end pr-32">
             <Link
               href="/"
-              className="text-black font-medium hover:text-gray-600 text-[15px]"
+              className="text-black font-medium hover:text-[#887904] text-[15px] transition-all duration-300 hover:scale-110 relative group"
             >
               HOME
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
               href="/about"
-              className="text-black font-medium hover:text-gray-600 text-[15px]"
+              className="text-black font-medium hover:text-[#887904] text-[15px] transition-all duration-300 hover:scale-110 relative group"
             >
               ABOUT US
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
               href="/services"
-              className="text-black font-medium hover:text-gray-600 text-[15px]"
+              className="text-black font-medium hover:text-[#887904] text-[15px] transition-all duration-300 hover:scale-110 relative group"
             >
               SERVICES
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
               href="/amenities"
-              className="text-black font-medium hover:text-gray-600 text-[15px]"
+              className="text-black font-medium hover:text-[#887904] text-[15px] transition-all duration-300 hover:scale-110 relative group"
             >
               AMENITIES
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </div>
 
           {/* Center Logo with Circle Background */}
           <div className="absolute left-1/2 -translate-x-1/2 -bottom-8 sm:-bottom-16">
-            <Link href="/">
-              <div className="bg-white rounded-full p-3 sm:p-5 border-2 sm:border-4 border-white ">
+            <Link href="/" className="block">
+              <div className="bg-white rounded-full p-3 sm:p-5 border-2 sm:border-4 border-white shadow-lg">
                 <Image
                   src="/logo.svg"
                   alt="Quality Care Senior Living"
@@ -166,29 +170,32 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-10 flex-1 pl-32">
             <Link
               href="/gallery"
-              className="text-black font-medium hover:text-gray-600 text-[15px] whitespace-nowrap"
+              className="text-black font-medium hover:text-[#887904] text-[15px] whitespace-nowrap transition-all duration-300 hover:scale-110 relative group"
             >
               GALLERY
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
               href="/our-team"
-              className="text-black font-medium hover:text-gray-600 text-[15px] whitespace-nowrap"
+              className="text-black font-medium hover:text-[#887904] text-[15px] whitespace-nowrap transition-all duration-300 hover:scale-110 relative group"
             >
               OUR TEAM
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
               href="/contact"
-              className="text-black font-medium hover:text-gray-600 text-[15px] whitespace-nowrap"
+              className="text-black font-medium hover:text-[#887904] text-[15px] whitespace-nowrap transition-all duration-300 hover:scale-110 relative group"
             >
               CONTACT US
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#887904] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <button
               onClick={() => setIsTourModalOpen(true)}
-              className="bg-[#1a1a1a] text-white pl-8 pr-2 py-2.5 rounded-l-full rounded-r-full font-medium hover:bg-gray-800 flex items-center gap-4 transition-colors text-[15px] whitespace-nowrap"
+              className="bg-[#1a1a1a] text-white pl-8 pr-2 py-2.5 rounded-l-full rounded-r-full font-medium hover:bg-[#887904] hover:scale-105 active:scale-95 flex items-center gap-4 transition-all duration-300 text-[15px] whitespace-nowrap shadow-lg hover:shadow-xl group"
               style={{ borderRadius: "50px 50px 50px 50px" }}
             >
               BOOK A TOUR
-              <div className="bg-white rounded-full p-3 flex items-center justify-center">
+              <div className="bg-white rounded-full p-3 flex items-center justify-center transition-all duration-300 shadow-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -209,7 +216,7 @@ export default function Navbar() {
           {/* Mobile Book Tour Button */}
           <button
             onClick={() => setIsTourModalOpen(true)}
-            className="lg:hidden bg-[#1a1a1a] text-white px-4 py-2 rounded-full text-xs font-medium hover:bg-gray-800 transition-colors"
+            className="lg:hidden bg-[#1a1a1a] text-white px-4 py-2 rounded-full text-xs font-medium hover:bg-[#887904] active:scale-95 transition-all duration-300 shadow-md hover:shadow-lg"
           >
             BOOK TOUR
           </button>
@@ -236,7 +243,7 @@ export default function Navbar() {
             <div className="flex items-center gap-3">
               <div className="bg-white rounded-full p-2 flex items-center justify-center">
                 <Image
-                  src="/Logo.svg"
+                  src="/logo.svg"
                   alt="Quality Care"
                   width={40}
                   height={40}
@@ -274,51 +281,86 @@ export default function Navbar() {
             <Link
               href="/"
               onClick={toggleMobileMenu}
-              className="block px-6 py-4 text-gray-900 font-medium hover:bg-gray-100 transition-colors border-b border-gray-100"
+              className="block px-6 py-4 text-gray-900 font-medium hover:bg-[#887904] hover:text-white hover:pl-8 transition-all duration-300 border-b border-gray-100 relative group"
             >
-              HOME
+              <span className="flex items-center gap-2">
+                HOME
+                <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
             </Link>
             <Link
               href="/about"
               onClick={toggleMobileMenu}
-              className="block px-6 py-4 text-gray-900 font-medium hover:bg-gray-100 transition-colors border-b border-gray-100"
+              className="block px-6 py-4 text-gray-900 font-medium hover:bg-[#887904] hover:text-white hover:pl-8 transition-all duration-300 border-b border-gray-100 relative group"
             >
-              ABOUT US
+              <span className="flex items-center gap-2">
+                ABOUT US
+                <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
             </Link>
             <Link
               href="/services"
               onClick={toggleMobileMenu}
-              className="block px-6 py-4 text-gray-900 font-medium hover:bg-gray-100 transition-colors border-b border-gray-100"
+              className="block px-6 py-4 text-gray-900 font-medium hover:bg-[#887904] hover:text-white hover:pl-8 transition-all duration-300 border-b border-gray-100 relative group"
             >
-              SERVICES
+              <span className="flex items-center gap-2">
+                SERVICES
+                <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
             </Link>
             <Link
               href="/amenities"
               onClick={toggleMobileMenu}
-              className="block px-6 py-4 text-gray-900 font-medium hover:bg-gray-100 transition-colors border-b border-gray-100"
+              className="block px-6 py-4 text-gray-900 font-medium hover:bg-[#887904] hover:text-white hover:pl-8 transition-all duration-300 border-b border-gray-100 relative group"
             >
-              AMENITIES
+              <span className="flex items-center gap-2">
+                AMENITIES
+                <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
             </Link>
             <Link
               href="/gallery"
               onClick={toggleMobileMenu}
-              className="block px-6 py-4 text-gray-900 font-medium hover:bg-gray-100 transition-colors border-b border-gray-100"
+              className="block px-6 py-4 text-gray-900 font-medium hover:bg-[#887904] hover:text-white hover:pl-8 transition-all duration-300 border-b border-gray-100 relative group"
             >
-              GALLERY
+              <span className="flex items-center gap-2">
+                GALLERY
+                <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
             </Link>
             <Link
               href="/our-team"
               onClick={toggleMobileMenu}
-              className="block px-6 py-4 text-gray-900 font-medium hover:bg-gray-100 transition-colors border-b border-gray-100"
+              className="block px-6 py-4 text-gray-900 font-medium hover:bg-[#887904] hover:text-white hover:pl-8 transition-all duration-300 border-b border-gray-100 relative group"
             >
-              OUR TEAM
+              <span className="flex items-center gap-2">
+                OUR TEAM
+                <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
             </Link>
             <Link
               href="/contact"
               onClick={toggleMobileMenu}
-              className="block px-6 py-4 text-gray-900 font-medium hover:bg-gray-100 transition-colors border-b border-gray-100"
+              className="block px-6 py-4 text-gray-900 font-medium hover:bg-[#887904] hover:text-white hover:pl-8 transition-all duration-300 border-b border-gray-100 relative group"
             >
-              CONTACT US
+              <span className="flex items-center gap-2">
+                CONTACT US
+                <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
             </Link>
           </div>
 

@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import ScrollAnimation from "./ScrollAnimation";
 
 export default function GalleryPageContent() {
   return (
@@ -30,91 +33,60 @@ export default function GalleryPageContent() {
 
       {/* Gallery Introduction */}
       <section className="bg-white py-8 sm:py-12 md:py-16 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto text-center">
-          <h3
-            className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3"
-            style={{
-              fontFamily: "var(--font-aulletta)",
-              color: "#887904",
-            }}
-          >
-            Gallery
-          </h3>
-          <h2
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6"
-            style={{ fontFamily: "var(--font-recoleta)" }}
-          >
-            A warm look into our home
-          </h2>
-          <div className="w-20 sm:w-24 h-1 bg-[#887904] mx-auto"></div>
-        </div>
+        <ScrollAnimation animation="fade-down">
+          <div className="max-w-7xl mx-auto text-center">
+            <h3
+              className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4"
+              style={{
+                fontFamily: "var(--font-aulletta)",
+                color: "#887904",
+              }}
+            >
+              Gallery
+            </h3>
+            <h2
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 sm:mb-6"
+              style={{ fontFamily: "var(--font-recoleta)" }}
+            >
+              A warm look into our home
+            </h2>
+            <div className="w-24 h-1 bg-[#887904] mx-auto"></div>
+          </div>
+        </ScrollAnimation>
       </section>
 
       {/* Bedrooms Section */}
       <section className="bg-white py-8 sm:py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Section Title with Lines */}
-          <div className="flex items-center gap-3 sm:gap-6 mb-6 sm:mb-10">
-            <div className="flex-1 h-px bg-[#887904]"></div>
-            <h3
-              className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap"
-              style={{ fontFamily: "var(--font-recoleta)" }}
-            >
-              Bedrooms
-            </h3>
-            <div className="flex-1 h-px bg-[#887904]"></div>
-          </div>
+          <ScrollAnimation animation="fade-right">
+            <div className="flex items-center gap-3 sm:gap-6 mb-6 sm:mb-10">
+              <div className="flex-1 h-px bg-[#887904]"></div>
+              <h3
+                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                Bedrooms
+              </h3>
+              <div className="flex-1 h-px bg-[#887904]"></div>
+            </div>
+          </ScrollAnimation>
 
-          {/* Image Grid - 3 columns, 2 rows */}
+          {/* Image Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/1.png"
-                alt="Bedroom 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/2.png"
-                alt="Bedroom 2"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/3.png"
-                alt="Bedroom 3"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/4.png"
-                alt="Bedroom 4"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/5.png"
-                alt="Bedroom 5"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/6.png"
-                alt="Bedroom 6"
-                fill
-                className="object-cover"
-              />
-            </div>
+            {[1, 2, 3, 4, 5, 6].map((num, index) => (
+              <ScrollAnimation key={num} animation="fade-up" delay={index * 0.1}>
+                <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
+                  <Image
+                    src={`/gallery/${num}.png`}
+                    alt={`Bedroom ${num}`}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                </div>
+              </ScrollAnimation>
+            ))}
           </div>
         </div>
       </section>
@@ -123,43 +95,34 @@ export default function GalleryPageContent() {
       <section className="bg-[#f8f8f8] py-8 sm:py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Section Title with Lines */}
-          <div className="flex items-center gap-3 sm:gap-6 mb-6 sm:mb-10">
-            <div className="flex-1 h-px bg-[#887904]"></div>
-            <h3
-              className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap"
-              style={{ fontFamily: "var(--font-recoleta)" }}
-            >
-              Living room
-            </h3>
-            <div className="flex-1 h-px bg-[#887904]"></div>
-          </div>
+          <ScrollAnimation animation="fade-left">
+            <div className="flex items-center gap-3 sm:gap-6 mb-6 sm:mb-10">
+              <div className="flex-1 h-px bg-[#887904]"></div>
+              <h3
+                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                Living room
+              </h3>
+              <div className="flex-1 h-px bg-[#887904]"></div>
+            </div>
+          </ScrollAnimation>
 
-          {/* Image Grid - 3 columns */}
+          {/* Image Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/7.png"
-                alt="Living room 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/8.png"
-                alt="Living room 2"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/9.png"
-                alt="Living room 3"
-                fill
-                className="object-cover"
-              />
-            </div>
+            {[7, 8, 9].map((num, index) => (
+              <ScrollAnimation key={num} animation="zoom" delay={index * 0.1}>
+                <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
+                  <Image
+                    src={`/gallery/${num}.png`}
+                    alt={`Living room ${num - 6}`}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                </div>
+              </ScrollAnimation>
+            ))}
           </div>
         </div>
       </section>
@@ -168,43 +131,34 @@ export default function GalleryPageContent() {
       <section className="bg-white py-8 sm:py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Section Title with Lines */}
-          <div className="flex items-center gap-3 sm:gap-6 mb-6 sm:mb-10">
-            <div className="flex-1 h-px bg-[#887904]"></div>
-            <h3
-              className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap"
-              style={{ fontFamily: "var(--font-recoleta)" }}
-            >
-              Dining area
-            </h3>
-            <div className="flex-1 h-px bg-[#887904]"></div>
-          </div>
+          <ScrollAnimation animation="fade-right">
+            <div className="flex items-center gap-3 sm:gap-6 mb-6 sm:mb-10">
+              <div className="flex-1 h-px bg-[#887904]"></div>
+              <h3
+                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                Dining area
+              </h3>
+              <div className="flex-1 h-px bg-[#887904]"></div>
+            </div>
+          </ScrollAnimation>
 
-          {/* Image Grid - 3 columns */}
+          {/* Image Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/10.png"
-                alt="Dining area 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/11.png"
-                alt="Dining area 2"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/12.png"
-                alt="Dining area 3"
-                fill
-                className="object-cover"
-              />
-            </div>
+            {[10, 11, 12].map((num, index) => (
+              <ScrollAnimation key={num} animation="fade-up" delay={index * 0.1}>
+                <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
+                  <Image
+                    src={`/gallery/${num}.png`}
+                    alt={`Dining area ${num - 9}`}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                </div>
+              </ScrollAnimation>
+            ))}
           </div>
         </div>
       </section>
@@ -213,43 +167,34 @@ export default function GalleryPageContent() {
       <section className="bg-[#f8f8f8] py-8 sm:py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Section Title with Lines */}
-          <div className="flex items-center gap-3 sm:gap-6 mb-6 sm:mb-10">
-            <div className="flex-1 h-px bg-[#887904]"></div>
-            <h3
-              className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap"
-              style={{ fontFamily: "var(--font-recoleta)" }}
-            >
-              Kitchen
-            </h3>
-            <div className="flex-1 h-px bg-[#887904]"></div>
-          </div>
+          <ScrollAnimation animation="fade-left">
+            <div className="flex items-center gap-3 sm:gap-6 mb-6 sm:mb-10">
+              <div className="flex-1 h-px bg-[#887904]"></div>
+              <h3
+                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                Kitchen
+              </h3>
+              <div className="flex-1 h-px bg-[#887904]"></div>
+            </div>
+          </ScrollAnimation>
 
-          {/* Image Grid - 3 columns */}
+          {/* Image Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/13.png"
-                alt="Kitchen 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/14.png"
-                alt="Kitchen 2"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/15.png"
-                alt="Kitchen 3"
-                fill
-                className="object-cover"
-              />
-            </div>
+            {[13, 14, 15].map((num, index) => (
+              <ScrollAnimation key={num} animation="zoom" delay={index * 0.1}>
+                <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
+                  <Image
+                    src={`/gallery/${num}.png`}
+                    alt={`Kitchen ${num - 12}`}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                </div>
+              </ScrollAnimation>
+            ))}
           </div>
         </div>
       </section>
@@ -258,67 +203,34 @@ export default function GalleryPageContent() {
       <section className="bg-white py-8 sm:py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Section Title with Lines */}
-          <div className="flex items-center gap-3 sm:gap-6 mb-6 sm:mb-10">
-            <div className="flex-1 h-px bg-[#887904]"></div>
-            <h3
-              className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap"
-              style={{ fontFamily: "var(--font-recoleta)" }}
-            >
-              Bathrooms
-            </h3>
-            <div className="flex-1 h-px bg-[#887904]"></div>
-          </div>
+          <ScrollAnimation animation="fade-right">
+            <div className="flex items-center gap-3 sm:gap-6 mb-6 sm:mb-10">
+              <div className="flex-1 h-px bg-[#887904]"></div>
+              <h3
+                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                Bathrooms
+              </h3>
+              <div className="flex-1 h-px bg-[#887904]"></div>
+            </div>
+          </ScrollAnimation>
 
-          {/* Image Grid - 3 columns, 2 rows */}
+          {/* Image Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/16.png"
-                alt="Bathroom 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/17.png"
-                alt="Bathroom 2"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/18.png"
-                alt="Bathroom 3"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/19.png"
-                alt="Bathroom 4"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/20.png"
-                alt="Bathroom 5"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/21.png"
-                alt="Bathroom 6"
-                fill
-                className="object-cover"
-              />
-            </div>
+            {[16, 17, 18, 19, 20, 21].map((num, index) => (
+              <ScrollAnimation key={num} animation="fade-up" delay={(index % 3) * 0.1}>
+                <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
+                  <Image
+                    src={`/gallery/${num}.png`}
+                    alt={`Bathroom ${num - 15}`}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                </div>
+              </ScrollAnimation>
+            ))}
           </div>
         </div>
       </section>
@@ -327,67 +239,34 @@ export default function GalleryPageContent() {
       <section className="bg-[#f8f8f8] py-8 sm:py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Section Title with Lines */}
-          <div className="flex items-center gap-3 sm:gap-6 mb-6 sm:mb-10">
-            <div className="flex-1 h-px bg-[#887904]"></div>
-            <h3
-              className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap"
-              style={{ fontFamily: "var(--font-recoleta)" }}
-            >
-              Outdoor spaces
-            </h3>
-            <div className="flex-1 h-px bg-[#887904]"></div>
-          </div>
+          <ScrollAnimation animation="fade-left">
+            <div className="flex items-center gap-3 sm:gap-6 mb-6 sm:mb-10">
+              <div className="flex-1 h-px bg-[#887904]"></div>
+              <h3
+                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                Outdoor spaces
+              </h3>
+              <div className="flex-1 h-px bg-[#887904]"></div>
+            </div>
+          </ScrollAnimation>
 
-          {/* Image Grid - 3 columns, 2 rows */}
+          {/* Image Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/22.png"
-                alt="Outdoor space 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/23.png"
-                alt="Outdoor space 2"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/24.png"
-                alt="Outdoor space 3"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/25.png"
-                alt="Outdoor space 4"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/26.png"
-                alt="Outdoor space 5"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden">
-              <Image
-                src="/gallery/27.png"
-                alt="Outdoor space 6"
-                fill
-                className="object-cover"
-              />
-            </div>
+            {[22, 23, 24, 25, 26, 27].map((num, index) => (
+              <ScrollAnimation key={num} animation="zoom" delay={(index % 3) * 0.1}>
+                <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
+                  <Image
+                    src={`/gallery/${num}.png`}
+                    alt={`Outdoor space ${num - 21}`}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+                </div>
+              </ScrollAnimation>
+            ))}
           </div>
         </div>
       </section>

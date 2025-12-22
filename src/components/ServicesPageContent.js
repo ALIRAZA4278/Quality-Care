@@ -1,7 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import TourModal from "./TourModal";
+import ScrollAnimation from "./ScrollAnimation";
 
 export default function ServicesPageContent() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const services = [
     {
       id: 1,
@@ -84,92 +89,89 @@ export default function ServicesPageContent() {
       <section className="bg-white py-8 sm:py-12 md:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-8 sm:mb-12">
-            <h3
-              className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3"
-              style={{
-                fontFamily: "var(--font-aulletta)",
-                color: "#887904",
-              }}
-            >
-              Our Services
-            </h3>
-            <h2
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight px-4"
-              style={{ fontFamily: "var(--font-recoleta)" }}
-            >
-              Supporting Every Day, Every Way
-            </h2>
-            <div className="w-20 sm:w-24 h-1 bg-[#887904] mx-auto mt-4 sm:mt-6"></div>
-            <p className="text-sm sm:text-base md:text-lg text-gray-700 mt-4 sm:mt-6 max-w-3xl mx-auto px-4">
-              At Quality Care Senior Living, we provide essential daily support
-              to ensure every resident feels comfortable, cared for, and safe.
-            </p>
-          </div>
+          <ScrollAnimation animation="fade-down">
+            <div className="text-center mb-8 sm:mb-12">
+              <h3
+                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-2 sm:mb-3"
+                style={{
+                  fontFamily: "var(--font-aulletta)",
+                  color: "#887904",
+                }}
+              >
+                Our Services
+              </h3>
+              <h2
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight px-4"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                Supporting Every Day, Every Way
+              </h2>
+              <div className="w-20 sm:w-24 md:w-28 lg:w-32 h-1 bg-[#887904] mx-auto mt-4 sm:mt-6"></div>
+              <p className="text-sm sm:text-base md:text-lg text-gray-700 mt-4 sm:mt-6 max-w-3xl mx-auto px-4">
+                At Quality Care Senior Living, we provide essential daily support
+                to ensure every resident feels comfortable, cared for, and safe.
+              </p>
+            </div>
+          </ScrollAnimation>
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-10">
-            {services.map((service) => (
-              <div
-                key={service.id}
-                className="bg-white rounded-2xl sm:rounded-[32px] p-2 sm:p-3 relative flex flex-col"
-              >
+            {services.map((service, index) => (
+              <ScrollAnimation key={service.id} animation="fade-up" delay={index * 0.1}>
+                <div
+                  className="bg-white rounded-2xl sm:rounded-[32px] p-2 sm:p-3 relative flex flex-col shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group"
+                >
                 {/* Image Container with padding and rounded */}
                 <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden rounded-xl sm:rounded-[16px] mb-2">
                   <Image
                     src={service.image}
                     alt={service.title}
                     fill
-                    className="object-cover"
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
                 </div>
 
                 {/* Icon Badge - Overlapping between image and text */}
                 <div className="flex justify-center -mt-8 sm:-mt-10 mb-4 sm:mb-6 relative z-10">
-                  <div className="bg-white rounded-full p-3 sm:p-4 shadow-lg">
+                  <div className="bg-white rounded-full p-3 sm:p-4 shadow-lg group-hover:shadow-2xl group-hover:shadow-[#887904]/30 group-hover:scale-125 group-hover:-translate-y-2 transition-all duration-500">
                     <div className="relative w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10">
                       <Image
                         src={service.icon}
                         alt={`${service.title} icon`}
                         fill
-                        className="object-contain"
+                        className="object-contain group-hover:rotate-12 transition-transform duration-500"
                       />
                     </div>
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="text-center px-2 sm:px-3 flex flex-col flex-grow">
+                <div className="text-center px-2 sm:px-3 flex flex-col flex-grow pb-3 sm:pb-4">
                   <h3
                     className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight"
                     style={{ fontFamily: "var(--font-recoleta)" }}
                   >
                     {service.title}
                   </h3>
-                  <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed flex-grow">
+                  <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
                     {service.description}
                   </p>
-                  <div className="pb-3 sm:pb-4">
-                    <Link
-                      href={`/services#${service.title.toLowerCase().replace(/\s+/g, "-")}`}
-                      className="inline-block text-[#887904] font-semibold text-sm sm:text-base hover:text-[#6a5f03] transition-colors border-b-2 border-[#887904] hover:border-[#6a5f03]"
-                    >
-                      Learn More
-                    </Link>
-                  </div>
                 </div>
               </div>
+              </ScrollAnimation>
             ))}
           </div>
 
           {/* Book a Tour CTA */}
-          <div className="text-center mt-8 sm:mt-12">
-            <Link
-              href="/book-tour"
-              className="bg-black text-white pl-6 sm:pl-8 pr-2 py-2.5 sm:py-3 rounded-full font-semibold hover:bg-gray-800 inline-flex items-center gap-2 sm:gap-3 transition-colors text-xs sm:text-sm md:text-[15px] uppercase tracking-wide"
+          <ScrollAnimation animation="zoom">
+            <div className="text-center mt-8 sm:mt-12">
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="bg-[#1a1a1a] text-white pl-6 sm:pl-8 pr-2 py-2.5 sm:py-3 rounded-full font-semibold hover:bg-[#887904] hover:scale-110 hover:shadow-2xl hover:shadow-[#887904]/40 active:scale-95 inline-flex items-center gap-2 sm:gap-3 transition-all duration-300 text-xs sm:text-sm md:text-[15px] uppercase tracking-wide shadow-lg group"
             >
               Book a Tour
-              <div className="bg-white rounded-full p-2 sm:p-3 flex items-center justify-center">
+              <div className="bg-white rounded-full p-2 sm:p-3 flex items-center justify-center transition-all duration-300 shadow-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -185,10 +187,13 @@ export default function ServicesPageContent() {
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </div>
-            </Link>
-          </div>
+            </button>
+            </div>
+          </ScrollAnimation>
         </div>
       </section>
+
+      <TourModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 }

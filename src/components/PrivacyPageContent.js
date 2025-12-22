@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import ScrollAnimation from "./ScrollAnimation";
 
 export default function PrivacyPageContent() {
   const [activeSection, setActiveSection] = useState("introduction");
