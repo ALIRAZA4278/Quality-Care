@@ -32,10 +32,10 @@ export default function OurTeamPageContent() {
       </section>
 
       {/* Meet Our Team Introduction Section */}
-      <section className="bg-white pt-12 sm:pt-16 md:pt-20 pb-8 sm:pb-12 md:pb-16 px-4 sm:px-6">
+      <section className="bg-white pt-8 sm:pt-12 md:pt-16 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <ScrollAnimation animation="fade-up">
-            <p className="text-base sm:text-lg md:text-xl text-gray-900 leading-relaxed text-left">
+            <p className="text-sm sm:text-base md:text-lg text-gray-900 leading-relaxed text-left">
               At Quality Care Senior Living, our team is the foundation of the care we provide. Our dedicated professionals are committed to delivering compassionate, respectful, and personalized care in a safe and supportive environment where every resident feels at home.
             </p>
           </ScrollAnimation>
@@ -43,7 +43,7 @@ export default function OurTeamPageContent() {
       </section>
 
       {/* Team Member Section */}
-      <section className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 relative overflow-hidden">
+      <section className="bg-white pt-0 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6 relative overflow-hidden">
         {/* Decorative leaves background */}
         <div className="absolute top-10 right-10 opacity-20">
           <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
@@ -58,9 +58,9 @@ export default function OurTeamPageContent() {
         <div className="max-w-7xl mx-auto relative">
           {/* Meet Our Team Heading */}
           <ScrollAnimation animation="fade-up">
-            <div className="text-center mb-12 sm:mb-16 md:mb-20">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16">
               <h2
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 uppercase"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 uppercase"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 MEET OUR TEAM
