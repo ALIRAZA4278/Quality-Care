@@ -1,10 +1,52 @@
 "use client";
 
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollAnimation from "./ScrollAnimation";
 
 export default function AboutSection() {
+  const [count, setCount] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const countRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+          let start = 0;
+          const end = 25;
+          const duration = 2000;
+          const increment = end / (duration / 16);
+
+          const timer = setInterval(() => {
+            start += increment;
+            if (start >= end) {
+              setCount(end);
+              clearInterval(timer);
+            } else {
+              setCount(Math.floor(start));
+            }
+          }, 16);
+
+          return () => clearInterval(timer);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (countRef.current) {
+      observer.observe(countRef.current);
+    }
+
+    return () => {
+      if (countRef.current) {
+        observer.unobserve(countRef.current);
+      }
+    };
+  }, [hasAnimated]);
+
   return (
     <section className="bg-[#f8f6f3] py-12 sm:py-16 md:py-24 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
@@ -37,28 +79,26 @@ export default function AboutSection() {
               </div>
 
             {/* Years of Experience Text - Bottom Left, overlapping */}
-            <div className="absolute -bottom-[10%] sm:-bottom-[2%] left-[10%] sm:left-[25%] z-10 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 hover:bg-white transition-all duration-300 cursor-pointer">
+            <div ref={countRef} className="absolute -bottom-[10%] sm:-bottom-[2%] left-[10%] sm:left-[25%] z-10 px-4 py-2 rounded-xl hover:scale-105 transition-all duration-300 cursor-pointer">
               <div
                 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-none mb-1"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
-                25+
+                {count}+
               </div>
               <div className="text-sm sm:text-base font-medium text-gray-900">
                 Years Of Experiences
               </div>
             </div>
 
-            {/* Bottom Right Small Image with White Border - Taller */}
-            <div className="absolute -bottom-6 sm:-bottom-8 -right-3 sm:-right-5 w-[50%] h-[65%] bg-white rounded-[20px] sm:rounded-[32px] border-8 sm:border-10 border-white p-2 sm:p-4 shadow-2xl hover:shadow-[#887904]/50 hover:scale-105 hover:-rotate-2 transition-all duration-500 group cursor-pointer">
-              <div className="w-full h-full rounded-[16px] sm:rounded-[20px] overflow-hidden">
-                <Image
-                  src="/home/about2.png"
-                  alt="Seniors in living room"
-                  fill
-                  className="object-cover rounded-[16px] sm:rounded-[32px] group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
+            {/* Bottom Right Small Image - Taller */}
+            <div className="absolute -bottom-6 sm:-bottom-8 -right-3 sm:-right-5 w-[50%] h-[65%] rounded-[20px] sm:rounded-[32px] overflow-hidden shadow-2xl hover:shadow-[#887904]/50 hover:scale-105 hover:-rotate-2 transition-all duration-500 group cursor-pointer animate-float">
+              <Image
+                src="/home/about2.png"
+                alt="Seniors in living room"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
+              />
             </div>
           </div>
           </ScrollAnimation>
@@ -70,9 +110,9 @@ export default function AboutSection() {
             <h3
               className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
               style={{
-                fontFamily: "var(--font-aulletta)",
+                fontFamily: "'Playfair Display', serif",
                 color: "#887904",
-                fontWeight: "400",
+                fontWeight: "700",
               }}
             >
               About Us
@@ -80,7 +120,7 @@ export default function AboutSection() {
 
             {/* Main Heading */}
             <h2
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 sm:mb-6 leading-tight"
               style={{ fontFamily: "var(--font-recoleta)" }}
             >
               Our Promise to Your Loved One

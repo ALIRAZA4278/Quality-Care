@@ -34,7 +34,7 @@ export default function CaregiversSection() {
         {/* Section Header */}
         <div className="mb-12 sm:mb-16">
           <h2
-            className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Caregivers
@@ -64,7 +64,7 @@ export default function CaregiversSection() {
 
               {/* Name and Occupation */}
               <h3
-                className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 italic"
+                className="text-xl sm:text-2xl font-extrabold text-gray-900 mb-2 italic"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 {caregiver.name}

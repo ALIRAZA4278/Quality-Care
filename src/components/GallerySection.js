@@ -21,15 +21,15 @@ export default function GallerySection() {
           <h3
             className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
             style={{
-              fontFamily: "var(--font-aulletta)",
+              fontFamily: "'Playfair Display', serif",
               color: "#887904",
-              fontWeight: "400",
+              fontWeight: "700",
             }}
           >
             Our Gallery
           </h3>
           <h2
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight px-4"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight px-4"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             See Where Comfort and Care Meet

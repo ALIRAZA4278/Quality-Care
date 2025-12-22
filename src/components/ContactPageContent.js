@@ -130,8 +130,9 @@ export default function ContactPageContent() {
               <h3
                 className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3"
                 style={{
-                  fontFamily: "var(--font-aulletta)",
+                  fontFamily: "'Playfair Display', serif",
                   color: "#887904",
+                  fontWeight: "700",
                 }}
               >
                 Send us a message

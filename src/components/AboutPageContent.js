@@ -41,8 +41,9 @@ export default function AboutPageContent() {
                 <h3
                   className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3"
                   style={{
-                    fontFamily: "var(--font-aulletta)",
+                    fontFamily: "'Playfair Display', serif",
                     color: "#887904",
+                    fontWeight: "700",
                   }}
                 >
                   Our Mission
@@ -124,8 +125,9 @@ export default function AboutPageContent() {
               <h3
                 className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3"
                 style={{
-                  fontFamily: "var(--font-aulletta)",
+                  fontFamily: "'Playfair Display', serif",
                   color: "#887904",
+                  fontWeight: "700",
                 }}
               >
                 About Us
@@ -162,8 +164,9 @@ export default function AboutPageContent() {
               <h3
                 className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3"
                 style={{
-                  fontFamily: "var(--font-aulletta)",
+                  fontFamily: "'Playfair Display', serif",
                   color: "#887904",
+                  fontWeight: "700",
                 }}
               >
                 Why Choose Us

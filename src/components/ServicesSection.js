@@ -65,15 +65,15 @@ export default function ServicesSection() {
           <h3
             className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
             style={{
-              fontFamily: "var(--font-aulletta)",
+              fontFamily: "'Playfair Display', serif",
               color: "#887904",
-              fontWeight: "400",
+              fontWeight: "700",
             }}
           >
             Our Services
           </h3>
           <h2
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Supporting Every Day, Every Way
@@ -122,7 +122,7 @@ export default function ServicesSection() {
               {/* Content */}
               <div className="text-center px-2 flex flex-col flex-grow pb-4">
                 <h3
-                  className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 leading-tight"
+                  className="text-xl sm:text-2xl font-extrabold text-gray-900 mb-4 leading-tight"
                   style={{ fontFamily: "var(--font-recoleta)" }}
                 >
                   {service.title}

@@ -38,8 +38,9 @@ export default function GalleryPageContent() {
             <h3
               className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
               style={{
-                fontFamily: "var(--font-aulletta)",
+                fontFamily: "'Playfair Display', serif",
                 color: "#887904",
+                fontWeight: "700",
               }}
             >
               Gallery

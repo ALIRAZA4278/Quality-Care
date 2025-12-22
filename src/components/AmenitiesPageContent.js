@@ -38,9 +38,9 @@ export default function AmenitiesPageContent() {
           <div className="text-center mb-8 sm:mb-12">
             <p
               className="text-[#887904] text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
-              style={{ fontFamily: "var(--font-aulletta)" }}
+              style={{ fontFamily: "'Playfair Display', serif", fontWeight: "700" }}
             >
-              
+
               Amenities
             </p>
             <h2
@@ -372,7 +372,7 @@ export default function AmenitiesPageContent() {
             <div className="order-1 lg:order-2 lg:pt-8">
               <p
                 className="text-[#887904] text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4"
-                style={{ fontFamily: "var(--font-aulletta)" }}
+                style={{ fontFamily: "'Playfair Display', serif", fontWeight: "700" }}
               >
                 About Us
               </p>

@@ -22,7 +22,7 @@ export default function CTASection() {
         {/* Left Side - Text Content */}
         <div className="text-white py-4 sm:py-5 lg:py-6 animate-slide-in-left">
           <h2
-            className="text-sm sm:text-base md:text-lg lg:text-xl font-bold mb-2 sm:mb-3 md:mb-4 leading-snug sm:leading-tight italic max-w-md sm:max-w-lg md:max-w-xl"
+            className="text-sm sm:text-base md:text-lg lg:text-xl font-extrabold mb-2 sm:mb-3 md:mb-4 leading-snug sm:leading-tight italic max-w-md sm:max-w-lg md:max-w-xl"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             SCHEDULE A VISIT TODAY AND EXPERIENCE THE DIFFERENCE OF PERSONALIZED SENIOR CARE.
