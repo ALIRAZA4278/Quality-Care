@@ -22,7 +22,7 @@ export default function OurTeamPageContent() {
         {/* Hero Title */}
         <div className="relative z-10 text-center px-4">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 uppercase"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Our Team
@@ -47,12 +47,12 @@ export default function OurTeamPageContent() {
         <div className="max-w-7xl mx-auto relative">
           <div className="bg-white rounded-2xl sm:rounded-3xl border-2 border-[#887904] overflow-hidden flex flex-col lg:flex-row items-stretch relative">
             {/* Right - Image (Mobile First) */}
-            <div className="relative w-full h-64 sm:h-80 lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-[50%] lg:h-auto lg:rounded-r-3xl overflow-hidden order-1 lg:order-2">
+            <div className="relative w-full h-80 sm:h-96 lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-[50%] lg:h-auto lg:rounded-r-3xl overflow-hidden order-1 lg:order-2">
               <Image
                 src="/team/Shunkelia-Johnson.png"
                 alt="Shunkelia Johnson"
                 fill
-                className="object-cover object-top"
+                className="object-contain object-center lg:object-cover lg:object-top"
               />
             </div>
 

@@ -22,7 +22,7 @@ export default function AmenitiesPageContent() {
         {/* Hero Title */}
         <div className="relative z-10 text-center px-4">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 uppercase"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Amenities
@@ -36,13 +36,7 @@ export default function AmenitiesPageContent() {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-8 sm:mb-12">
-            <p
-              className="text-[#887904] text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4 uppercase"
-              style={{ fontFamily: "'Playfair Display', serif", fontWeight: "700" }}
-            >
-
-              Amenities
-            </p>
+           
             <h2
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 px-4"
               style={{ fontFamily: "var(--font-recoleta)" }}

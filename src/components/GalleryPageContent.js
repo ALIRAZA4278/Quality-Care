@@ -22,7 +22,7 @@ export default function GalleryPageContent() {
         {/* Hero Title */}
         <div className="relative z-10 text-center px-4">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 uppercase"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Gallery
@@ -35,16 +35,7 @@ export default function GalleryPageContent() {
       <section className="bg-white py-8 sm:py-12 md:py-16 px-4 sm:px-6">
         <ScrollAnimation animation="fade-down">
           <div className="max-w-7xl mx-auto text-center">
-            <h3
-              className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4 uppercase"
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                color: "#887904",
-                fontWeight: "700",
-              }}
-            >
-              Gallery
-            </h3>
+            
             <h2
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 sm:mb-6"
               style={{ fontFamily: "var(--font-recoleta)" }}

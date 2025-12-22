@@ -55,7 +55,6 @@ export default function AboutSection() {
           <ScrollAnimation animation="fade-left">
           <div className="relative w-full aspect-[3/2.5] max-w-[500px] sm:max-w-[600px] mx-auto lg:mx-0">
             {/* Dark Green Background Box - Top Left */}
-            <div className="absolute top-8 sm:top-35 -left-6 sm:-left-10 w-[30%] h-[65%] bg-black rounded-[20px] sm:rounded-[32px] shadow-2xl"></div>
 
             {/* Main Large Image - Taller and bigger */}
             <div className="absolute top-[-5%] sm:top-[-8%] left-[0] w-[85%] h-[95%] rounded-[20px] sm:rounded-[32px] overflow-hidden shadow-2xl hover:shadow-[#887904]/50 group">
@@ -79,14 +78,14 @@ export default function AboutSection() {
               </div>
 
             {/* Years of Experience Text - Bottom Left, overlapping */}
-            <div ref={countRef} className="absolute -bottom-[10%] sm:-bottom-[2%] left-[10%] sm:left-[25%] z-10 px-4 py-2 rounded-xl hover:scale-105 transition-all duration-300 cursor-pointer">
+            <div ref={countRef} className="absolute flex flex-col items-center -bottom-[12%] sm:-bottom-[5%] left-[8%] sm:left-[5%] z-10 bg-white px-4 py-3 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
               <div
                 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-none mb-1"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 {count}+
               </div>
-              <div className="text-sm sm:text-base font-medium text-gray-900">
+              <div className="text-xs sm:text-sm font-medium text-gray-900 text-center">
                 Years Of Experiences
               </div>
             </div>

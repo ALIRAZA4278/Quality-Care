@@ -31,7 +31,7 @@ export default function TourModal({ isOpen, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/50 overflow-y-auto">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-3 sm:p-4 bg-black/50 overflow-y-auto">
       <div className="relative bg-white rounded-2xl sm:rounded-3xl max-w-md sm:max-w-xl w-full my-auto shadow-2xl">
         {/* Background Image */}
         <div className="absolute inset-0 rounded-2xl sm:rounded-3xl overflow-hidden pointer-events-none flex items-center justify-center">
@@ -70,8 +70,8 @@ export default function TourModal({ isOpen, onClose }) {
         {/* Modal Content */}
         <div className="relative pt-8 px-4 pb-4 sm:pt-12 sm:px-8 sm:pb-6">
           <h2
-            className="text-base sm:text-2xl font-extrabold text-center text-gray-900 mb-1 sm:mb-3"
-            style={{ fontFamily: "var(--font-recoleta)" }}
+            className="text-2xl sm:text-4xl font-black text-center text-gray-900 mb-1 sm:mb-3"
+            style={{ fontFamily: "'Playfair Display', serif", fontWeight: "900" }}
           >
             Schedule a Tour
           </h2>

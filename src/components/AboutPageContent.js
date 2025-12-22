@@ -22,7 +22,7 @@ export default function AboutPageContent() {
         {/* Hero Title */}
         <div className="relative z-10 text-center px-4">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 uppercase"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             About Us
