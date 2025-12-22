@@ -91,7 +91,7 @@ export default function OurTeamPageContent() {
             </div>
 
             {/* Text Content - Left Side */}
-            <div className="w-full lg:w-1/2 p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 flex flex-col justify-center order-2 lg:order-1">
+            <div className="w-full lg:w-1/2 p-6 sm:p-8 md:p-2 lg:p-4 xl:p-6 flex flex-col justify-center order-2 lg:order-1">
               <h2
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-2 italic"
                 style={{ fontFamily: "var(--font-recoleta)" }}
