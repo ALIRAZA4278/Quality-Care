@@ -8,6 +8,7 @@ export default function TourModal({ isOpen, onClose }) {
     fullName: "",
     phone: "",
     email: "",
+    hearAboutUs: "",
     date: "",
     time: "",
     notes: "",
@@ -129,6 +130,28 @@ export default function TourModal({ isOpen, onClose }) {
                 required
                 className="w-full px-4 sm:px-5 md:px-6 py-3 sm:py-3.5 md:py-4 rounded-full border border-gray-300 focus:outline-none focus:border-[#887904] transition-colors placeholder:text-gray-400 text-sm sm:text-base"
               />
+            </div>
+
+            {/* How did you hear about us */}
+            <div>
+              <label htmlFor="hearAboutUs" className="block text-xs sm:text-sm font-semibold text-gray-900 mb-1.5 sm:mb-2">
+                How did you hear about us?
+              </label>
+              <select
+                id="hearAboutUs"
+                name="hearAboutUs"
+                value={formData.hearAboutUs}
+                onChange={handleChange}
+                required
+                className="w-full px-4 sm:px-5 md:px-6 py-3 sm:py-3.5 md:py-4 rounded-full border border-gray-300 focus:outline-none focus:border-[#887904] transition-colors appearance-none bg-white text-sm sm:text-base text-gray-900"
+              >
+                <option value="">Select</option>
+                <option value="Search Engine">Search Engine</option>
+                <option value="Word of Mouth">Word of Mouth</option>
+                <option value="Referral">Referral</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Event">Event</option>
+              </select>
             </div>
 
             {/* Preferred Date and Time */}

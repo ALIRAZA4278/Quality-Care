@@ -59,7 +59,7 @@ export default function AmenitiesPageContent() {
           {/* Three Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12 md:mt-16">
             {/* Card 1 - Home Features */}
-            <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden ">
+            <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]">
               <div className="relative h-48 sm:h-56 md:h-64">
                 <Image
                   src="/amenities/1.png"
@@ -160,7 +160,7 @@ export default function AmenitiesPageContent() {
             </div>
 
             {/* Card 2 - Care Environment */}
-            <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden ">
+            <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]">
               <div className="relative h-64">
                 <Image
                   src="/amenities/2.png"
@@ -247,7 +247,7 @@ export default function AmenitiesPageContent() {
             </div>
 
             {/* Card 3 - Resident Experience */}
-            <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden  sm:col-span-2 lg:col-span-1">
+            <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] sm:col-span-2 lg:col-span-1">
               <div className="relative h-64">
                 <Image
                   src="/amenities/3.png"
