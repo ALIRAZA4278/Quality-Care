@@ -30,15 +30,15 @@ export default function PrivacyPageContent() {
           <div className="absolute inset-0 bg-white/60"></div>
         </div>
 
-        {/* Hero Title */}
-        <div className="relative z-10 text-center px-4">
+        {/* Hero Title */} 
+        <div className="relative z-10 text-center px-4 mt-10">
           <h1
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 uppercase"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Privacy & Policy
           </h1>
-          <div className="w-32 h-1 bg-[#887904] mx-auto mt-6"></div>
+          <div className="w-32 h-1 bg-[#887904] mx-auto mt-1"></div>
         </div>
       </section>
 

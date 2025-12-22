@@ -106,7 +106,7 @@ export default function Navbar() {
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-gradient-to-b from-gray-100 to-white py-2 sm:py-2 md:py-4 px-4 sm:px-6 relative shadow-lg">
+      <nav className="bg-gradient-to-b from-gray-100 to-white py-3 sm:py-4 md:py-5 px-4 sm:px-6 relative shadow-lg">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Mobile Menu Button */}
           <button
@@ -164,15 +164,15 @@ export default function Navbar() {
           </div>
 
           {/* Center Logo with Circle Background */}
-          <div className="absolute left-1/2 -translate-x-1/2 -bottom-5 sm:-bottom-8 md:-bottom-10 z-50">
+          <div className="absolute left-1/2 -translate-x-1/2 -bottom-6 sm:-bottom-8 md:-bottom-10 z-50">
             <Link href="/" className="block">
-              <div className="bg-white rounded-full p-1.5 sm:p-2.5 md:p-3 border-2 border-white shadow-lg">
+              <div className="bg-white rounded-full p-2 sm:p-2.5 md:p-3 border-2 border-white shadow-lg">
                 <Image
                   src="/logo.png"
                   alt="Quality Care Senior Living"
                   width={110}
                   height={110}
-                  className="object-contain w-[45px] h-[45px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px]"
+                  className="object-contain w-[55px] h-[55px] sm:w-[65px] sm:h-[65px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px]"
                   priority
                   quality={100}
                 />
