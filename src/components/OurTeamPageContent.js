@@ -68,33 +68,33 @@ export default function OurTeamPageContent() {
             </div>
           </ScrollAnimation>
 
-          <div className="bg-white rounded-2xl sm:rounded-3xl border-2 border-[#887904] overflow-hidden flex flex-row items-stretch relative">
-            {/* Right - Image */}
-            <div className="absolute right-0 top-0 bottom-0 w-[45%] sm:w-[48%] md:w-[50%] h-auto rounded-r-3xl overflow-hidden">
+          <div className="bg-white rounded-2xl sm:rounded-3xl border-2 border-[#887904] overflow-hidden">
+            {/* Image */}
+            <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px]">
               <Image
                 src="/team/Shunkelia-Johnson.png"
                 alt="Shunkelia Johnson"
                 fill
-                className="object-cover object-top"
+                className="object-contain object-top"
               />
             </div>
 
-            {/* Left - Text Content */}
-            <div className="flex-1 p-3 sm:p-4 md:p-6 lg:p-8 xl:p-10 2xl:p-12 pr-[46%] sm:pr-[49%] md:pr-[51%] lg:pr-[52%] xl:pr-[52%] 2xl:pr-[50%] z-10">
+            {/* Text Content */}
+            <div className="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
               <h2
-                className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-1 sm:mb-2"
+                className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 mb-1 sm:mb-1.5 md:mb-2"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 Shunkelia Johnson
               </h2>
               <p
-                className="text-xs sm:text-sm md:text-base lg:text-lg mb-3 sm:mb-4 md:mb-5 lg:mb-6"
+                className="text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg mb-2 sm:mb-3 md:mb-4 lg:mb-5"
                 style={{ color: "#887904" }}
               >
                 Founder & Administrator of Quality Care Senior Living
               </p>
 
-              <div className="space-y-2 sm:space-y-3 md:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4 md:mb-5 lg:mb-6">
+              <div className="space-y-1.5 sm:space-y-2 md:space-y-3 lg:space-y-4 text-[9px] sm:text-[10px] md:text-xs lg:text-sm xl:text-base text-gray-700 leading-relaxed mb-2 sm:mb-3 md:mb-4 lg:mb-5">
                 <p>
                   I&apos;m Shunkelia Johnson-England, the Founder and Chief Administrative Officer of Quality Care Senior Living and a Licensed Assisted Living Community Administrator with 18 years of experience in the senior living industry. I began my career as a Certified Nursing Assistant and have since explored various roles throughout the Assisted Living sector. My specialty lies in Human Aging and Development Services, where I attended Georgia Gwinnett College to deepen my knowledge and passion for this field.
                 </p>
@@ -113,46 +113,46 @@ export default function OurTeamPageContent() {
               </div>
 
               {/* Contact Info */}
-              <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-2 sm:gap-3 md:gap-4 lg:gap-5">
-                <div className="flex items-center gap-1.5 sm:gap-2">
-                  <div className="bg-[#887904] rounded-md p-1.5 sm:p-2">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-1.5 sm:gap-2 md:gap-3 lg:gap-4">
+                <div className="flex items-center gap-1 sm:gap-1.5">
+                  <div className="bg-[#887904] rounded-md p-1 sm:p-1.5 md:p-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="14"
+                      width="12"
+                      height="12"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="white"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] drop-shadow-lg"
+                      className="sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 lg:w-[18px] lg:h-[18px] drop-shadow-lg"
                     >
                       <rect x="2" y="4" width="20" height="16" rx="2" />
                       <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                     </svg>
                   </div>
-                  <span className="text-[10px] sm:text-xs md:text-sm text-gray-900">1 (678) 910-8466</span>
+                  <span className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs xl:text-sm text-gray-900">1 (678) 910-8466</span>
                 </div>
 
-                <div className="flex items-center gap-1.5 sm:gap-2">
-                  <div className="bg-[#887904] rounded-md p-1.5 sm:p-2">
+                <div className="flex items-center gap-1 sm:gap-1.5">
+                  <div className="bg-[#887904] rounded-md p-1 sm:p-1.5 md:p-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="14"
+                      width="12"
+                      height="12"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="white"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] drop-shadow-lg"
+                      className="sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 lg:w-[18px] lg:h-[18px] drop-shadow-lg"
                     >
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                     </svg>
                   </div>
-                  <span className="text-[10px] sm:text-xs md:text-sm text-gray-900">1 (678) 910-8466</span>
+                  <span className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs xl:text-sm text-gray-900">1 (678) 910-8466</span>
                 </div>
               </div>
             </div>
