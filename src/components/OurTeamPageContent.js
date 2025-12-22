@@ -31,8 +31,19 @@ export default function OurTeamPageContent() {
         </div>
       </section>
 
+      {/* Meet Our Team Introduction Section */}
+      <section className="bg-white pt-12 sm:pt-16 md:pt-20 pb-8 sm:pb-12 md:pb-16 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto">
+          <ScrollAnimation animation="fade-up">
+            <p className="text-base sm:text-lg md:text-xl text-gray-900 leading-relaxed text-left">
+              At Quality Care Senior Living, our team is the foundation of the care we provide. Our dedicated professionals are committed to delivering compassionate, respectful, and personalized care in a safe and supportive environment where every resident feels at home.
+            </p>
+          </ScrollAnimation>
+        </div>
+      </section>
+
       {/* Team Member Section */}
-      <section className="bg-white py-8 sm:py-12 md:py-16 px-4 sm:px-6 relative overflow-hidden">
+      <section className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 relative overflow-hidden">
         {/* Decorative leaves background */}
         <div className="absolute top-10 right-10 opacity-20">
           <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
@@ -45,6 +56,18 @@ export default function OurTeamPageContent() {
         </div>
 
         <div className="max-w-7xl mx-auto relative">
+          {/* Meet Our Team Heading */}
+          <ScrollAnimation animation="fade-up">
+            <div className="text-center mb-12 sm:mb-16 md:mb-20">
+              <h2
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 uppercase"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                MEET OUR TEAM
+              </h2>
+            </div>
+          </ScrollAnimation>
+
           <div className="bg-white rounded-2xl sm:rounded-3xl border-2 border-[#887904] overflow-hidden flex flex-col lg:flex-row items-stretch relative">
             {/* Right - Image (Mobile First) */}
             <div className="relative w-full h-80 sm:h-96 lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-[50%] lg:h-auto lg:rounded-r-3xl overflow-hidden order-1 lg:order-2">
