@@ -164,15 +164,15 @@ export default function Navbar() {
           </div>
 
           {/* Center Logo with Circle Background */}
-          <div className="absolute left-1/2 -translate-x-1/2 -bottom-8 sm:-bottom-16 z-10">
+          <div className="absolute left-1/2 -translate-x-1/2 -bottom-6 sm:-bottom-10 md:-bottom-12 z-50">
             <Link href="/" className="block">
-              <div className="bg-white rounded-full p-3 sm:p-5 border-2 sm:border-4 border-white shadow-lg">
+              <div className="bg-white rounded-full p-2 sm:p-3 md:p-4 border-2 sm:border-3 border-white shadow-lg">
                 <Image
                   src="/logo.png"
                   alt="Quality Care Senior Living"
                   width={110}
                   height={110}
-                  className="object-contain w-[60px] h-[60px] sm:w-[110px] sm:h-[110px]"
+                  className="object-contain w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] md:w-[90px] md:h-[90px] lg:w-[110px] lg:h-[110px]"
                   priority
                   quality={100}
                 />
