@@ -18,9 +18,9 @@ export const metadata = {
   description:
     "Professional, compassionate personal care in a peaceful residential setting where every resident is truly treated like family.",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
   },
 };
 
