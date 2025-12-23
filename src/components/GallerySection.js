@@ -14,12 +14,12 @@ export default function GallerySection() {
   ];
 
   return (
-    <section className="bg-white py-8 sm:py-10 md:py-12 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-white py-6 sm:py-8 md:py-10 px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-6 sm:mb-8 md:mb-10">
+        <div className="text-center mb-5 sm:mb-6 md:mb-8">
           <h3
-            className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4 uppercase"
+            className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3 uppercase"
             style={{
               fontFamily: "'Playfair Display', serif",
               color: "#887904",
@@ -29,7 +29,7 @@ export default function GallerySection() {
             Our Gallery
           </h3>
           <h2
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight px-4"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 leading-tight px-4"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             See Where Comfort and Care Meet

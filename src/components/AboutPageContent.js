@@ -22,7 +22,7 @@ export default function AboutPageContent() {
         {/* Hero Title */}
         <div className="relative z-10 text-center px-4 mt-10">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 uppercase"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 uppercase"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             About Us
@@ -39,7 +39,7 @@ export default function AboutPageContent() {
             <ScrollAnimation animation="fade-right">
               <div>
                 <h3
-                  className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3 uppercase"
+                  className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3 uppercase"
                   style={{
                     fontFamily: "'Playfair Display', serif",
                     color: "#887904",
@@ -49,21 +49,21 @@ export default function AboutPageContent() {
                   Our Mission
                 </h3>
                 <h2
-                  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6"
+                  className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4 sm:mb-6"
                   style={{ fontFamily: "var(--font-recoleta)" }}
                 >
                   Connecting Care With Compassion
                 </h2>
 
-                <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
+                <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                   At Quality Care Senior Living, our mission is simple:
                 </p>
 
-                <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
+                <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                   to provide compassionate, personalized care in a comfortable home where seniors feel safe, respected, and truly cared for.
                 </p>
 
-                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+                <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                   We believe every resident deserves dignity, love, and a peaceful environment they can call home.
                 </p>
               </div>
@@ -83,14 +83,14 @@ export default function AboutPageContent() {
               </div>
 
               {/* 25+ Years Badge */}
-              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-[#887904] text-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-xl">
+              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-[#887904] text-white rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl">
                 <div
-                  className="text-3xl sm:text-4xl md:text-5xl font-bold leading-none mb-1 sm:mb-2"
+                  className="text-2xl sm:text-3xl md:text-4xl font-bold leading-none mb-1 sm:mb-2"
                   style={{ fontFamily: "var(--font-recoleta)" }}
                 >
                   25+
                 </div>
-                <div className="text-xs sm:text-sm font-medium uppercase">
+                <div className="text-[10px] sm:text-xs font-medium uppercase">
                   Years Experience
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function AboutPageContent() {
             <ScrollAnimation animation="fade-left">
               <div className="order-1 lg:order-2">
               <h3
-                className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3 uppercase"
+                className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3 uppercase"
                 style={{
                   fontFamily: "'Playfair Display', serif",
                   color: "#887904",
@@ -133,7 +133,7 @@ export default function AboutPageContent() {
                 About Us
               </h3>
               <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6"
+                className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4 sm:mb-6"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 Who We Are
@@ -144,7 +144,7 @@ export default function AboutPageContent() {
               </p>
 
               <p
-                className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 italic"
+                className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 italic"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 This isn&apos;t just a facility — it&apos;s a home.
@@ -162,7 +162,7 @@ export default function AboutPageContent() {
           <ScrollAnimation animation="fade-down">
             <div className="text-center mb-8 sm:mb-12">
               <h3
-                className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3 uppercase"
+                className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3 uppercase"
                 style={{
                   fontFamily: "'Playfair Display', serif",
                   color: "#887904",
@@ -172,7 +172,7 @@ export default function AboutPageContent() {
                 Why Choose Us
               </h3>
               <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900"
+                className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 Why Families Choose Us

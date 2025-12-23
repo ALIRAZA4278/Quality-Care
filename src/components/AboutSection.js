@@ -48,12 +48,12 @@ export default function AboutSection() {
   }, [hasAnimated]);
 
   return (
-    <section className="bg-[#f8f6f3] py-12 sm:py-16 md:py-24 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+    <section className="bg-[#f8f6f3] py-8 sm:py-12 md:py-16 px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 items-center">
           {/* Left Side - Images */}
           <ScrollAnimation animation="fade-left">
-          <div className="relative w-full aspect-[3/2.5] max-w-[500px] sm:max-w-[600px] mx-auto lg:mx-0">
+          <div className="relative w-full aspect-[3/2.5] max-w-[350px] sm:max-w-[420px] mx-auto lg:mx-0">
             {/* Dark Green Background Box - Top Left */}
 
             {/* Main Large Image - Taller and bigger */}
@@ -67,25 +67,25 @@ export default function AboutSection() {
 
             </div>
              {/* Logo Badge */}
-              <div className="absolute top-1 sm:top-2 right-6 sm:right-10 bg-white rounded-full p-2 sm:p-4 shadow-xl hover:shadow-2xl hover:shadow-[#887904]/40 hover:scale-110 hover:rotate-6 transition-all duration-300 cursor-pointer group">
+              <div className="absolute top-1 sm:top-2 right-6 sm:right-10 bg-white rounded-full p-2 sm:p-2.5 shadow-lg hover:shadow-xl hover:shadow-[#887904]/40 hover:scale-105 hover:rotate-6 transition-all duration-300 cursor-pointer group">
                 <Image
                   src="/logo.png"
                   alt="Quality Care Logo"
-                  width={60}
-                  height={60}
-                  className="object-contain sm:w-[85px] sm:h-[85px] group-hover:rotate-[-6deg] transition-transform duration-300"
+                  width={40}
+                  height={40}
+                  className="object-contain sm:w-[50px] sm:h-[50px] group-hover:rotate-[-6deg] transition-transform duration-300"
                 />
               </div>
 
             {/* Years of Experience Text - Bottom Left, overlapping */}
             <div ref={countRef} className="absolute flex flex-col items-center -bottom-[12%] sm:-bottom-[5%] left-[8%] sm:left-[10%] z-10  hover:scale-105 transition-all duration-300 cursor-pointer">
               <div
-                className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-none mb-1"
+                className="text-2xl sm:text-3xl font-bold text-gray-900 leading-none mb-1"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 {count}+
               </div>
-              <div className="text-xs sm:text-sm font-medium text-gray-900 text-center">
+              <div className="text-[10px] sm:text-xs font-medium text-gray-900 text-center">
                 Years Of Experiences
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function AboutSection() {
           <div className="lg:pl-8 mt-8 lg:mt-0">
             {/* About Us Label */}
             <h3
-              className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4 uppercase"
+              className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3 uppercase"
               style={{
                 fontFamily: "'Playfair Display', serif",
                 color: "#887904",
@@ -119,14 +119,14 @@ export default function AboutSection() {
 
             {/* Main Heading */}
             <h2
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 sm:mb-6 leading-tight"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight"
               style={{ fontFamily: "var(--font-recoleta)" }}
             >
               Our Promise to Your Loved One
             </h2>
 
             {/* Description */}
-            <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-5 sm:mb-6 leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-5 sm:mb-6 leading-relaxed">
               Quality Care Senior Living is a small, family-centered personal
               care home in Decatur where seniors receive the attention, dignity,
               and comfort they deserve. With only a few residents at a time, we
@@ -209,21 +209,21 @@ export default function AboutSection() {
             {/* Learn More Button */}
             <Link
               href="/about"
-              className="bg-black text-white pl-6 sm:pl-8 pr-2 py-2.5 sm:py-3 rounded-full font-medium hover:bg-[#887904] hover:scale-110 hover:shadow-2xl hover:shadow-[#887904]/40 active:scale-95 inline-flex items-center gap-3 sm:gap-4 transition-all duration-300 text-sm sm:text-[15px] shadow-xl group"
+              className="bg-black text-white pl-5 sm:pl-6 pr-1.5 py-2 sm:py-2.5 rounded-full font-medium hover:bg-[#887904] hover:scale-105 hover:shadow-xl hover:shadow-[#887904]/40 active:scale-95 inline-flex items-center gap-2 sm:gap-3 transition-all duration-300 text-xs sm:text-sm shadow-lg group"
             >
               LEARN MORE
-              <div className="bg-white rounded-full p-2 sm:p-3 flex items-center justify-center transition-all duration-300 shadow-md">
+              <div className="bg-white rounded-full p-2 sm:p-2.5 flex items-center justify-center transition-all duration-300 shadow-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
+                  width="14"
+                  height="14"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#1a1a1a"
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="sm:w-5 sm:h-5 drop-shadow-md"
+                  className="sm:w-4 sm:h-4 drop-shadow-md"
                 >
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>

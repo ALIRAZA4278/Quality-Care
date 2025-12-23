@@ -57,13 +57,13 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="bg-[#F9F9F9] py-8 sm:py-10 md:py-12 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-[#F9F9F9] py-6 sm:py-8 md:py-10 px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <ScrollAnimation animation="fade-down">
-        <div className="text-center mb-8 sm:mb-10 md:mb-12">
+        <div className="text-center mb-6 sm:mb-8 md:mb-10">
           <h3
-            className="text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4 uppercase"
+            className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3 uppercase"
             style={{
               fontFamily: "'Playfair Display', serif",
               color: "#887904",
@@ -73,7 +73,7 @@ export default function ServicesSection() {
             Our Services
           </h3>
           <h2
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight"
+            className="text-base sm:text-lg md:text-xl font-bold text-gray-900 leading-tight"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Supporting Every Day, Every Way
@@ -83,19 +83,19 @@ export default function ServicesSection() {
         </ScrollAnimation>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mb-6 sm:mb-8">
           {services.map((service, index) => (
             <ScrollAnimation animation="fade-up" delay={index * 0.1} key={service.id}>
             <div
               key={service.id}
-              className="bg-white rounded-[32px] p-3 relative flex flex-col h-full shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] group animate-fade-in"
+              className="bg-white rounded-2xl p-2 relative flex flex-col h-full shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:scale-[1.01] group animate-fade-in"
               style={{
                 animationDelay: `${index * 0.1}s`,
                 opacity: 0,
               }}
             >
               {/* Image Container with padding and rounded */}
-              <div className="relative h-65 sm:h-70 overflow-hidden rounded-[16px] mb-2">
+              <div className="relative h-40 sm:h-44 overflow-hidden rounded-xl mb-2">
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -106,9 +106,9 @@ export default function ServicesSection() {
               </div>
 
               {/* Icon Badge - Overlapping between image and text */}
-              <div className="flex justify-center -mt-10 mb-6 relative z-10">
-                <div className="bg-white rounded-full p-4 shadow-xl group-hover:shadow-2xl group-hover:shadow-[#887904]/30 group-hover:scale-125 group-hover:-translate-y-2 transition-all duration-500">
-                  <div className="relative w-8 h-8 sm:w-10 sm:h-10">
+              <div className="flex justify-center -mt-7 mb-4 relative z-10">
+                <div className="bg-white rounded-full p-3 shadow-lg group-hover:shadow-xl group-hover:shadow-[#887904]/30 group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-500">
+                  <div className="relative w-6 h-6 sm:w-8 sm:h-8">
                     <Image
                       src={service.icon}
                       alt={`${service.title} icon`}
@@ -120,14 +120,14 @@ export default function ServicesSection() {
               </div>
 
               {/* Content */}
-              <div className="text-center px-2 flex flex-col flex-grow pb-4">
+              <div className="text-center px-2 flex flex-col flex-grow pb-3">
                 <h3
-                  className="text-xl sm:text-2xl font-extrabold text-gray-900 mb-4 leading-tight"
+                  className="text-base sm:text-lg font-bold text-gray-900 mb-3 leading-tight"
                   style={{ fontFamily: "var(--font-recoleta)" }}
                 >
                   {service.title}
                 </h3>
-                <p className="text-sm sm:text-lg text-gray-700 leading-relaxed flex-grow">
+                <p className="text-xs sm:text-sm text-gray-700 leading-relaxed flex-grow">
                   {service.description}
                 </p>
               </div>
@@ -141,14 +141,14 @@ export default function ServicesSection() {
         <div className="text-center">
           <Link
             href="/services"
-            className="bg-[#1a1a1a] text-white pl-8 pr-2 py-3 rounded-full font-medium hover:bg-[#887904] hover:scale-110 hover:shadow-2xl hover:shadow-[#887904]/40 active:scale-95 inline-flex items-center gap-4 transition-all duration-300 text-[15px] shadow-xl group"
+            className="bg-[#1a1a1a] text-white pl-5 sm:pl-6 pr-1.5 py-2 sm:py-2.5 rounded-full font-medium hover:bg-[#887904] hover:scale-105 hover:shadow-xl hover:shadow-[#887904]/40 active:scale-95 inline-flex items-center gap-2 sm:gap-3 transition-all duration-300 text-xs sm:text-sm shadow-lg group"
           >
             VIEW ALL SERVICES
-            <div className="bg-white rounded-full p-3 flex items-center justify-center transition-all duration-300 shadow-md">
+            <div className="bg-white rounded-full p-2 sm:p-2.5 flex items-center justify-center transition-all duration-300 shadow-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
+                width="14"
+                height="14"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="#1a1a1a"

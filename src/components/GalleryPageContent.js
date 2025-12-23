@@ -22,7 +22,7 @@ export default function GalleryPageContent() {
         {/* Hero Title */}
         <div className="relative z-10 text-center px-4 mt-10">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 uppercase"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 uppercase"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Gallery
@@ -37,7 +37,7 @@ export default function GalleryPageContent() {
           <div className="max-w-7xl mx-auto text-center">
             
             <h2
-              className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 sm:mb-6"
+              className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
               style={{ fontFamily: "var(--font-recoleta)" }}
             >
               A warm look into our home
@@ -68,7 +68,7 @@ export default function GalleryPageContent() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[1, 2, 3, 4, 5, 6].map((num, index) => (
               <ScrollAnimation key={num} animation="fade-up" delay={index * 0.1}>
-                <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
+                <div className="relative h-[180px] sm:h-[220px] md:h-[260px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
                   <Image
                     src={`/gallery/${num}.png`}
                     alt={`Bedroom ${num}`}
@@ -104,7 +104,7 @@ export default function GalleryPageContent() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[7, 8, 9].map((num, index) => (
               <ScrollAnimation key={num} animation="zoom" delay={index * 0.1}>
-                <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
+                <div className="relative h-[180px] sm:h-[220px] md:h-[260px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
                   <Image
                     src={`/gallery/${num}.png`}
                     alt={`Living room ${num - 6}`}
@@ -140,7 +140,7 @@ export default function GalleryPageContent() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[10, 11, 12].map((num, index) => (
               <ScrollAnimation key={num} animation="fade-up" delay={index * 0.1}>
-                <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
+                <div className="relative h-[180px] sm:h-[220px] md:h-[260px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
                   <Image
                     src={`/gallery/${num}.png`}
                     alt={`Dining area ${num - 9}`}
@@ -176,7 +176,7 @@ export default function GalleryPageContent() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[13, 14, 15].map((num, index) => (
               <ScrollAnimation key={num} animation="zoom" delay={index * 0.1}>
-                <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
+                <div className="relative h-[180px] sm:h-[220px] md:h-[260px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
                   <Image
                     src={`/gallery/${num}.png`}
                     alt={`Kitchen ${num - 12}`}
@@ -212,7 +212,7 @@ export default function GalleryPageContent() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[16, 17, 18, 19, 20, 21].map((num, index) => (
               <ScrollAnimation key={num} animation="fade-up" delay={(index % 3) * 0.1}>
-                <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
+                <div className="relative h-[180px] sm:h-[220px] md:h-[260px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
                   <Image
                     src={`/gallery/${num}.png`}
                     alt={`Bathroom ${num - 15}`}
@@ -248,7 +248,7 @@ export default function GalleryPageContent() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[22, 23, 24, 25, 26, 27].map((num, index) => (
               <ScrollAnimation key={num} animation="zoom" delay={(index % 3) * 0.1}>
-                <div className="relative h-[200px] sm:h-[250px] md:h-[300px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
+                <div className="relative h-[180px] sm:h-[220px] md:h-[260px] rounded-lg sm:rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-[#887904]/30 transition-all duration-500">
                   <Image
                     src={`/gallery/${num}.png`}
                     alt={`Outdoor space ${num - 21}`}

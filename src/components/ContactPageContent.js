@@ -22,7 +22,7 @@ export default function ContactPageContent() {
         {/* Hero Title */}
         <div className="relative z-10 text-center px-4 mt-10">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 uppercase"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 uppercase"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Contact Us
@@ -128,7 +128,7 @@ export default function ContactPageContent() {
             {/* Right - Form */}
             <div className="order-1 lg:order-2">
               <h3
-                className="text-3xl sm:text-4xl md:text-[45px] mb-2 sm:mb-3 uppercase"
+                className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3 uppercase"
                 style={{
                   fontFamily: "'Playfair Display', serif",
                   color: "#887904",
@@ -138,7 +138,7 @@ export default function ContactPageContent() {
                 Send us a message
               </h3>
               <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6"
+                className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4 sm:mb-6"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 Get In Touch

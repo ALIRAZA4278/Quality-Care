@@ -34,13 +34,13 @@ export default function CaregiversSection() {
         {/* Section Header */}
         <div className="mb-12 sm:mb-16">
           <h2
-            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4"
+            className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Caregivers
           </h2>
           <div className="w-24 h-1 bg-[#887904] mb-6"></div>
-          <p className="text-base sm:text-lg text-gray-700 max-w-4xl leading-relaxed">
+          <p className="text-sm sm:text-base text-gray-700 max-w-4xl leading-relaxed">
             Our trained caregivers are committed to providing patient, respectful, and attentive assistance every day. Each team member brings warmth, professionalism, and genuine love for seniors.
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function CaregiversSection() {
           {caregivers.map((caregiver) => (
             <div key={caregiver.id} className="text-center">
               {/* Circular Image with Light Background */}
-              <div className="relative w-48 h-48 sm:w-56 sm:h-56 mx-auto mb-6">
+              <div className="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-6">
                 <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-gray-50 rounded-full"></div>
                 <div className="relative w-full h-full rounded-full overflow-hidden">
                   <Image
@@ -64,7 +64,7 @@ export default function CaregiversSection() {
 
               {/* Name and Occupation */}
               <h3
-                className="text-xl sm:text-2xl font-extrabold text-gray-900 mb-2 italic"
+                className="text-lg sm:text-xl font-extrabold text-gray-900 mb-2 italic"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 {caregiver.name}

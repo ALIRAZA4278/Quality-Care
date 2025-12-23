@@ -22,7 +22,7 @@ export default function AmenitiesPageContent() {
         {/* Hero Title */}
         <div className="relative z-10 text-center px-4 mt-10">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 uppercase"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 uppercase"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Amenities
@@ -32,56 +32,56 @@ export default function AmenitiesPageContent() {
       </section>
 
       {/* A Comfortable Home Environment Section */}
-      <section className="bg-white py-8 sm:py-12 md:py-16 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-white py-6 sm:py-10 md:py-12 px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-8 sm:mb-12">
+          <div className="text-center mb-6 sm:mb-8">
            
             <h2
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 px-4"
+              className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-3 sm:mb-4 px-4"
               style={{ fontFamily: "var(--font-recoleta)" }}
             >
               A Comfortable Home Environment
             </h2>
-            <div className="w-20 sm:w-24 md:w-28 h-1 bg-[#887904] mx-auto mb-6 sm:mb-8"></div>
-            <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed px-4">
+            <div className="w-16 sm:w-20 md:w-24 h-1 bg-[#887904] mx-auto mb-4 sm:mb-6"></div>
+            <p className="text-gray-700 text-xs sm:text-sm md:text-base max-w-3xl mx-auto leading-relaxed px-4">
               We offer a safe, peaceful personal care home setting designed to make residents feel
               comfortable and cared for.
             </p>
           </div>
 
           {/* Three Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12 md:mt-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mt-6 sm:mt-8">
             {/* Card 1 - Home Features */}
-            <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]">
-              <div className="relative h-48 sm:h-56 md:h-64">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:scale-[1.01] flex flex-col h-full">
+              <div className="relative h-40 sm:h-44">
                 <Image
                   src="/amenities/1.png"
                   alt="Home Features"
                   fill
                   className="object-cover"
                 />
-                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-white rounded-full p-2 sm:p-3 shadow-md">
+                <div className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-white rounded-full p-2 shadow-md">
                   <Image
                     src="/amenities/icon1.png"
                     alt="Home Icon"
-                    width={20}
-                    height={20}
-                    className="object-contain sm:w-6 sm:h-6"
+                    width={16}
+                    height={16}
+                    className="object-contain sm:w-5 sm:h-5"
                   />
                 </div>
               </div>
-              <div className="p-4 sm:p-6">
+              <div className="p-3 sm:p-4 flex flex-col flex-grow">
                 <h3
-                  className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4"
+                  className="text-sm sm:text-base font-bold text-gray-900 mb-3 sm:mb-4"
                   style={{ fontFamily: "var(--font-recoleta)" }}
                 >
                   Home Features
                 </h3>
-                <ul className="space-y-2 sm:space-y-3 text-gray-700 text-sm sm:text-base">
-                  <li className="flex items-start gap-2 sm:gap-3">
+                <ul className="space-y-1.5 sm:space-y-2 text-gray-700 text-xs sm:text-sm">
+                  <li className="flex items-start gap-2">
                     <svg
-                      className="w-4 h-4 sm:w-5 sm:h-5 text-[#887904] mt-0.5 flex-shrink-0"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#887904] mt-0.5 flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -154,35 +154,35 @@ export default function AmenitiesPageContent() {
             </div>
 
             {/* Card 2 - Care Environment */}
-            <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]">
-              <div className="relative h-64">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:scale-[1.01] flex flex-col h-full">
+              <div className="relative h-40 sm:h-44">
                 <Image
                   src="/amenities/2.png"
                   alt="Care Environment"
                   fill
                   className="object-cover"
                 />
-                <div className="absolute top-4 left-4 bg-white rounded-full p-3 shadow-md">
+                <div className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-white rounded-full p-2 shadow-md">
                   <Image
                     src="/amenities/icon2.png"
                     alt="Care Icon"
-                    width={24}
-                    height={24}
-                    className="object-contain"
+                    width={16}
+                    height={16}
+                    className="object-contain sm:w-5 sm:h-5"
                   />
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-3 sm:p-4 flex flex-col flex-grow">
                 <h3
-                  className="text-xl sm:text-2xl font-bold text-gray-900 mb-4"
+                  className="text-sm sm:text-base font-bold text-gray-900 mb-3 sm:mb-4"
                   style={{ fontFamily: "var(--font-recoleta)" }}
                 >
                   Care Environment
                 </h3>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start gap-3">
+                <ul className="space-y-1.5 sm:space-y-2 text-gray-700 text-xs sm:text-sm">
+                  <li className="flex items-start gap-2">
                     <svg
-                      className="w-5 h-5 text-[#887904] mt-0.5 flex-shrink-0"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#887904] mt-0.5 flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -194,9 +194,9 @@ export default function AmenitiesPageContent() {
                     </svg>
                     <span>24/7 supervision</span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-2">
                     <svg
-                      className="w-5 h-5 text-[#887904] mt-0.5 flex-shrink-0"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#887904] mt-0.5 flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -208,9 +208,9 @@ export default function AmenitiesPageContent() {
                     </svg>
                     <span>Assistance with all daily needs</span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-2">
                     <svg
-                      className="w-5 h-5 text-[#887904] mt-0.5 flex-shrink-0"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#887904] mt-0.5 flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -222,9 +222,9 @@ export default function AmenitiesPageContent() {
                     </svg>
                     <span>Emotional and social support</span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-2">
                     <svg
-                      className="w-5 h-5 text-[#887904] mt-0.5 flex-shrink-0"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#887904] mt-0.5 flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -241,35 +241,35 @@ export default function AmenitiesPageContent() {
             </div>
 
             {/* Card 3 - Resident Experience */}
-            <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] sm:col-span-2 lg:col-span-1">
-              <div className="relative h-64">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:scale-[1.01] sm:col-span-2 lg:col-span-1 flex flex-col h-full">
+              <div className="relative h-40 sm:h-44">
                 <Image
                   src="/amenities/3.png"
                   alt="Resident Experience"
                   fill
                   className="object-cover"
                 />
-                <div className="absolute top-4 left-4 bg-white rounded-full p-3 shadow-md">
+                <div className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-white rounded-full p-2 shadow-md">
                   <Image
                     src="/amenities/icon3.png"
                     alt="Resident Icon"
-                    width={24}
-                    height={24}
-                    className="object-contain"
+                    width={16}
+                    height={16}
+                    className="object-contain sm:w-5 sm:h-5"
                   />
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-3 sm:p-4 flex flex-col flex-grow">
                 <h3
-                  className="text-xl sm:text-2xl font-bold text-gray-900 mb-4"
+                  className="text-sm sm:text-base font-bold text-gray-900 mb-3 sm:mb-4"
                   style={{ fontFamily: "var(--font-recoleta)" }}
                 >
                   Resident Experience
                 </h3>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-start gap-3">
+                <ul className="space-y-1.5 sm:space-y-2 text-gray-700 text-xs sm:text-sm">
+                  <li className="flex items-start gap-2">
                     <svg
-                      className="w-5 h-5 text-[#887904] mt-0.5 flex-shrink-0"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#887904] mt-0.5 flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -281,9 +281,9 @@ export default function AmenitiesPageContent() {
                     </svg>
                     <span>Home-cooked meals</span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-2">
                     <svg
-                      className="w-5 h-5 text-[#887904] mt-0.5 flex-shrink-0"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#887904] mt-0.5 flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -295,9 +295,9 @@ export default function AmenitiesPageContent() {
                     </svg>
                     <span>Daily routines</span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-2">
                     <svg
-                      className="w-5 h-5 text-[#887904] mt-0.5 flex-shrink-0"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#887904] mt-0.5 flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -309,9 +309,9 @@ export default function AmenitiesPageContent() {
                     </svg>
                     <span>Activities and engagement</span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-2">
                     <svg
-                      className="w-5 h-5 text-[#887904] mt-0.5 flex-shrink-0"
+                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#887904] mt-0.5 flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -365,13 +365,13 @@ export default function AmenitiesPageContent() {
             {/* Right Side - Content */}
             <div className="order-1 lg:order-2 lg:pt-8">
               <p
-                className="text-[#887904] text-3xl sm:text-4xl md:text-[45px] mb-3 sm:mb-4 uppercase"
+                className="text-[#887904] text-base sm:text-lg md:text-xl mb-2 sm:mb-3 uppercase"
                 style={{ fontFamily: "'Playfair Display', serif", fontWeight: "700" }}
               >
                 About Us
               </p>
               <h2
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6"
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 sm:mb-6"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 Floor Plan Layout

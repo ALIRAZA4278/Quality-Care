@@ -22,7 +22,7 @@ export default function OurTeamPageContent() {
         {/* Hero Title */}
         <div className="relative z-10 text-center px-4 mt-10">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 uppercase"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 uppercase"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Our Team
@@ -35,7 +35,7 @@ export default function OurTeamPageContent() {
       <section className="bg-white pt-8 sm:pt-12 md:pt-16 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <ScrollAnimation animation="fade-up">
-            <p className="text-sm sm:text-base md:text-lg text-gray-900 leading-relaxed text-left">
+            <p className="text-xs sm:text-sm md:text-base text-gray-900 leading-relaxed text-left">
               At Quality Care Senior Living, our team is the foundation of the care we provide. Our dedicated professionals are committed to delivering compassionate, respectful, and personalized care in a safe and supportive environment where every resident feels at home.
             </p>
           </ScrollAnimation>
@@ -70,7 +70,7 @@ export default function OurTeamPageContent() {
           <ScrollAnimation animation="fade-up">
             <div className="text-center mb-8 sm:mb-12 md:mb-16">
               <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 uppercase"
+                className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-gray-900 uppercase"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 MEET OUR TEAM
@@ -93,19 +93,19 @@ export default function OurTeamPageContent() {
             {/* Text Content - Left Side */}
             <div className="w-full lg:w-1/2 p-6 sm:p-8 md:p-2 lg:p-4 xl:p-6 flex flex-col justify-center order-2 lg:order-1">
               <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-2 italic"
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 italic"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 Shunkelia Johnson
               </h2>
               <p
-                className="text-sm sm:text-base md:text-lg lg:text-base xl:text-lg mb-6 font-semibold"
+                className="text-xs sm:text-sm md:text-base mb-6 font-semibold"
                 style={{ color: "#887904" }}
               >
                 Founder & Administrator of Quality Care Senior Living
               </p>
 
-              <div className="space-y-4 text-xs sm:text-sm md:text-base lg:text-sm xl:text-base text-gray-700 leading-relaxed mb-8">
+              <div className="space-y-4 text-[11px] sm:text-xs md:text-sm text-gray-700 leading-relaxed mb-8">
                 <p>
                   I&apos;m Shunkelia Johnson-England, the Founder and Chief Administrative Officer of Quality Care Senior Living and a Licensed Assisted Living Community Administrator with 18 years of experience in the senior living industry. I began my career as a Certified Nursing Assistant and have since explored various roles throughout the Assisted Living sector. My specialty lies in Human Aging and Development Services, where I attended Georgia Gwinnett College to deepen my knowledge and passion for this field.
                 </p>
@@ -123,42 +123,44 @@ export default function OurTeamPageContent() {
               {/* Contact Info */}
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-3">
-                  <div className="bg-[#887904] rounded-lg p-2.5">
+                  <div className="bg-[#887904] rounded-lg p-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
+                      width="16"
+                      height="16"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="white"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
+                      className="sm:w-5 sm:h-5"
                     >
                       <rect x="2" y="4" width="20" height="16" rx="2" />
                       <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                     </svg>
                   </div>
-                  <span className="text-sm sm:text-base md:text-lg text-gray-900 font-medium">1 (678) 910-8466</span>
+                  <span className="text-xs sm:text-sm md:text-base text-gray-900 font-medium">1 (678) 910-8466</span>
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <div className="bg-[#887904] rounded-lg p-2.5">
+                  <div className="bg-[#887904] rounded-lg p-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
+                      width="16"
+                      height="16"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="white"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
+                      className="sm:w-5 sm:h-5"
                     >
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                     </svg>
                   </div>
-                  <span className="text-sm sm:text-base md:text-lg text-gray-900 font-medium">1 (678) 910-8466</span>
+                  <span className="text-xs sm:text-sm md:text-base text-gray-900 font-medium">1 (678) 910-8466</span>
                 </div>
               </div>
             </div>

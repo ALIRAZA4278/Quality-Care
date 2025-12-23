@@ -33,7 +33,7 @@ export default function PrivacyPageContent() {
         {/* Hero Title */} 
         <div className="relative z-10 text-center px-4 mt-10">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 uppercase"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 uppercase"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Privacy & Policy
@@ -81,12 +81,12 @@ export default function PrivacyPageContent() {
               {activeSection === "introduction" && (
                 <div>
                   <h2
-                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
+                    className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-4 sm:mb-6"
                     style={{ fontFamily: "var(--font-recoleta)" }}
                   >
                     Introduction & Scope
                   </h2>
-                  <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+                  <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                     <p>
                       At Quality Care, we recognize that the privacy of your personal information, especially when it concerns health and senior living, is a matter of profound importance and trust. This Privacy Policy is designed to provide you with a comprehensive understanding of how we collect, process, manage, and safeguard the data of our seniors, their family members, and legal representatives through our digital platforms, including our website, mobile applications, and other communication portals.
                     </p>
@@ -106,12 +106,12 @@ export default function PrivacyPageContent() {
               {activeSection === "information" && (
                 <div>
                   <h2
-                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
+                    className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-4 sm:mb-6"
                     style={{ fontFamily: "var(--font-recoleta)" }}
                   >
                     Information We Collect
                   </h2>
-                  <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+                  <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                     <p>
                       We collect various types of information to provide and improve our services. This includes personal identification information such as names, contact details, and demographic information. We also collect health-related information when necessary to provide appropriate care services.
                     </p>
@@ -125,12 +125,12 @@ export default function PrivacyPageContent() {
               {activeSection === "usage" && (
                 <div>
                   <h2
-                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
+                    className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-4 sm:mb-6"
                     style={{ fontFamily: "var(--font-recoleta)" }}
                   >
                     How We Use Data
                   </h2>
-                  <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+                  <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                     <p>
                       The information we collect is used primarily to provide high-quality care services to our residents. We use your data to coordinate care plans, communicate with family members, and ensure the safety and well-being of all residents.
                     </p>
@@ -144,12 +144,12 @@ export default function PrivacyPageContent() {
               {activeSection === "hipaa" && (
                 <div>
                   <h2
-                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
+                    className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-4 sm:mb-6"
                     style={{ fontFamily: "var(--font-recoleta)" }}
                   >
                     HIPAA & Security Protocols
                   </h2>
-                  <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+                  <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                     <p>
                       Quality Care is committed to maintaining the highest standards of data security and complying with HIPAA regulations. We implement comprehensive security measures including encryption, secure data storage, and restricted access to protected health information.
                     </p>
@@ -163,12 +163,12 @@ export default function PrivacyPageContent() {
               {activeSection === "data-sharing" && (
                 <div>
                   <h2
-                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
+                    className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-4 sm:mb-6"
                     style={{ fontFamily: "var(--font-recoleta)" }}
                   >
                     Data Sharing & Third Parties
                   </h2>
-                  <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+                  <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                     <p>
                       We do not sell, rent, or trade your personal information to third parties for marketing purposes. We only share information when necessary to provide our services, comply with legal obligations, or with your explicit consent.
                     </p>

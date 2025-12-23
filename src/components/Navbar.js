@@ -166,7 +166,7 @@ export default function Navbar() {
           {/* Center Logo with Circle Background */}
           <div className="absolute left-1/2 -translate-x-1/2 -bottom-6 sm:-bottom-8 md:-bottom-10 z-50">
             <Link href="/" className="block">
-              <div className="bg-white rounded-full p-2 sm:p-2.5 md:p-3 border-2 border-white shadow-lg">
+              <div className="bg-white rounded-full p-2 sm:p-2.5 md:p-3 border-2 border-white ">
                 <Image
                   src="/logo.png"
                   alt="Quality Care Senior Living"
@@ -205,22 +205,22 @@ export default function Navbar() {
             </Link>
             <button
               onClick={() => setIsTourModalOpen(true)}
-              className="bg-[#1a1a1a] text-white pl-6 xl:pl-8 pr-2 py-2 xl:py-2.5 rounded-l-full rounded-r-full font-medium hover:bg-[#887904] hover:scale-105 active:scale-95 flex items-center gap-3 xl:gap-4 transition-all duration-300 text-[13px] xl:text-[15px] whitespace-nowrap shadow-lg hover:shadow-xl group"
+              className="bg-[#1a1a1a] text-white pl-4 xl:pl-5 pr-1.5 py-1.5 xl:py-2 rounded-l-full rounded-r-full font-medium hover:bg-[#887904] hover:scale-105 active:scale-95 flex items-center gap-2 xl:gap-2.5 transition-all duration-300 text-[11px] xl:text-[13px] whitespace-nowrap shadow-lg hover:shadow-xl group"
               style={{ borderRadius: "50px 50px 50px 50px" }}
             >
               BOOK A TOUR
-              <div className="bg-white rounded-full p-2 xl:p-3 flex items-center justify-center transition-all duration-300 shadow-md">
+              <div className="bg-white rounded-full p-1.5 xl:p-2 flex items-center justify-center transition-all duration-300 shadow-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
+                  width="14"
+                  height="14"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#1a1a1a"
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="drop-shadow-md xl:w-5 xl:h-5"
+                  className="drop-shadow-md xl:w-4 xl:h-4"
                 >
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>

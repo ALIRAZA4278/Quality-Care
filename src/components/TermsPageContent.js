@@ -22,7 +22,7 @@ export default function TermsPageContent() {
         {/* Hero Title */}
         <div className="relative z-10 text-center px-4 mt-10">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 uppercase"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 uppercase"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
             Terms of Use
@@ -47,12 +47,12 @@ export default function TermsPageContent() {
             {/* 1. Acceptance of Terms */}
             <div>
               <h2
-                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 1. Acceptance of Terms
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-3 sm:mb-4">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                 Welcome to Quality Care. By accessing our website, you agree to be bound by these Terms of Use and our Privacy Policy. If you are using this site on behalf of a senior or family member, you represent that you have the authority to bind them to these terms.
               </p>
             </div>
@@ -60,15 +60,15 @@ export default function TermsPageContent() {
             {/* 2. Medical Disclaimer */}
             <div>
               <h2
-                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 2. MEDICAL DISCLAIMER <span className="text-[#887904]">(IMPORTANT)</span>
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-3 sm:mb-4">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                 The content on the Quality Care website is for informational purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment:
               </p>
-              <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-sm sm:text-base md:text-lg text-gray-700">
+              <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-xs sm:text-sm md:text-base text-gray-700">
                 <li>Always seek the advice of a physician or other qualified health provider with any questions regarding a medical condition.</li>
                 <li>If you think you may have a medical emergency, call 911 or your local emergency services immediately.</li>
               </ul>
@@ -77,15 +77,15 @@ export default function TermsPageContent() {
             {/* 3. Description of Services */}
             <div>
               <h2
-                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 3. Description of Services
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-3 sm:mb-4">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                 Quality Care provides a platform to learn about and request elderly home care services, including companion care, personal care, and specialized nursing.
               </p>
-              <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-sm sm:text-base md:text-lg text-gray-700">
+              <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-xs sm:text-sm md:text-base text-gray-700">
                 <li>The website allows users to request a free in-home assessment.</li>
                 <li>Actual care services are governed by a separate Service Agreement signed at the time of enrollment.</li>
               </ul>
@@ -94,15 +94,15 @@ export default function TermsPageContent() {
             {/* 4. User Eligibility and Conduct */}
             <div>
               <h2
-                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 4. User Eligibility and Conduct
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-3 sm:mb-4">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
                 To ensure a safe environment for our clients and caregivers, you agree to:
               </p>
-              <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-sm sm:text-base md:text-lg text-gray-700">
+              <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-xs sm:text-sm md:text-base text-gray-700">
                 <li>Be at least 18 years of age to request a consultation.</li>
                 <li>Provide accurate and truthful information regarding the health and living conditions of the care recipient.</li>
                 <li>Use the website only for lawful purposes.</li>
@@ -112,12 +112,12 @@ export default function TermsPageContent() {
             {/* 5. Intellectual Property */}
             <div>
               <h2
-                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 5. Intellectual Property
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                 All website design, text, graphics, and logos are the property of Quality Care. You may download or print portions of this site for personal, non-commercial use only (e.g., sharing care options with family members).
               </p>
             </div>
@@ -125,12 +125,12 @@ export default function TermsPageContent() {
             {/* 6. Safety and Caregiver Protection */}
             <div>
               <h2
-                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 6. Safety and Caregiver Protection
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                 Quality Care is committed to the safety of our staff. We reserve the right to refuse or terminate services if a home environment is deemed unsafe, unsanitary, or if caregivers are subjected to harassment or discrimination.
               </p>
             </div>
@@ -138,12 +138,12 @@ export default function TermsPageContent() {
             {/* 7. Limitation of Liability */}
             <div>
               <h2
-                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 7. Limitation of Liability
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                 Quality Care and its employees shall not be liable for any damages resulting from your use of the website or reliance on any general health information provided herein.
               </p>
             </div>
@@ -151,12 +151,12 @@ export default function TermsPageContent() {
             {/* 8. Changes to Terms */}
             <div>
               <h2
-                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 8. Changes to Terms
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                 We may update these terms from time to time to reflect changes in our services or legal requirements. We encourage you to review this page periodically.
               </p>
             </div>
@@ -164,12 +164,12 @@ export default function TermsPageContent() {
             {/* 9. Contact Us */}
             <div>
               <h2
-                className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 9. Contact Us
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                 If you have questions regarding these Terms of Use, please contact us at:{" "}
                 <span className="font-semibold">Email: legal@qualitycare.com</span>{" "}
                 <span className="font-semibold">Phone: (555) 123-4567</span>

@@ -11,7 +11,7 @@ export default function Footer() {
             {/* Newsletter Form */}
             <div>
               <h2
-                className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 uppercase text-center"
+                className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 md:mb-6 uppercase text-center"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
                 Subscribe Our Newsletter
@@ -67,14 +67,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* About Us */}
           <div>
-            <h3 className="text-xl font-bold mb-4 uppercase">About Us</h3>
+            <h3 className="text-lg font-bold mb-4 uppercase">About Us</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
               We believe every resident deserves dignity, love, and a peaceful environment they can call home.
             </p>
 
             {/* Social Media */}
             <div className="mt-6">
-              <h4 className="text-lg font-semibold mb-3 uppercase">Social Media</h4>
+              <h4 className="text-base font-semibold mb-3 uppercase">Social Media</h4>
               <div className="flex gap-3">
                 <Link
                   href="https://facebook.com"
@@ -142,7 +142,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4 uppercase">Quick Links</h3>
+            <h3 className="text-lg font-bold mb-4 uppercase">Quick Links</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
@@ -179,7 +179,7 @@ export default function Footer() {
 
           {/* Our Services */}
           <div>
-            <h3 className="text-xl font-bold mb-4 uppercase">Our Services</h3>
+            <h3 className="text-lg font-bold mb-4 uppercase">Our Services</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/services#personal-care" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
@@ -216,7 +216,7 @@ export default function Footer() {
 
           {/* Contact Us */}
           <div>
-            <h3 className="text-xl font-bold mb-4 uppercase">Contact Us</h3>
+            <h3 className="text-lg font-bold mb-4 uppercase">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <svg
