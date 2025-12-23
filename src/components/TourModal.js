@@ -70,7 +70,7 @@ export default function TourModal({ isOpen, onClose }) {
         {/* Modal Content */}
         <div className="relative pt-8 px-4 pb-4 sm:pt-12 sm:px-8 sm:pb-6">
           <h2
-            className="text-3xl sm:text-5xl font-black text-center text-gray-900 mb-1 sm:mb-3"
+            className="text-xl sm:text-2xl md:text-3xl font-black text-center text-gray-900 mb-1 sm:mb-3"
             style={{ fontFamily: "var(--font-recoleta)", fontWeight: "900", textTransform: "uppercase" }}
           >
             Schedule a Tour
