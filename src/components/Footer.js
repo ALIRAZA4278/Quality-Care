@@ -196,35 +196,35 @@ export default function Footer() {
 
           {/* Our Services */}
           <div>
-            <h3 className="text-lg font-bold mb-4 uppercase">Our Services</h3>
-            <ul className="space-y-3">
+            <h3 className="text-sm sm:text-base font-bold mb-3 uppercase">Our Services</h3>
+            <ul className="space-y-2">
               <li>
-                <Link href="/services#personal-care" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                <Link href="/services#personal-care" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block text-xs sm:text-sm">
                   → Personal Care Assistance
                 </Link>
               </li>
               <li>
-                <Link href="/services#medication" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                <Link href="/services#medication" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block text-xs sm:text-sm">
                   → Medication Reminders
                 </Link>
               </li>
               <li>
-                <Link href="/services#meals" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                <Link href="/services#meals" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block text-xs sm:text-sm">
                   → Home-Cooked Meals
                 </Link>
               </li>
               <li>
-                <Link href="/services#activities" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                <Link href="/services#activities" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block text-xs sm:text-sm">
                   → Daily Activities
                 </Link>
               </li>
               <li>
-                <Link href="/services#housekeeping" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                <Link href="/services#housekeeping" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block text-xs sm:text-sm">
                   → Housekeeping & Laundry
                 </Link>
               </li>
               <li>
-                <Link href="/services#companionship" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block">
+                <Link href="/services#companionship" className="text-gray-300 hover:text-[#887904] hover:pl-2 transition-all duration-300 inline-block text-xs sm:text-sm">
                   → Companionship & Emotional Support
                 </Link>
               </li>
@@ -233,65 +233,65 @@ export default function Footer() {
 
           {/* Contact Us */}
           <div>
-            <h3 className="text-lg font-bold mb-4 uppercase">Contact Us</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
+            <h3 className="text-sm sm:text-base font-bold mb-3 uppercase">Contact Us</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="16"
+                  height="16"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="flex-shrink-0 mt-1 drop-shadow-md"
+                  className="shrink-0 mt-0.5 drop-shadow-md sm:w-[18px] sm:h-[18px]"
                 >
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <span className="text-gray-300 text-base">
+                <span className="text-gray-300 text-xs sm:text-sm">
                   2033 Sombrero Way SE,<br />
                   Atlanta, GA 30316
                 </span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="16"
+                  height="16"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="flex-shrink-0 drop-shadow-md"
+                  className="shrink-0 drop-shadow-md sm:w-[18px] sm:h-[18px]"
                 >
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
-                <Link href="tel:+31425687922" className="text-gray-300 hover:text-[#887904] transition-colors text-base">
+                <Link href="tel:+31425687922" className="text-gray-300 hover:text-[#887904] transition-colors text-xs sm:text-sm">
                   +314 256 8792 2
                 </Link>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="16"
+                  height="16"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="flex-shrink-0 drop-shadow-md"
+                  className="shrink-0 drop-shadow-md sm:w-[18px] sm:h-[18px]"
                 >
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
-                <Link href="mailto:info@qualitycaresl.com" className="text-gray-300 hover:text-[#887904] transition-colors text-base">
+                <Link href="mailto:info@qualitycaresl.com" className="text-gray-300 hover:text-[#887904] transition-colors text-xs sm:text-sm">
                   info@qualitycaresl.com
                 </Link>
               </li>
@@ -302,20 +302,20 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs sm:text-sm text-gray-400">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-5">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 text-[10px] sm:text-xs text-gray-400">
             <p className="text-center sm:text-left">© 2025 QUALITY CARE SENIOR LIVING. ALL RIGHTS RESERVED.</p>
-            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 items-center">
-              <Link href="/privacy" className="hover:text-white transition-colors uppercase text-xs">
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-4 items-center">
+              <Link href="/privacy" className="hover:text-white transition-colors uppercase text-[10px] sm:text-xs">
                 Privacy & Policy
               </Link>
-              <Link href="/terms-of-use" className="hover:text-white transition-colors uppercase text-xs">
+              <Link href="/terms-of-use" className="hover:text-white transition-colors uppercase text-[10px] sm:text-xs">
                 Terms of Use
               </Link>
-              <Link href="/hipaa-policy" className="hover:text-white transition-colors uppercase text-xs">
+              <Link href="/hipaa-policy" className="hover:text-white transition-colors uppercase text-[10px] sm:text-xs">
                 HIPAA Policy
               </Link>
-              <Link href="/accessibility" className="hover:text-white transition-colors uppercase text-xs whitespace-nowrap">
+              <Link href="/accessibility" className="hover:text-white transition-colors uppercase text-[10px] sm:text-xs whitespace-nowrap">
                 Accessibility Statement
               </Link>
               <Link href="/accessibility" className="hover:opacity-80 transition-all duration-300 hover:scale-110" aria-label="Accessibility">
@@ -324,7 +324,7 @@ export default function Footer() {
                   alt="Accessibility"
                   width={28}
                   height={28}
-                  className="w-6 h-6 sm:w-7 sm:h-7"
+                  className="w-5 h-5 sm:w-6 sm:h-6"
                 />
               </Link>
             </div>
