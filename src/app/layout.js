@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const aulletta = localFont({
   src: "../../public/fonts/Aulletta.otf",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         className={`${aulletta.variable} ${recoleta.variable} antialiased`}
       >
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );
