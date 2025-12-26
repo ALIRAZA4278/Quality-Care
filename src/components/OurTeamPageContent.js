@@ -33,10 +33,19 @@ export default function OurTeamPageContent() {
 
       {/* Meet Our Team Introduction Section */}
       <section className="bg-white pt-8 sm:pt-12 md:pt-16 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto text-center">
           <ScrollAnimation animation="fade-up">
-            <p className="text-xs sm:text-sm md:text-base text-gray-900 leading-relaxed text-left">
-              At Quality Care Senior Living, our team is the foundation of the care we provide. Our dedicated professionals are committed to delivering compassionate, respectful, and personalized care in a safe and supportive environment where every resident feels at home.
+            <h2
+              className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4"
+              style={{ fontFamily: "var(--font-recoleta)" }}
+            >
+              "The Heart Behind Our Care"
+            </h2>
+            <div className="w-20 sm:w-24 h-1 bg-[#887904] mx-auto mb-4 sm:mb-6"></div>
+            <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed max-w-4xl mx-auto">
+              At Quality Care Senior Living, our team is the foundation of the care we provide. Our dedicated
+              professionals are committed to delivering compassionate, respectful, and personalized care in a
+              safe and supportive environment where every resident feels at home.
             </p>
           </ScrollAnimation>
         </div>

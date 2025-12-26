@@ -14,7 +14,7 @@ export default function ServicesPageContent() {
       icon: "/home/services-icon1.png",
       title: "Personal Care Assistance",
       description:
-        "Help with bathing, grooming, dressing, hygiene, mobility, and toileting — always with dignity and respect.",
+        "Support with daily activities such as bathing, dressing, grooming, and mobility, delivered with dignity, patience, and respect.",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ export default function ServicesPageContent() {
       icon: "/home/services-icon2.png",
       title: "Medication Reminders",
       description:
-        "Daily medication prompts to ensure residents stay consistent and safe.",
+        "Gentle reminders and assistance to ensure medications are taken accurately and on schedule.",
     },
     {
       id: 3,
@@ -30,31 +30,31 @@ export default function ServicesPageContent() {
       icon: "/home/services-icon3.png",
       title: "Nutritious Home-Cooked Meals",
       description:
-        "Freshly prepared meals and snacks tailored to dietary needs and personal preferences.",
+        "Wholesome, well-balanced meals prepared daily to support health, energy, and enjoyment.",
     },
     {
       id: 4,
       image: "/home/services4.png",
       icon: "/home/services-icon4.png",
-      title: "Activities & Companionship",
+      title: "24-Hour Care",
       description:
-        "Light exercise, walks, games, conversations, music, TV time, puzzles, and personal engagement to promote emotional well-being.",
+        "Around-the-clock professional supervision and support to ensure safety, comfort, and peace of mind at all times.",
     },
     {
       id: 5,
       image: "/home/services5.png",
       icon: "/home/services-icon5.png",
-      title: "Housekeeping & Laundry",
+      title: "Activities & Companionship",
       description:
-        "Daily tidying, weekly cleaning, and regular laundry services keep the home clean and comfortable.",
+        "Engaging daily activities, games, music, and social interaction designed to promote joy, mental stimulation, and meaningful connections.",
     },
     {
       id: 6,
       image: "/home/services6.png",
       icon: "/home/services-icon6.png",
-      title: "Health & Wellness Monitoring",
+      title: "Housekeeping & Laundry",
       description:
-        "Daily awareness of changes in behavior, appetite, or mobility. Caregivers provide updates to families as needed.",
+        "Regular housekeeping and laundry services to maintain a clean, comfortable, and stress-free living environment.",
     },
   ];
 
@@ -96,12 +96,27 @@ export default function ServicesPageContent() {
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 leading-tight px-4"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
-                Supporting Every Day, Every Way
+                Our Services
               </h2>
               <div className="w-20 sm:w-24 md:w-28 lg:w-32 h-1 bg-[#887904] mx-auto mt-4 sm:mt-6"></div>
-              <p className="text-xs sm:text-sm md:text-base text-gray-700 mt-4 sm:mt-6 max-w-3xl mx-auto px-4">
-                At Quality Care Senior Living, we provide essential daily support
-                to ensure every resident feels comfortable, cared for, and safe.
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 mt-4 sm:mt-6 max-w-4xl mx-auto px-4 leading-relaxed">
+                At Quality Care Senior Living, we offer personalized, around-the-clock care in a safe,
+                comfortable, and welcoming home-like environment. Our 24-hour professional support ensures
+                residents receive attentive assistance day and night, giving families peace of mind and residents
+                the confidence to live fully and comfortably.
+              </p>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 mt-4 max-w-4xl mx-auto px-4 leading-relaxed">
+                We provide comprehensive personal care services, nutritious home-cooked meals, medication
+                reminders, and assistance with daily living, always delivered with compassion, dignity, and
+                respect. Beyond care, we believe in living well. Our daily activities are thoughtfully designed to
+                promote joy, social connection, mental stimulation, and physical movement, creating moments
+                of laughter, purpose, and fulfillment.
+              </p>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 mt-4 max-w-4xl mx-auto px-4 leading-relaxed">
+                From games, music, and group activities to relaxation and companionship, every day is an
+                opportunity for engagement and enjoyment. At Quality Care Senior Living, we don&apos;t just
+                provide care, we create a vibrant, supportive community where residents feel valued, safe, and
+                truly at home.
               </p>
             </div>
           </ScrollAnimation>

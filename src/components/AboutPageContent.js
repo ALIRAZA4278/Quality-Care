@@ -56,15 +56,17 @@ export default function AboutPageContent() {
                 </h2>
 
                 <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
-                  At Quality Care Senior Living, our mission is simple:
-                </p>
-
-                <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
-                  to provide compassionate, personalized care in a comfortable home where seniors feel safe, respected, and truly cared for.
+                  At Quality Care Senior Living, our mission is simple yet deeply intentional: to provide
+                  compassionate, personalized care in a comfortable, home-like setting where seniors feel safe,
+                  respected, and genuinely valued. We are committed to supporting each resident&apos;s physical,
+                  emotional, and social well-being while honoring their individuality, life experiences, and
+                  personal needs.
                 </p>
 
                 <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
-                  We believe every resident deserves dignity, love, and a peaceful environment they can call home.
+                  We believe every resident deserves dignity, patience, and love—delivered with consistency and
+                  integrity. Our goal is to create a peaceful, nurturing environment where families feel confident,
+                  residents feel supported, and every day is met with care that comes from the heart.
                 </p>
               </div>
             </ScrollAnimation>
@@ -140,14 +142,25 @@ export default function AboutPageContent() {
               </h2>
 
               <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
-                Quality Care Senior Living is a small, one-location personal care home serving families in the Decatur and Atlanta, Georgia area. Because we care for only a limited number of residents at a time, we are able to offer one-on-one support, consistent routines, and meaningful companionship.
+                Quality Care Senior Living is a privately operated, one-location personal care home proudly
+                serving families in the Decatur and greater Atlanta, Georgia area. We intentionally maintain a
+                small, close-knit community, allowing us to provide attentive one-on-one support, personalized
+                care plans, and consistent daily routines tailored to each resident&apos;s needs.
+              </p>
+
+              <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
+                Our approach goes beyond basic care. We focus on building genuine relationships, fostering
+                trust, and creating a sense of belonging through meaningful companionship and daily
+                engagement. Our experienced and compassionate caregivers are dedicated to ensuring residents
+                feel comfortable, understood, and cared for at every stage of life.
               </p>
 
               <p
                 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 italic"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
-                This isn&apos;t just a facility — it&apos;s a home.
+                This isn&apos;t just a facility, it&apos;s a home. A place where residents are known by name, treated like
+                family, and supported with the respect and warmth they deserve.
               </p>
               </div>
             </ScrollAnimation>

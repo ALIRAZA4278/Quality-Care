@@ -35,14 +35,20 @@ export default function GalleryPageContent() {
       <section className="bg-white py-8 sm:py-12 md:py-16 px-4 sm:px-6">
         <ScrollAnimation animation="fade-down">
           <div className="max-w-7xl mx-auto text-center">
-            
+
             <h2
-              className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
+              className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4"
               style={{ fontFamily: "var(--font-recoleta)" }}
             >
-              A warm look into our home
+              "A Glimpse Into Life at Quality Care Senior Living"
             </h2>
-            <div className="w-24 h-1 bg-[#887904] mx-auto"></div>
+            <div className="w-20 sm:w-24 h-1 bg-[#887904] mx-auto mb-4 sm:mb-6"></div>
+            <p className="text-sm sm:text-base text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              Our gallery offers a look into the warm, comfortable, and caring environment at Quality Care
+              Senior Living. From inviting living spaces to moments of connection and daily activities, each
+              image reflects our commitment to safety, dignity, and quality care. We invite you to explore and
+              envision your loved one in a place that truly feels like home.
+            </p>
           </div>
         </ScrollAnimation>
       </section>
