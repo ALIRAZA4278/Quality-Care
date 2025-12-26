@@ -1,0 +1,13 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Heart with pulse line -->
+  <!-- Heart shape -->
+  <path d="M50 85C50 85 15 65 15 40C15 30 20 20 30 20C37 20 43 25 50 32C57 25 63 20 70 20C80 20 85 30 85 40C85 65 50 85 50 85Z" fill="#887904"/>
+  
+  <!-- Pulse/heartbeat line -->
+  <path d="M25 50 L35 50 L40 35 L45 65 L50 50 L55 50 L60 35 L65 50 L75 50" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Small circles on pulse line for emphasis -->
+  <circle cx="45" cy="65" r="2" fill="white"/>
+  <circle cx="40" cy="35" r="2" fill="white"/>
+  <circle cx="60" cy="35" r="2" fill="white"/>
+</svg>

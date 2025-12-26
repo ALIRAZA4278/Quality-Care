@@ -56,6 +56,14 @@ export default function ServicesPageContent() {
       description:
         "Regular housekeeping and laundry services to maintain a clean, comfortable, and stress-free living environment.",
     },
+    {
+      id: 7,
+      image: "/home/services7.png",
+      icon: "/home/services-icon7.svg",
+      title: "Health & Wellness Monitoring",
+      description:
+        "Ongoing wellness observation and coordination to support each resident's overall health and well-being.",
+    },
   ];
 
   return (
