@@ -105,7 +105,7 @@ export default function OurTeamPageContent() {
                 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 italic"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
-                Shunkelia Johnson
+                Shunkelia Johnson-England
               </h2>
               <p
                 className="text-xs sm:text-sm md:text-base mb-6 font-semibold"
@@ -149,7 +149,7 @@ export default function OurTeamPageContent() {
                       <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                     </svg>
                   </div>
-                  <span className="text-xs sm:text-sm md:text-base text-gray-900 font-medium">1 (678) 910-8466</span>
+                  <span className="text-xs sm:text-sm md:text-base text-gray-900 font-medium">sjohnson@qualitycareseniorliving.com</span>
                 </div>
 
                 <div className="flex items-center gap-3">
