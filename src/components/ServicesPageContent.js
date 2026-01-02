@@ -104,7 +104,7 @@ export default function ServicesPageContent() {
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 leading-tight px-4"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
-                Our Services
+                Our Care & Services
               </h2>
               <div className="w-20 sm:w-24 md:w-28 lg:w-32 h-1 bg-[#887904] mx-auto mt-4 sm:mt-6"></div>
               <p className="text-xs sm:text-sm md:text-base text-gray-700 mt-4 sm:mt-6 max-w-4xl mx-auto px-4 leading-relaxed">

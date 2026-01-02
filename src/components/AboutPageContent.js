@@ -71,7 +71,7 @@ export default function AboutPageContent() {
               </div>
             </ScrollAnimation>
 
-            {/* Right - Image with 25+ Years Badge */}
+            {/* Right - Image with 15+ Years Badge */}
             <ScrollAnimation animation="fade-left">
               <div className="relative mt-8 lg:mt-0">
               <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
@@ -84,13 +84,13 @@ export default function AboutPageContent() {
                 />
               </div>
 
-              {/* 25+ Years Badge */}
+              {/* 15+ Years Badge */}
               <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-[#887904] text-white rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl">
                 <div
                   className="text-2xl sm:text-3xl md:text-4xl font-bold leading-none mb-1 sm:mb-2"
                   style={{ fontFamily: "var(--font-recoleta)" }}
                 >
-                  25+
+                  15+
                 </div>
                 <div className="text-[10px] sm:text-xs font-medium uppercase">
                   Years Experience

@@ -346,7 +346,7 @@ export default function AmenitiesPageContent() {
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
-                Our Amenities
+                What our Resident Can Look Forward to 
               </h2>
               <div className="w-20 sm:w-24 h-1 bg-[#887904] mx-auto"></div>
             </div>

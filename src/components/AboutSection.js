@@ -16,7 +16,7 @@ export default function AboutSection() {
         if (entries[0].isIntersecting && !hasAnimated) {
           setHasAnimated(true);
           let start = 0;
-          const end = 25;
+          const end = 15;
           const duration = 2000;
           const increment = end / (duration / 16);
 

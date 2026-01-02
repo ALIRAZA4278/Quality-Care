@@ -53,7 +53,7 @@ export default function Navbar() {
               >
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
-              <span className="hidden sm:inline">+314 256 8792 2</span>
+              <span className="hidden sm:inline">+1 (678) 910-8466</span>
             </button>
             {/* Mobile slide-in phone number */}
             <div
@@ -61,8 +61,8 @@ export default function Navbar() {
                 showPhone ? "max-w-[150px] opacity-100" : "max-w-0 opacity-0"
               }`}
             >
-              <a href="tel:+31425687922" className="whitespace-nowrap">
-                +314 256 8792 2
+              <a href="tel:+16789108466" className="whitespace-nowrap">
+                +1 (678) 910-8466
               </a>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function Navbar() {
                 <rect x="2" y="4" width="20" height="16" rx="2" />
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
               </svg>
-              <span className="hidden md:inline">info@qualitycaresl.com</span>
+              <span className="hidden md:inline">sjohnson@qualitycareseniorliving.com</span>
             </button>
             {/* Mobile/tablet slide-in email */}
             <div
@@ -97,8 +97,8 @@ export default function Navbar() {
                 showEmail ? "max-w-[200px] opacity-100" : "max-w-0 opacity-0"
               }`}
             >
-              <a href="mailto:info@qualitycaresl.com" className="whitespace-nowrap text-[10px] sm:text-xs">
-                info@qualitycaresl.com
+              <a href="mailto:sjohnson@qualitycareseniorliving.com" className="whitespace-nowrap text-[10px] sm:text-xs">
+                sjohnson@qualitycareseniorliving.com
               </a>
             </div>
           </div>
@@ -351,8 +351,8 @@ export default function Navbar() {
               </svg>
               <span className="text-xs text-gray-600 font-medium">CALL US ANYTIME:</span>
             </div>
-            <a href="tel:+31425687922" className="text-xl font-bold text-gray-900 hover:text-[#887904] transition-colors">
-              +314 256 8792 2
+            <a href="tel:+16789108466" className="text-xl font-bold text-gray-900 hover:text-[#887904] transition-colors">
+              +1 (678) 910-8466
             </a>
           </div>
 
@@ -412,7 +412,7 @@ export default function Navbar() {
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
                 <span className="text-xs text-gray-700">
-                  info@qualitycaresl.com
+                  sjohnson.@qualitycareseniorliving.com
                 </span>
               </div>
             </div>

@@ -18,7 +18,7 @@ export default function PrivacyPageContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative w-full h-[25vh] sm:h-[30vh] md:h-[35vh] flex items-center justify-center mt-[100px] sm:mt-[120px] md:mt-[140px]">
+      <section className="relative w-full h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[40vh] flex items-center justify-center mt-[70px] sm:mt-[80px] md:mt-[90px]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -36,7 +36,7 @@ export default function PrivacyPageContent() {
             className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 uppercase"
             style={{ fontFamily: "var(--font-recoleta)" }}
           >
-            Privacy & Policy
+            Privacy Policy
           </h1>
           <div className="w-32 h-1 bg-[#887904] mx-auto mt-1"></div>
         </div>
