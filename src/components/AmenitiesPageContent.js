@@ -541,32 +541,15 @@ export default function AmenitiesPageContent() {
       <section className="bg-white py-8 sm:py-12 md:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-start">
-            {/* Left Side - Floor Plan Images */}
-            <div className="relative w-full h-[280px] sm:h-[350px] md:h-[420px] order-2 lg:order-1 flex items-center justify-center">
-              {/* Dark Box in Center */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black w-32 h-24 sm:w-44 sm:h-32 md:w-56 md:h-40 z-0 rounded-lg sm:rounded-xl"></div>
-
-              {/* Floor Plan 1 - Top Left */}
-              <div className="absolute -top-4 sm:-top-8 md:-top-10 -left-1 sm:-left-4 md:-left-6 z-10">
-                <Image
-                  src="/amenities/f1.png"
-                  alt="Floor Plan 1"
-                  width={180}
-                  height={160}
-                  className="object-contain sm:w-[220px] sm:h-[190px] md:w-[320px] md:h-[280px]"
-                />
-              </div>
-
-              {/* Floor Plan 2 - Bottom Right */}
-              <div className="absolute -bottom-4 sm:-bottom-6 md:-bottom-8 -right-1 sm:-right-4 md:-right-6 z-10">
-                <Image
-                  src="/amenities/f2.png"
-                  alt="Floor Plan 2"
-                  width={180}
-                  height={160}
-                  className="object-contain sm:w-[220px] sm:h-[190px] md:w-[280px] md:h-[240px]"
-                />
-              </div>
+            {/* Left Side - Floor Plan Image */}
+            <div className="relative w-full order-2 lg:order-1 flex items-center justify-center">
+              <Image
+                src="/amenities/Floor plan.png"
+                alt="Floor Plan"
+                width={600}
+                height={600}
+                className="object-contain w-full h-auto"
+              />
             </div>
 
             {/* Right Side - Content */}

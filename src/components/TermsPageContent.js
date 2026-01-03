@@ -31,149 +31,300 @@ export default function TermsPageContent() {
         </div>
       </section>
 
-      {/* Effective Date */}
-      <section className="bg-white py-6 sm:py-8 px-4 sm:px-6 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-sm sm:text-base text-gray-700 font-semibold">
-            Effective Date: December 19, 2025
-          </p>
-        </div>
-      </section>
-
       {/* Terms Content */}
       <section className="bg-white py-8 sm:py-12 md:py-16 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="space-y-8 sm:space-y-10 md:space-y-12">
-            {/* 1. Acceptance of Terms */}
+        <div className="max-w-6xl mx-auto">
+          <div className="space-y-6 sm:space-y-8 md:space-y-10">
+            {/* Introduction */}
             <div>
               <h2
-                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
-                1. Acceptance of Terms
+                Quality Care Senior Living, LLC.
               </h2>
-              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
-                Welcome to Quality Care. By accessing our website, you agree to be bound by these Terms of Use and our Privacy Policy. If you are using this site on behalf of a senior or family member, you represent that you have the authority to bind them to these terms.
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                <span className="font-semibold">Effective Date:</span> January 1, 2026
+              </p>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+                Welcome to the website of Quality Care Senior Living ("Company," "we," "our," or "us"). These Terms of Use govern your access to and use of our website, services, and content. By accessing or using this website, you agree to be bound by these Terms of Use. If you do not agree, please do not use the website.
               </p>
             </div>
 
-            {/* 2. Medical Disclaimer */}
+            {/* 1. Use of Website */}
             <div>
               <h2
-                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
-                2. MEDICAL DISCLAIMER <span className="text-[#887904]">(IMPORTANT)</span>
+                1. Use of Website
               </h2>
-              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
-                The content on the Quality Care website is for informational purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment:
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                This website is provided for informational purposes only. It is intended to offer general information about Quality Care Senior Living, our services, amenities, and contact options.
               </p>
-              <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-xs sm:text-sm md:text-base text-gray-700">
-                <li>Always seek the advice of a physician or other qualified health provider with any questions regarding a medical condition.</li>
-                <li>If you think you may have a medical emergency, call 911 or your local emergency services immediately.</li>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                You agree to use this website:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm md:text-base text-gray-700 ml-4">
+                <li>For lawful purposes only</li>
+                <li>In a manner that does not violate any applicable laws or regulations</li>
+                <li>Without attempting to disrupt, damage, or interfere with the website's functionality</li>
+              </ul>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mt-3">
+                Unauthorized use of this website may result in termination of access and potential legal action.
+              </p>
+            </div>
+
+            {/* 2. No Medical or Legal Advice */}
+            <div>
+              <h2
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                2. No Medical or Legal Advice
+              </h2>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                Information provided on this website is not medical, healthcare, or legal advice.
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm md:text-base text-gray-700 ml-4">
+                <li>Content is for general informational purposes only</li>
+                <li>No information on this website should be relied upon as a substitute for professional medical, legal, or healthcare advice</li>
+                <li>Residents and families should consult licensed professionals for medical or legal decisions</li>
+              </ul>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mt-3">
+                Use of this website does not create a caregiver, provider, or resident relationship.
+              </p>
+            </div>
+
+            {/* 3. Eligibility */}
+            <div>
+              <h2
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                3. Eligibility
+              </h2>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+                This website is intended for users who are at least 18 years of age. By using this website, you confirm that you meet this requirement.
+              </p>
+            </div>
+
+            {/* 4. Intellectual Property Rights */}
+            <div>
+              <h2
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                4. Intellectual Property Rights
+              </h2>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                All content on this website—including but not limited to text, images, graphics, logos, videos, design elements, and trademarks—is the property of Quality Care Senior Living or its licensors and is protected by intellectual property laws.
+              </p>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                You may not:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm md:text-base text-gray-700 ml-4">
+                <li>Copy, reproduce, distribute, modify, or republish content without written permission</li>
+                <li>Use our name, logo, or branding without authorization</li>
+                <li>Use website content for commercial purposes without consent</li>
               </ul>
             </div>
 
-            {/* 3. Description of Services */}
+            {/* 5. User Submissions & Communications */}
             <div>
               <h2
-                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
-                3. Description of Services
+                5. User Submissions & Communications
               </h2>
-              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
-                Quality Care provides a platform to learn about and request elderly home care services, including companion care, personal care, and specialized nursing.
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                If you submit information through our website (including contact forms, inquiries, or emails), you agree that:
               </p>
-              <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-xs sm:text-sm md:text-base text-gray-700">
-                <li>The website allows users to request a free in-home assessment.</li>
-                <li>Actual care services are governed by a separate Service Agreement signed at the time of enrollment.</li>
+              <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm md:text-base text-gray-700 ml-4">
+                <li>Information provided is accurate and truthful</li>
+                <li>We may use the information to respond to your inquiry or provide services</li>
+                <li>Submission does not create a contractual or care obligation</li>
+              </ul>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mt-3">
+                We reserve the right to review, remove, or disregard submissions that are inappropriate, unlawful, or misleading.
+              </p>
+            </div>
+
+            {/* 6. Privacy & Data Protection */}
+            <div>
+              <h2
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                6. Privacy & Data Protection
+              </h2>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                Your use of this website is also governed by our Privacy Policy, which explains how we collect, use, and protect personal information.
+              </p>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+                By using this website, you consent to the data practices described in our Privacy Policy.
+              </p>
+            </div>
+
+            {/* 7. Third-Party Links */}
+            <div>
+              <h2
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                7. Third-Party Links
+              </h2>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                This website may contain links to third-party websites or services for convenience or informational purposes.
+              </p>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                Quality Care Senior Living:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm md:text-base text-gray-700 ml-4">
+                <li>Does not control third-party websites</li>
+                <li>Is not responsible for their content, policies, or practices</li>
+                <li>Does not endorse third-party services unless explicitly stated</li>
+              </ul>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mt-3">
+                Access third-party sites at your own risk.
+              </p>
+            </div>
+
+            {/* 8. Disclaimer of Warranties */}
+            <div>
+              <h2
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                8. Disclaimer of Warranties
+              </h2>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                This website is provided on an "as is" and "as available" basis.
+              </p>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                We make no warranties or representations regarding:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm md:text-base text-gray-700 ml-4">
+                <li>Accuracy or completeness of content</li>
+                <li>Availability or uninterrupted access</li>
+                <li>Freedom from errors, viruses, or security issues</li>
+              </ul>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mt-3">
+                To the fullest extent permitted by law, we disclaim all warranties, express or implied.
+              </p>
+            </div>
+
+            {/* 9. Limitation of Liability */}
+            <div>
+              <h2
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                9. Limitation of Liability
+              </h2>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                To the maximum extent permitted by Georgia law, Quality Care Senior Living shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm md:text-base text-gray-700 ml-4">
+                <li>Use or inability to use the website</li>
+                <li>Reliance on website content</li>
+                <li>Unauthorized access to information</li>
+              </ul>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mt-3">
+                Use of the website is at your own risk.
+              </p>
+            </div>
+
+            {/* 10. Indemnification */}
+            <div>
+              <h2
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
+                style={{ fontFamily: "var(--font-recoleta)" }}
+              >
+                10. Indemnification
+              </h2>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                You agree to indemnify and hold harmless Quality Care Senior Living, its owners, officers, employees, agents, and affiliates from any claims, liabilities, damages, losses, or expenses arising from:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm md:text-base text-gray-700 ml-4">
+                <li>Your use of the website</li>
+                <li>Violation of these Terms of Use</li>
+                <li>Violation of any applicable laws</li>
               </ul>
             </div>
 
-            {/* 4. User Eligibility and Conduct */}
+            {/* 11. Governing Law & Jurisdiction */}
             <div>
               <h2
-                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
-                4. User Eligibility and Conduct
+                11. Governing Law & Jurisdiction
               </h2>
-              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
-                To ensure a safe environment for our clients and caregivers, you agree to:
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                These Terms of Use are governed by and interpreted in accordance with the laws of the State of Georgia, without regard to conflict of law principles.
               </p>
-              <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-xs sm:text-sm md:text-base text-gray-700">
-                <li>Be at least 18 years of age to request a consultation.</li>
-                <li>Provide accurate and truthful information regarding the health and living conditions of the care recipient.</li>
-                <li>Use the website only for lawful purposes.</li>
-              </ul>
-            </div>
-
-            {/* 5. Intellectual Property */}
-            <div>
-              <h2
-                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
-                style={{ fontFamily: "var(--font-recoleta)" }}
-              >
-                5. Intellectual Property
-              </h2>
               <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
-                All website design, text, graphics, and logos are the property of Quality Care. You may download or print portions of this site for personal, non-commercial use only (e.g., sharing care options with family members).
+                Any disputes arising under these Terms shall be resolved exclusively in the state or federal courts located in Georgia.
               </p>
             </div>
 
-            {/* 6. Safety and Caregiver Protection */}
+            {/* 12. Changes to Terms */}
             <div>
               <h2
-                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
-                6. Safety and Caregiver Protection
+                12. Changes to Terms
               </h2>
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                We reserve the right to update or modify these Terms of Use at any time. Changes will be effective upon posting to this website with a revised effective date.
+              </p>
               <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
-                Quality Care is committed to the safety of our staff. We reserve the right to refuse or terminate services if a home environment is deemed unsafe, unsanitary, or if caregivers are subjected to harassment or discrimination.
+                Your continued use of the website constitutes acceptance of the updated Terms.
               </p>
             </div>
 
-            {/* 7. Limitation of Liability */}
+            {/* 13. Termination of Access */}
             <div>
               <h2
-                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
-                7. Limitation of Liability
+                13. Termination of Access
               </h2>
               <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
-                Quality Care and its employees shall not be liable for any damages resulting from your use of the website or reliance on any general health information provided herein.
+                We reserve the right to suspend or terminate access to the website at our discretion, without notice, for violations of these Terms or for any reason deemed necessary to protect our operations or users.
               </p>
             </div>
 
-            {/* 8. Changes to Terms */}
+            {/* 14. Contact Information */}
             <div>
               <h2
-                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
+                className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 uppercase"
                 style={{ fontFamily: "var(--font-recoleta)" }}
               >
-                8. Changes to Terms
+                14. Contact Information
               </h2>
-              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
-                We may update these terms from time to time to reflect changes in our services or legal requirements. We encourage you to review this page periodically.
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
+                If you have questions regarding these Terms of Use, please contact:
               </p>
-            </div>
-
-            {/* 9. Contact Us */}
-            <div>
-              <h2
-                className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-3 sm:mb-4"
-                style={{ fontFamily: "var(--font-recoleta)" }}
-              >
-                9. Contact Us
-              </h2>
-              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
-                If you have questions regarding these Terms of Use, please contact us at:{" "}
-                <span className="font-semibold">Email: legal@qualitycare.com</span>{" "}
-                <span className="font-semibold">Phone: (555) 123-4567</span>
-              </p>
+              <div className="bg-[#f8f6f3] p-4 sm:p-6 rounded-lg space-y-2">
+                <p className="text-xs sm:text-sm md:text-base text-gray-900 font-semibold">
+                  Quality Care Senior Living, LLC
+                </p>
+                <p className="text-xs sm:text-sm md:text-base text-gray-700">
+                  2033 Sombrero Way SE,<br />
+                  Atlanta, GA 30316
+                </p>
+                <p className="text-xs sm:text-sm md:text-base text-gray-700">
+                  Email: <a href="mailto:sjohnson@qualitycareseniorliving.com" className="text-[#887904] hover:underline">sjohnson@qualitycareseniorliving.com</a>
+                </p>
+                <p className="text-xs sm:text-sm md:text-base text-gray-700">
+                  Phone: <a href="tel:+16789108466" className="text-[#887904] hover:underline">1 (678) 910-8466</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
