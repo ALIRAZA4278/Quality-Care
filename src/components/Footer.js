@@ -282,7 +282,7 @@ export default function Footer() {
                 Privacy Policy
               </Link>
               <Link href="/terms-of-use" className="hover:text-white transition-colors uppercase text-[10px] sm:text-xs">
-                Terms & Conditions
+                Terms of Use
               </Link>
               <Link href="/hipaa-policy" className="hover:text-white transition-colors uppercase text-[10px] sm:text-xs">
                 HIPAA Policy
