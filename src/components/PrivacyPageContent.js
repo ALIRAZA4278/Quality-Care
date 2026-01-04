@@ -11,8 +11,13 @@ export default function PrivacyPageContent() {
     { id: "introduction", label: "INTRODUCTION & SCOPE" },
     { id: "information", label: "INFORMATION WE COLLECT" },
     { id: "usage", label: "HOW WE USE DATA" },
-    { id: "hipaa", label: "HIPAA & SECURITY PROTOCOLS" },
     { id: "data-sharing", label: "DATA SHARING & THIRD PARTIES" },
+    { id: "hipaa", label: "HIPAA & SECURITY PROTOCOLS" },
+    { id: "data-retention", label: "DATA RETENTION" },
+    { id: "children", label: "CHILDREN'S PRIVACY" },
+    { id: "rights", label: "YOUR RIGHTS & CHOICES" },
+    { id: "policy-updates", label: "POLICY UPDATES" },
+    { id: "contact", label: "CONTACT INFORMATION" },
   ];
 
   return (
@@ -45,6 +50,19 @@ export default function PrivacyPageContent() {
       {/* Privacy Content Section */}
       <section className="bg-white py-8 sm:py-12 md:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
+          {/* Introduction Paragraph */}
+          <div className="max-w-5xl mx-auto mb-8 sm:mb-12 text-center">
+            <p className="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">
+              Quality Care Senior Living
+            </p>
+            <p className="text-sm sm:text-base text-gray-700 mb-4">
+              Effective Date: January 2026
+            </p>
+            <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+              Quality Care Senior Living ("we," "our," or "us") is committed to protecting the privacy, dignity, and confidentiality of our residents, families, visitors, employees, and website users. This Privacy Policy explains how we collect, use, protect, and share information in compliance with applicable federal and state laws, including laws governing senior living and healthcare services in the State of Georgia.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
             {/* Left Sidebar Navigation */}
             <div className="lg:col-span-1">
@@ -88,16 +106,20 @@ export default function PrivacyPageContent() {
                   </h2>
                   <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                     <p>
-                      At Quality Care, we recognize that the privacy of your personal information, especially when it concerns health and senior living, is a matter of profound importance and trust. This Privacy Policy is designed to provide you with a comprehensive understanding of how we collect, process, manage, and safeguard the data of our seniors, their family members, and legal representatives through our digital platforms, including our website, mobile applications, and other communication portals.
+                      This Privacy Policy applies to all personal information collected by Quality Care Senior Living through:
                     </p>
+                    <ul className="list-disc pl-5 sm:pl-6 space-y-2">
+                      <li>Our website and online forms</li>
+                      <li>Phone calls, emails, and written communications</li>
+                      <li>In-person interactions</li>
+                      <li>Resident admissions and care-related services</li>
+                      <li>Employment and vendor relationships</li>
+                    </ul>
                     <p>
-                      We operate with a deep sense of mission and duty, cognizant that many of our residents are elderly or require specialty-dignified care for the elderly. We understand that navigating home care options can be a complex and emotional journey, and our goal is to ensure that your personal information is safeguarded when you're exploring the home care we provide in the home. This policy applies to all visitors of the Quality Care website and users of our digital outreach services.
+                      This policy governs how we handle personal, sensitive, and protected information related to residents, prospective residents, families, staff, caregivers, contractors, and website visitors.
                     </p>
-                    <p>
-                      By accessing our site or engaging with our official website, you acknowledge that you have been informed of our practices regarding your personal data. We operate in strict compliance with applicable state and federal privacy regulations, including the Health Insurance Portability and Accountability Act (HIPAA) where applicable, humane that assumes our ethical and legal obligations extend far beyond what statutes require, given the inherently's legal and moral meaning. It is a promise of transparency to the families we serve, outlining exactly what we do with your information and, more importantly, what we do not do—such as selling your data to third-party advertisers.
-                    </p>
-                    <p>
-                      We encourage you to read this introduction and the subsequent sections thoroughly to understand your rights, our obligations, and the security measures we have implemented to protect the legacy and well-being of the seniors in our care.
+                    <p className="font-semibold">
+                      By using our services or website, you consent to the practices described in this Privacy Policy.
                     </p>
                   </div>
                 </div>
@@ -111,12 +133,65 @@ export default function PrivacyPageContent() {
                   >
                     Information We Collect
                   </h2>
-                  <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+                  <div className="space-y-4 sm:space-y-6 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                     <p>
-                      We collect various types of information to provide and improve our services. This includes personal identification information such as names, contact details, and demographic information. We also collect health-related information when necessary to provide appropriate care services.
+                      We may collect the following categories of information:
                     </p>
-                    <p>
-                      Additionally, we may collect technical information such as IP addresses, browser types, and device information when you visit our website. This helps us improve our digital services and ensure a better user experience.
+
+                    {/* Personal Information */}
+                    <div>
+                      <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 sm:mb-3">
+                        Personal Information
+                      </h3>
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-2">
+                        <li>Full name</li>
+                        <li>Address and location information</li>
+                        <li>Phone number and email address</li>
+                        <li>Emergency contact details</li>
+                        <li>Date of birth</li>
+                      </ul>
+                    </div>
+
+                    {/* Resident & Care-Related Information */}
+                    <div>
+                      <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 sm:mb-3">
+                        Resident & Care-Related Information
+                      </h3>
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-2">
+                        <li>Health-related information provided for care coordination</li>
+                        <li>Medical history and care needs (when applicable)</li>
+                        <li>Insurance or payment-related details</li>
+                        <li>Admission and residency documentation</li>
+                      </ul>
+                    </div>
+
+                    {/* Website & Digital Information */}
+                    <div>
+                      <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 sm:mb-3">
+                        Website & Digital Information
+                      </h3>
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-2">
+                        <li>IP address</li>
+                        <li>Browser type and device information</li>
+                        <li>Pages visited and interaction data</li>
+                        <li>Online inquiry and contact form submissions</li>
+                      </ul>
+                    </div>
+
+                    {/* Employment & Vendor Information */}
+                    <div>
+                      <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 sm:mb-3">
+                        Employment & Vendor Information
+                      </h3>
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-2">
+                        <li>Resume and employment application details</li>
+                        <li>Background and credential verification (where applicable)</li>
+                        <li>Business contact information</li>
+                      </ul>
+                    </div>
+
+                    <p className="font-semibold">
+                      We only collect information that is necessary to provide safe, effective, and compliant services.
                     </p>
                   </div>
                 </div>
@@ -132,10 +207,20 @@ export default function PrivacyPageContent() {
                   </h2>
                   <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                     <p>
-                      The information we collect is used primarily to provide high-quality care services to our residents. We use your data to coordinate care plans, communicate with family members, and ensure the safety and well-being of all residents.
+                      Information collected by Quality Care Senior Living is used for the following purposes:
                     </p>
-                    <p>
-                      We also use collected data to improve our services, maintain records as required by law, process payments, and communicate important updates about our facilities and services.
+                    <ul className="list-disc pl-5 sm:pl-6 space-y-2">
+                      <li>Providing senior living and care services</li>
+                      <li>Processing inquiries, tours, and admissions</li>
+                      <li>Communicating with residents, families, and authorized representatives</li>
+                      <li>Coordinating care, staffing, and facility operations</li>
+                      <li>Billing, payments, and administrative functions</li>
+                      <li>Maintaining safety, security, and compliance</li>
+                      <li>Improving our services, website, and resident experience</li>
+                      <li>Meeting legal, regulatory, and licensing requirements</li>
+                    </ul>
+                    <p className="font-semibold">
+                      We do not sell personal information to third parties.
                     </p>
                   </div>
                 </div>
@@ -149,12 +234,40 @@ export default function PrivacyPageContent() {
                   >
                     HIPAA & Security Protocols
                   </h2>
-                  <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+                  <div className="space-y-4 sm:space-y-6 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                     <p>
-                      Quality Care is committed to maintaining the highest standards of data security and complying with HIPAA regulations. We implement comprehensive security measures including encryption, secure data storage, and restricted access to protected health information.
+                      Quality Care Senior Living follows strict safeguards to protect sensitive and protected information.
                     </p>
-                    <p>
-                      Our staff receives regular training on privacy practices and security protocols. We conduct regular audits and assessments to ensure our systems meet or exceed industry standards for protecting sensitive information.
+
+                    {/* HIPAA Awareness */}
+                    <div>
+                      <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 sm:mb-3">
+                        HIPAA Awareness
+                      </h3>
+                      <p>
+                        When applicable, we comply with the Health Insurance Portability and Accountability Act (HIPAA) and applicable state privacy laws regarding protected health information (PHI).
+                      </p>
+                    </div>
+
+                    {/* Security Measures */}
+                    <div>
+                      <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 mb-2 sm:mb-3">
+                        Security Measures
+                      </h3>
+                      <p className="mb-3">
+                        We implement administrative, technical, and physical safeguards, including:
+                      </p>
+                      <ul className="list-disc pl-5 sm:pl-6 space-y-2">
+                        <li>Restricted access to sensitive data</li>
+                        <li>Secure digital systems and password protection</li>
+                        <li>Role-based access for staff</li>
+                        <li>Staff training on confidentiality and privacy</li>
+                        <li>Secure storage of physical records</li>
+                      </ul>
+                    </div>
+
+                    <p className="font-semibold">
+                      Only authorized personnel are permitted to access sensitive or protected information.
                     </p>
                   </div>
                 </div>
@@ -170,11 +283,134 @@ export default function PrivacyPageContent() {
                   </h2>
                   <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                     <p>
-                      We do not sell, rent, or trade your personal information to third parties for marketing purposes. We only share information when necessary to provide our services, comply with legal obligations, or with your explicit consent.
+                      We may share information only when necessary and permitted by law, including:
                     </p>
+                    <ul className="list-disc pl-5 sm:pl-6 space-y-2">
+                      <li>With authorized healthcare providers involved in resident care</li>
+                      <li>With service providers supporting operations (IT, billing, compliance)</li>
+                      <li>With government or regulatory agencies as required by law</li>
+                      <li>With emergency services when necessary for safety or care</li>
+                    </ul>
+                    <p className="font-semibold">
+                      All third-party partners are required to maintain appropriate confidentiality and security standards.
+                    </p>
+                    <p className="font-semibold">
+                      We do not share personal data for marketing purposes without consent.
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {activeSection === "children" && (
+                <div>
+                  <h2
+                    className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-4 sm:mb-6"
+                    style={{ fontFamily: "var(--font-recoleta)" }}
+                  >
+                    Children's Privacy
+                  </h2>
+                  <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                     <p>
-                      In some cases, we may share information with healthcare providers, insurance companies, or legal authorities when required by law or necessary for the care and safety of our residents. All third parties with access to your information are bound by strict confidentiality agreements.
+                      Our services and website are not intended for children under the age of 13. We do not knowingly collect personal information from children without parental or legal guardian consent.
                     </p>
+                  </div>
+                </div>
+              )}
+
+              {activeSection === "rights" && (
+                <div>
+                  <h2
+                    className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-4 sm:mb-6"
+                    style={{ fontFamily: "var(--font-recoleta)" }}
+                  >
+                    Your Rights & Choices
+                  </h2>
+                  <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+                    <p>
+                      Depending on applicable law, individuals may have the right to:
+                    </p>
+                    <ul className="list-disc pl-5 sm:pl-6 space-y-2">
+                      <li>Request access to their personal information</li>
+                      <li>Request corrections to inaccurate information</li>
+                      <li>Request limitations on certain uses or disclosures</li>
+                      <li>Withdraw consent where applicable</li>
+                    </ul>
+                    <p className="font-semibold">
+                      Requests must be submitted in writing and may be subject to verification.
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {activeSection === "data-retention" && (
+                <div>
+                  <h2
+                    className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-4 sm:mb-6"
+                    style={{ fontFamily: "var(--font-recoleta)" }}
+                  >
+                    Data Retention
+                  </h2>
+                  <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+                    <p>
+                      We retain personal and resident information only for as long as necessary to:
+                    </p>
+                    <ul className="list-disc pl-5 sm:pl-6 space-y-2">
+                      <li>Provide services</li>
+                      <li>Meet legal, regulatory, and licensing requirements</li>
+                      <li>Resolve disputes or enforce agreements</li>
+                    </ul>
+                    <p className="font-semibold">
+                      Once information is no longer required, it is securely disposed of.
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {activeSection === "policy-updates" && (
+                <div>
+                  <h2
+                    className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-4 sm:mb-6"
+                    style={{ fontFamily: "var(--font-recoleta)" }}
+                  >
+                    Policy Updates
+                  </h2>
+                  <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+                    <p>
+                      We may update this Privacy Policy periodically to reflect changes in laws, regulations, or operational practices. Updates will be posted on our website with a revised effective date.
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {activeSection === "contact" && (
+                <div>
+                  <h2
+                    className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-4 sm:mb-6"
+                    style={{ fontFamily: "var(--font-recoleta)" }}
+                  >
+                    Contact Information
+                  </h2>
+                  <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+                    <p>
+                      If you have questions, concerns, or requests related to this Privacy Policy, please contact:
+                    </p>
+                    <div className="bg-[#f8f6f0] p-4 sm:p-6 rounded-lg">
+                      <p className="text-xs sm:text-sm md:text-base text-gray-900 font-semibold mb-2">
+                        Quality Care Senior Living, LLC
+                      </p>
+                      <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-1">
+                        2033 Sombrero Way SE,
+                      </p>
+                      <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-1">
+                        Atlanta, GA 30316
+                      </p>
+                      <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-1">
+                        Email: sjohnson@qualitycareseniorliving.com
+                      </p>
+                      <p className="text-xs sm:text-sm md:text-base text-gray-700">
+                        Phone: 1 (678) 910-8466
+                      </p>
+                    </div>
                   </div>
                 </div>
               )}
