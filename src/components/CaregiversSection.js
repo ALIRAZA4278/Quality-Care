@@ -4,28 +4,29 @@ export default function CaregiversSection() {
   const caregivers = [
     {
       id: 1,
-      name: "Employee Name",
-      occupation: "Occupation",
-      image: "/team/2.png",
+      name: "Shunkelia Johnson-England",
+      occupation: "Administrator",
+      image: "/team/Shunkelia-Johnson.png",
     },
-    {
-      id: 2,
-      name: "Employee Name",
-      occupation: "Occupation",
-      image: "/team/1.png",
-    },
-    {
-      id: 3,
-      name: "Employee Name",
-      occupation: "Occupation",
-      image: "/team/2.png",
-    },
-    {
-      id: 4,
-      name: "Employee Name",
-      occupation: "Occupation",
-      image: "/team/1.png",
-    },
+    // Hidden employees - will add as we hire them
+    // {
+    //   id: 2,
+    //   name: "Employee Name",
+    //   occupation: "Occupation",
+    //   image: "/team/1.png",
+    // },
+    // {
+    //   id: 3,
+    //   name: "Employee Name",
+    //   occupation: "Occupation",
+    //   image: "/team/2.png",
+    // },
+    // {
+    //   id: 4,
+    //   name: "Employee Name",
+    //   occupation: "Occupation",
+    //   image: "/team/1.png",
+    // },
   ];
 
   return (
@@ -50,7 +51,7 @@ export default function CaregiversSection() {
           {caregivers.map((caregiver) => (
             <div key={caregiver.id} className="text-center">
               {/* Circular Image with Light Background */}
-              <div className="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-6">
+              <div className="relative w-32 h-32 sm:w-36 sm:h-36 mx-auto mb-6">
                 <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-gray-50 rounded-full"></div>
                 <div className="relative w-full h-full rounded-full overflow-hidden">
                   <Image
