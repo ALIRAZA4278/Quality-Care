@@ -89,7 +89,7 @@ export default function Navbar() {
                 <rect x="2" y="4" width="20" height="16" rx="2" />
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
               </svg>
-              <span className="hidden md:inline">sjohnson@qualitycareseniorliving.com</span>
+              <span className="hidden md:inline">info@qualitycareseniorliving.com</span>
             </button>
             {/* Mobile/tablet slide-in email */}
             <div
@@ -97,8 +97,8 @@ export default function Navbar() {
                 showEmail ? "max-w-[200px] opacity-100" : "max-w-0 opacity-0"
               }`}
             >
-              <a href="mailto:sjohnson@qualitycareseniorliving.com" className="whitespace-nowrap text-[10px] sm:text-xs">
-                sjohnson@qualitycareseniorliving.com
+              <a href="mailto:info@qualitycareseniorliving.com" className="whitespace-nowrap text-[10px] sm:text-xs">
+                info@qualitycareseniorliving.com
               </a>
             </div>
           </div>
@@ -392,7 +392,7 @@ export default function Navbar() {
                   <circle cx="12" cy="10" r="3"/>
                 </svg>
                 <span className="text-xs text-gray-700 leading-tight">
-                  123 Main Street, Decatur, GA
+                  2033 Sombrero Way SE, Atlanta, GA 30316
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -412,7 +412,7 @@ export default function Navbar() {
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
                 <span className="text-xs text-gray-700">
-                  sjohnson.@qualitycareseniorliving.com
+                  info@qualitycareseniorliving.com
                 </span>
               </div>
             </div>
