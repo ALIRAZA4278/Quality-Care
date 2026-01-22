@@ -243,7 +243,7 @@ export default function Footer() {
                 >
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
-                <Link href="tel:+31425687922" className="text-gray-300 hover:text-[#887904] transition-colors text-xs sm:text-sm">
+                <Link href="tel:+16789108466" className="text-gray-300 hover:text-[#887904] transition-colors text-xs sm:text-sm">
                   +1 (678) 910-8466
                 </Link>
               </li>
@@ -263,8 +263,8 @@ export default function Footer() {
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
-                <Link href="mailto:sjohnson@qualitycareseniorliving.com" className="text-gray-300 hover:text-[#887904] transition-colors text-xs sm:text-sm">
-                  sjohnson@qualitycareseniorliving.com
+                <Link href="mailto:info@qualitycareseniorliving.com" className="text-gray-300 hover:text-[#887904] transition-colors text-xs sm:text-sm">
+                  info@qualitycareseniorliving.com
                 </Link>
               </li>
             </ul>

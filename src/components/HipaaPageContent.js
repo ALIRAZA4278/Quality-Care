@@ -46,9 +46,6 @@ export default function HipaaPageContent() {
               <p className="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">
                 Quality Care Senior Living, LLC
               </p>
-              <p className="text-sm sm:text-base text-gray-700">
-                Effective Date: January 1, 2026
-              </p>
             </div>
 
             {/* Important Notice */}
@@ -310,7 +307,7 @@ export default function HipaaPageContent() {
                   Quality Care Senior Living – Privacy Officer
                 </p>
                 <p className="text-xs sm:text-sm md:text-base text-gray-700">
-                  Email: sjohnson@qualitycareseniorliving.com
+                  Email: info@qualitycareseniorliving.com
                 </p>
                 <p className="text-xs sm:text-sm md:text-base text-gray-700">
                   Phone: 1 (678) 910-8466
@@ -356,7 +353,7 @@ export default function HipaaPageContent() {
                   Atlanta, GA 30316
                 </p>
                 <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-1">
-                  Email: sjohnson@qualitycareseniorliving.com
+                  Email: info@qualitycareseniorliving.com
                 </p>
                 <p className="text-xs sm:text-sm md:text-base text-gray-700">
                   Phone: 1 (678) 910-8466

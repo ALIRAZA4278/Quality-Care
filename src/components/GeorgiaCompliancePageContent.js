@@ -213,7 +213,7 @@ export default function GeorgiaCompliancePageContent() {
                   Atlanta, GA 30316
                 </p>
                 <p className="text-xs sm:text-sm md:text-base text-gray-700">
-                  Email: <a href="mailto:sjohnson@qualitycareseniorliving.com" className="text-[#887904] hover:underline">sjohnson@qualitycareseniorliving.com</a>
+                  Email: <a href="mailto:info@qualitycareseniorliving.com" className="text-[#887904] hover:underline">info@qualitycareseniorliving.com</a>
                 </p>
                 <p className="text-xs sm:text-sm md:text-base text-gray-700">
                   Phone: <a href="tel:+16789108466" className="text-[#887904] hover:underline">1 (678) 910-8466</a>

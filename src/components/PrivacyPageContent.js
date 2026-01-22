@@ -55,9 +55,6 @@ export default function PrivacyPageContent() {
             <p className="text-base sm:text-lg md:text-xl font-semibold text-gray-800 mb-2">
               Quality Care Senior Living
             </p>
-            <p className="text-sm sm:text-base text-gray-700 mb-4">
-              Effective Date: January 2026
-            </p>
             <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
               Quality Care Senior Living ("we," "our," or "us") is committed to protecting the privacy, dignity, and confidentiality of our residents, families, visitors, employees, and website users. This Privacy Policy explains how we collect, use, protect, and share information in compliance with applicable federal and state laws, including laws governing senior living and healthcare services in the State of Georgia.
             </p>
@@ -405,7 +402,7 @@ export default function PrivacyPageContent() {
                         Atlanta, GA 30316
                       </p>
                       <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-1">
-                        Email: sjohnson@qualitycareseniorliving.com
+                        Email: info@qualitycareseniorliving.com
                       </p>
                       <p className="text-xs sm:text-sm md:text-base text-gray-700">
                         Phone: 1 (678) 910-8466

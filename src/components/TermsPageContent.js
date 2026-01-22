@@ -43,9 +43,6 @@ export default function TermsPageContent() {
               >
                 Quality Care Senior Living, LLC.
               </h2>
-              <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-3">
-                <span className="font-semibold">Effective Date:</span> January 1, 2026
-              </p>
               <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
                 Welcome to the website of Quality Care Senior Living ("Company," "we," "our," or "us"). These Terms of Use govern your access to and use of our website, services, and content. By accessing or using this website, you agree to be bound by these Terms of Use. If you do not agree, please do not use the website.
               </p>
@@ -319,7 +316,7 @@ export default function TermsPageContent() {
                   Atlanta, GA 30316
                 </p>
                 <p className="text-xs sm:text-sm md:text-base text-gray-700">
-                  Email: <a href="mailto:sjohnson@qualitycareseniorliving.com" className="text-[#887904] hover:underline">sjohnson@qualitycareseniorliving.com</a>
+                  Email: <a href="mailto:info@qualitycareseniorliving.com" className="text-[#887904] hover:underline">info@qualitycareseniorliving.com</a>
                 </p>
                 <p className="text-xs sm:text-sm md:text-base text-gray-700">
                   Phone: <a href="tel:+16789108466" className="text-[#887904] hover:underline">1 (678) 910-8466</a>
